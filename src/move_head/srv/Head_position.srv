@@ -1,0 +1,6 @@
+# yaw desired and pitch desired rotation 
+float64 HeadYaw
+float64 HeadPitch
+---
+# movement result
+bool result

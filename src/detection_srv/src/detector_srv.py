@@ -12,7 +12,7 @@ class DetectionService():
 
     def __init__(self):
         rospy.init_node('detection_node')
-        print("Pippo e pluto1")
+        rospy.loginfo("Loading model")
         self.DET_PATH=os.path.join(os.path.dirname(__file__),'efficientdet_d1_coco17_tpu-32')
         self.mydetector = Detector(self.DET_PATH)
         self.objects = []
@@ -20,21 +20,27 @@ class DetectionService():
         self.connectPepper()
 
 
+    def reset_service(self,topic):
+        topic.unregister()
+        self.objects.clear()
+        self.counter = 10
+
     def serviceCallback(self, data):
-        print("Pippo e pluto2")
-        si = rospy.Subscriber("/testcam/image_raw", Image, self.rcv_image)
+        rospy.loginfo("Subscribe to image topic")
+        topic = rospy.Subscriber("/testcam/image_raw", Image, self.rcv_image)
         while self.counter != 0:
             pass
+        self.reset_service(topic)
         return DetectorResponse(self.objects)
 
 
     def connectPepper(self):
-        print("Pippo e pluto3")
+        rospy.loginfo("Advertise service")
         s = rospy.Service('detection_srv', D_srv, self.serviceCallback)
 
 
     def rcv_image(self, msg):
-        print("Pippo e pluto4")
+        rospy.loginfo("Image received")
         image = ros_numpy.numpify(msg)
         detections = self.mydetector(image)
         # Create the message and fill the data in the message (format conversion)
@@ -43,7 +49,6 @@ class DetectionService():
         for clabel,score,box in zip(detections['detection_classes'], detections['detection_scores'], detections['detection_boxes']):
             #d = Detection2D()
             if classmap[clabel] not in self.objects:
-                print("Ecco la label: " + classmap[clabel])
                 self.objects.append(classmap[clabel])
         
         self.counter = self.counter-1
