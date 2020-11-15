@@ -1,0 +1,6 @@
+devel_space: /home/ciccio/Robotica_Cognitiva/pepper_ros/devel
+install: false
+install_space: /home/ciccio/Robotica_Cognitiva/pepper_ros/install
+profile: default
+source_space: /home/ciccio/Robotica_Cognitiva/pepper_ros/src
+workspace: /home/ciccio/Robotica_Cognitiva/pepper_ros
