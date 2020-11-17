@@ -1,0 +1,5 @@
+controller
+/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/controller/cmake.lock /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/./cmake.lock
+/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/controller/lib/pkgconfig/controller.pc /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/lib/pkgconfig/controller.pc
+/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/controller/share/controller/cmake/controllerConfig-version.cmake /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/share/controller/cmake/controllerConfig-version.cmake
+/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/controller/share/controller/cmake/controllerConfig.cmake /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/share/controller/cmake/controllerConfig.cmake

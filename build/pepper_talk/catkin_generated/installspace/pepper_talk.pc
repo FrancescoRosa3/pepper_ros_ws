@@ -1,0 +1,8 @@
+prefix=/home/ciccio/Robotica_Cognitiva/pepper_ros/install
+
+Name: pepper_talk
+Description: Description of pepper_talk
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: 

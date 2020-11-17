@@ -1,0 +1,1 @@
+/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/pepper_talk/include/pepper_talk/Say.h

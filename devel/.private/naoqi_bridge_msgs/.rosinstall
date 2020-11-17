@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/setup.sh

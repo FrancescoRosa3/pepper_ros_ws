@@ -1,0 +1,7 @@
+Symlinking /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/lib/pkgconfig/pepper_sensors_py.pc
+Symlinking /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/lib/python2.7/dist-packages/pepper_sensors/__init__.py
+Symlinking /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/bin/cmake.lock
+Symlinking /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/bin/laser.py
+Symlinking /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/bin/camera.py
+Symlinking /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/share/pepper_sensors_py/cmake/pepper_sensors_pyConfig-version.cmake
+Symlinking /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/share/pepper_sensors_py/cmake/pepper_sensors_pyConfig.cmake

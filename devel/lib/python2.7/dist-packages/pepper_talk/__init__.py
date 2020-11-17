@@ -1,0 +1,1 @@
+/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/pepper_talk/lib/python2.7/dist-packages/pepper_talk/__init__.py

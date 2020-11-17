@@ -1,0 +1,4 @@
+Symlinking /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/lib/pkgconfig/naoqi_tools.pc
+Symlinking /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/lib/python2.7/dist-packages/naoqi_tools/__init__.py
+Symlinking /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/share/naoqi_tools/cmake/naoqi_toolsConfig-version.cmake
+Symlinking /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/share/naoqi_tools/cmake/naoqi_toolsConfig.cmake

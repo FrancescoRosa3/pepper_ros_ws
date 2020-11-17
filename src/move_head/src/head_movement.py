@@ -16,7 +16,7 @@ class Move_head:
         goal.joint_angles.joint_names = ['HeadYaw', 'HeadPitch']
         goal.joint_angles.relative = 0
         goal.joint_angles.speed = 0.2
-        goal.joint_angles.joint_angles = [request.HeadYaw, request.HeadPith]
+        goal.joint_angles.joint_angles = [request.HeadYaw, request.HeadPicth]
         # send goal to server
         self.client.send_goal(goal)
         # wait for result from server
@@ -30,8 +30,9 @@ class Move_head:
         rospy.init_node('move_head_server')
         # init client to joint_angles_action server
         rospy.loginfo("Connecting to server......")
-        self.client = actionlib.SimpleActionClient('joint_angles_action', JointAnglesWithSpeedAction)
+        self.client = actionlib.SimpleActionClient('pepper_robot/pose/pose_controller/joint_angles_action', JointAnglesWithSpeedAction)
         self.client.wait_for_server()
+        rospy.loginfo("Server connected")
         # init service server
         self.service = rospy.Service('move_head', Head_position, self.move_head)
 

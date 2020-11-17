@@ -1,0 +1,1 @@
+/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/pepper_talk/share/common-lisp/ros/pepper_talk/srv/_package.lisp

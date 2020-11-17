@@ -13,9 +13,9 @@ class Controller:
         # Service client             
         self.detection_srv = rospy.ServiceProxy('detection_srv', Detector)
         # Wait for move_head service
-        rospy.loginfo("Wait for move_head")
-        rospy.wait_for_service('move_head')  
-        self.move_head_srv = rospy.ServiceProxy('move_head', Head_position)
+        # rospy.loginfo("Wait for move_head")
+        # rospy.wait_for_service('move_head')  
+        # self.move_head_srv = rospy.ServiceProxy('move_head', Head_position)
 
     # call the service for receiving object detected
     def get_detections(self):
@@ -30,21 +30,30 @@ class Controller:
 
 if __name__ == "__main__":
     ctrl = Controller()
-    # front
-    ctrl.move_head(0, 0)
-    obj_detected = ctrl.get_detections()
-    rospy.loginfo("Object detected front"+ obj_detected)
-    # left
-    ctrl.move_head(0.96, 0)
-    obj_detected = ctrl.get_detections()
-    rospy.loginfo("Object detected left"+ obj_detected)
-    ctrl.move_head(0, 0)
-    # right
-    ctrl.move_head(-0.96, 0)
-    obj_detected = ctrl.get_detections()
-    rospy.loginfo("Object detected right"+ obj_detected)
-    ctrl.move_head(0, 0)
 
-
-    ctrl.get_detections()
-    rospy.spin()
+    """while not rospy.is_shutdown():
+        # front
+        #ctrl.move_head(0, 0)
+        obj_detected = ctrl.get_detections()
+        rospy.loginfo("Object detected front ")
+        rospy.loginfo(obj_detected.objects)"""
+    
+    while not rospy.is_shutdown():
+        # front
+        ctrl.move_head(0, 0)
+        obj_detected = ctrl.get_detections()
+        rospy.loginfo("Object detected front ")
+        rospy.loginfo(obj_detected.objects)
+        # left
+        ctrl.move_head(0.96, 0)
+        obj_detected = ctrl.get_detections()
+        rospy.loginfo("Object detected left ")
+        rospy.loginfo(obj_detected.objects)
+        ctrl.move_head(0, 0)
+        # right
+        ctrl.move_head(-0.96, 0)
+        obj_detected = ctrl.get_detections()
+        rospy.loginfo("Object detected right ")
+        rospy.loginfo(obj_detected.objects)
+        ctrl.move_head(0, 0)
+        #rospy.spin()

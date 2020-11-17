@@ -1,0 +1,8 @@
+prefix=/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/controller
+
+Name: controller
+Description: Description of controller
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

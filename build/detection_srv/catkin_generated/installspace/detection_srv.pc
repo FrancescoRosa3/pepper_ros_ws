@@ -1,0 +1,8 @@
+prefix=/home/ciccio/Robotica_Cognitiva/pepper_ros/install
+
+Name: detection_srv
+Description: Description of detection_srv
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: 

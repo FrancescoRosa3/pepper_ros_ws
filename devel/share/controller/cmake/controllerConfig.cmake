@@ -1,0 +1,1 @@
+/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/controller/share/controller/cmake/controllerConfig.cmake

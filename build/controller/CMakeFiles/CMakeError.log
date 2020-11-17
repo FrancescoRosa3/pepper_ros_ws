@@ -1,0 +1,55 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/ciccio/Robotica_Cognitiva/pepper_ros/build/controller/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f475b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f475b.dir/build.make CMakeFiles/cmTC_f475b.dir/build
+make[1]: Entering directory '/home/ciccio/Robotica_Cognitiva/pepper_ros/build/controller/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f475b.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_f475b.dir/CheckSymbolExists.c.o   -c /home/ciccio/Robotica_Cognitiva/pepper_ros/build/controller/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_f475b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f475b.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_f475b.dir/CheckSymbolExists.c.o  -o cmTC_f475b 
+CMakeFiles/cmTC_f475b.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_f475b.dir/build.make:97: recipe for target 'cmTC_f475b' failed
+make[1]: *** [cmTC_f475b] Error 1
+make[1]: Leaving directory '/home/ciccio/Robotica_Cognitiva/pepper_ros/build/controller/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_f475b/fast' failed
+make: *** [cmTC_f475b/fast] Error 2
+
+File /home/ciccio/Robotica_Cognitiva/pepper_ros/build/controller/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/ciccio/Robotica_Cognitiva/pepper_ros/build/controller/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_9a3dc/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9a3dc.dir/build.make CMakeFiles/cmTC_9a3dc.dir/build
+make[1]: Entering directory '/home/ciccio/Robotica_Cognitiva/pepper_ros/build/controller/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9a3dc.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_9a3dc.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_9a3dc
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9a3dc.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_9a3dc.dir/CheckFunctionExists.c.o  -o cmTC_9a3dc -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_9a3dc.dir/build.make:97: recipe for target 'cmTC_9a3dc' failed
+make[1]: *** [cmTC_9a3dc] Error 1
+make[1]: Leaving directory '/home/ciccio/Robotica_Cognitiva/pepper_ros/build/controller/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_9a3dc/fast' failed
+make: *** [cmTC_9a3dc/fast] Error 2
+
+

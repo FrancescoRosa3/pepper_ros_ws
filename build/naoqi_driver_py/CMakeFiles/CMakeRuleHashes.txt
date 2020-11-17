@@ -1,0 +1,4 @@
+# Hashes of file build rules.
+0fcde036c532d964bdc4a1e3ec92f4a6 /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_driver_py/include/naoqi_driver_py/NaoqiSpeechConfig.h
+d760d9e2076a2eb62ca508c61acc35a0 CMakeFiles/clean_test_results
+a8b0ec0643d404320eb0844a7db9b514 CMakeFiles/naoqi_driver_py_gencfg

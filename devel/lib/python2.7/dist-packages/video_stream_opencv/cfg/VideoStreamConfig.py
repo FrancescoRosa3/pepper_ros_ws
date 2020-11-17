@@ -1,0 +1,1 @@
+/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/video_stream_opencv/lib/python2.7/dist-packages/video_stream_opencv/cfg/VideoStreamConfig.py

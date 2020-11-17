@@ -1,0 +1,1 @@
+/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/__init__.py

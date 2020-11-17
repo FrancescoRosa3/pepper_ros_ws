@@ -1,0 +1,1 @@
+/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/detection_srv/share/common-lisp/ros/detection_srv/srv/detection_srv-srv.asd

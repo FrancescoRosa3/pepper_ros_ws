@@ -1,0 +1,15 @@
+# Hashes of file build rules.
+f6663a333b5e515333f274d1890a2153 /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/pepper_talk/include/pepper_talk/Say.h
+a40026435a5afc383d611973f687af44 /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/pepper_talk/lib/python2.7/dist-packages/pepper_talk/srv/_Say.py
+87f5961a2b41bd16441a9212da8fbcab /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/pepper_talk/lib/python2.7/dist-packages/pepper_talk/srv/__init__.py
+bdc09fd156ce0f4f0641bb45131c1329 /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/pepper_talk/share/common-lisp/ros/pepper_talk/srv/Say.lisp
+b63adab6bee638832e9664371335e9de /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/pepper_talk/share/gennodejs/ros/pepper_talk/srv/Say.js
+2afa49db63ae821bae45e72f49287fe8 /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/pepper_talk/share/roseus/ros/pepper_talk/manifest.l
+246f5cc0dce48b9ced086165422618ee /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/pepper_talk/share/roseus/ros/pepper_talk/srv/Say.l
+7f9c6a0e64536c16df9396533ad4368b CMakeFiles/_pepper_talk_generate_messages_check_deps_Say
+d7a8988b37f989decd9545adc2eb19c3 CMakeFiles/clean_test_results
+ec8b131d855131c1a7cf550a2004b9d3 CMakeFiles/pepper_talk_generate_messages_cpp
+ec8b131d855131c1a7cf550a2004b9d3 CMakeFiles/pepper_talk_generate_messages_eus
+ec8b131d855131c1a7cf550a2004b9d3 CMakeFiles/pepper_talk_generate_messages_lisp
+ec8b131d855131c1a7cf550a2004b9d3 CMakeFiles/pepper_talk_generate_messages_nodejs
+ec8b131d855131c1a7cf550a2004b9d3 CMakeFiles/pepper_talk_generate_messages_py

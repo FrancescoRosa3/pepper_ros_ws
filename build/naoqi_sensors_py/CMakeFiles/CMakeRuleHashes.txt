@@ -1,0 +1,5 @@
+# Hashes of file build rules.
+ff289d38b86973c827abab6eb40ba602 /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_sensors_py/include/naoqi_sensors_py/NaoqiCameraConfig.h
+8531de9766e62a4ff2257afcb2d9aa58 /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_sensors_py/include/naoqi_sensors_py/NaoqiMicrophoneConfig.h
+857c0e2206a23948914b485a3ee5fc9e CMakeFiles/clean_test_results
+53803e8081c2426a94a2c443fb263c4a CMakeFiles/naoqi_sensors_py_gencfg
