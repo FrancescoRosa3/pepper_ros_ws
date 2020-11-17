@@ -30,8 +30,21 @@ class Controller:
 
 if __name__ == "__main__":
     ctrl = Controller()
+    # front
     ctrl.move_head(0, 0)
     obj_detected = ctrl.get_detections()
-    rospy.loginfo("Object detected "+ obj_detected)
+    rospy.loginfo("Object detected front"+ obj_detected)
+    # left
+    ctrl.move_head(0.96, 0)
+    obj_detected = ctrl.get_detections()
+    rospy.loginfo("Object detected left"+ obj_detected)
+    ctrl.move_head(0, 0)
+    # right
+    ctrl.move_head(-0.96, 0)
+    obj_detected = ctrl.get_detections()
+    rospy.loginfo("Object detected right"+ obj_detected)
+    ctrl.move_head(0, 0)
+
+
     ctrl.get_detections()
     rospy.spin()
