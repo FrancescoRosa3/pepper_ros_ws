@@ -21,8 +21,8 @@ class Controller:
         self.move_head_srv = rospy.ServiceProxy('move_head', Head_position)
         # Wait for pepper_talk service
         rospy.loginfo("Wait for pepper_talk service")
-        rospy.wait_for_service('animated_say')
-        self.pepper_talk_srv = rospy.ServiceProxy('animated_say', Say)
+        # rospy.wait_for_service('animated_say')
+        # self.pepper_talk_srv = rospy.ServiceProxy('animated_say', Say)
 
     # call the service for receiving object detected
     def get_detections(self):
@@ -53,6 +53,7 @@ if __name__ == "__main__":
         rospy.loginfo("Object detected front ")
         rospy.loginfo(obj_detected.objects)"""
     
+    r = rospy.Rate(1)
     while not rospy.is_shutdown():
         # front
         ctrl.move_head(0, 0)
@@ -60,6 +61,7 @@ if __name__ == "__main__":
         rospy.loginfo("Object detected front ")
         rospy.loginfo(obj_detected.objects)
         ctrl.dict_obj["front"] = obj_detected
+        r.sleep()
         # left
         ctrl.move_head(0.96, 0)
         obj_detected = ctrl.get_detections()
@@ -67,6 +69,7 @@ if __name__ == "__main__":
         rospy.loginfo(obj_detected.objects)
         ctrl.dict_obj["left"] = obj_detected
         ctrl.move_head(0, 0)
+        r.sleep()
         # right
         ctrl.move_head(-0.96, 0)
         obj_detected = ctrl.get_detections()
@@ -74,5 +77,5 @@ if __name__ == "__main__":
         rospy.loginfo(obj_detected.objects)
         ctrl.dict_obj["left"] = obj_detected
         ctrl.move_head(0, 0)
-        ctrl.speech("Ciao sono pepper")
+        # ctrl.speech("Ciao sono pepper")
         #rospy.spin()
