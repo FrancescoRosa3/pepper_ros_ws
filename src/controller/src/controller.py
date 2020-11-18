@@ -35,13 +35,20 @@ class Controller:
         return self.move_head_srv(yaw, pitch)
     
     # call the pepper_talk speech service
-    def speech(self, msg):
+    def speech(self):
+        msg = self.compose_msg()
         rospy.loginfo("Waiting for pepper talk")
         return self.pepper_talk_srv(msg)
 
 
-    def compose_msg(self, obj_list):
-        pass
+    def compose_msg(self):
+        msg = "On the "
+        for k in self.dict_obj:
+            msg = msg + k + " I can see "
+            for v in self.dict_obj[k]:
+                msg = msg +" a "+ v + " "
+        rospy.loginfo("COMPOSED MESSAGE: " + msg)
+        return msg
 
 if __name__ == "__main__":
     ctrl = Controller()
@@ -74,5 +81,5 @@ if __name__ == "__main__":
         rospy.loginfo(obj_detected.objects)
         ctrl.dict_obj["left"] = obj_detected
         ctrl.move_head(0, 0)
-        ctrl.speech("Ciao sono pepper")
+        #ctrl.speech()
         #rospy.spin()
