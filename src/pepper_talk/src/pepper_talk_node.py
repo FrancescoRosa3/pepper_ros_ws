@@ -1,7 +1,7 @@
 #!/usr/bin/python
 import rospy
 from naoqi_driver.naoqi_node import NaoqiNode
-from pepper_talk.srv import Say
+from pepper_talk.srv import Say, SayResponse
 
 class AnimatedSay(NaoqiNode):
     def __init__(self):
