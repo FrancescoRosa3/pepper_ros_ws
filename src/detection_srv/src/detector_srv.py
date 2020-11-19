@@ -25,7 +25,7 @@ class DetectionService():
         self.DET_PATH=os.path.join(os.path.dirname(__file__), args.get("model"))
         self.mydetector = Detector(self.DET_PATH)
         self.objects = []
-        self.num_iteration = 2
+        self.num_iteration = 5
         self.counter = self.num_iteration
         self.connectPepper()
         self.pub = rospy.Publisher('detection', Detection2DArray, queue_size=2)
@@ -78,14 +78,16 @@ class DetectionService():
             o.id = clabel
             d.results.append(o)
             message.detections.append(d)
-            if args.get("publish_bb") == True:
-                self.pub.publish(message)
-                self.pub_image.publish(msg)
+            
 
             print(classmap[clabel])
             if classmap[clabel] not in self.objects:
                 self.objects.append(classmap[clabel])
         
+        if args.get("publish_bb") == True:
+            self.pub.publish(message)
+            self.pub_image.publish(msg)
+            
         self.counter = self.counter-1
     
 

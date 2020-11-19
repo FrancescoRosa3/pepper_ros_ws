@@ -52,6 +52,7 @@ class Controller:
     def speech(self):
         if args.get("speech")  == True:
             msg = self.compose_msg()
+            # msg = "ciao sono pepper"
             rospy.loginfo("Waiting for pepper talk")
             return self.pepper_talk_srv(msg)
 
@@ -60,8 +61,9 @@ class Controller:
         msg = "On the "
         for k in self.dict_obj:
             msg = msg + k + " I can see "
-            for v in self.dict_obj[k]:
-                msg = msg +" a "+ v + " "
+            for v in self.dict_obj[k].objects:
+                msg = msg +" a "+ v + ","
+            msg = msg + ","
         rospy.loginfo("COMPOSED MESSAGE: " + msg)
         return msg
 
@@ -99,7 +101,7 @@ if __name__ == "__main__":
         obj_detected = ctrl.get_detections()
         rospy.loginfo("Object detected right ")
         rospy.loginfo(obj_detected.objects)
-        ctrl.dict_obj["left"] = obj_detected
+        ctrl.dict_obj["right"] = obj_detected
         ctrl.move_head(0, 0)
         ctrl.speech()
         #rospy.spin()
