@@ -85,8 +85,8 @@ class DetectionService():
                 self.objects.append(classmap[clabel])
         
         if args.get("publish_bb") == True:
-            self.pub.publish(message)
             self.pub_image.publish(msg)
+            self.pub.publish(message)
             
         self.counter = self.counter-1
     

@@ -58,12 +58,14 @@ class Controller:
 
 
     def compose_msg(self):
-        msg = "On the "
-        for k in self.dict_obj:
-            msg = msg + k + " I can see "
+        for k in self.dict_obj: 
+            msg = "\\rspd=60\\On the " + k + " I can see "
+            obj_num = len(self.dict_obj[k].objects)
             for v in self.dict_obj[k].objects:
-                msg = msg +" a "+ v + ","
-            msg = msg + ","
+                msg = msg +" a " + v + ","
+            if obj_num == 0:
+                msg = msg +" nothing"
+            msg = msg + "\\pau=1500\\"
         rospy.loginfo("COMPOSED MESSAGE: " + msg)
         return msg
 

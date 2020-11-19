@@ -8,6 +8,11 @@ import ros_numpy # pip3 install git+https://github.com/eric-wieser/ros_numpy
 from threading import Lock
 from classmap import category_map as classmap # https://gist.github.com/xhlulu/f7735970704b97fd0b72203628c1cc77
 
+import argparse
+ap = argparse.ArgumentParser()
+ap.add_argument("-m", "--model", help="Name of the model", default='mobile_net')
+args = vars(ap.parse_args())
+
 rospy.init_node('visualization_node')
 image_lock = Lock()
 image = None
@@ -38,7 +43,7 @@ def rcv_detection(msg):
     cv2.imshow('Image', im)
     # img_name
     global cnt
-    img_name = "image_" +str(cnt)+".jpg" 
+    img_name = args.get("model") + "_" + str(cnt) + ".jpg" 
     cnt = cnt + 1
     cv2.imwrite(img_name, im)
     cv2.waitKey(100)
