@@ -11,6 +11,7 @@ from classmap import category_map as classmap # https://gist.github.com/xhlulu/f
 rospy.init_node('visualization_node')
 image_lock = Lock()
 image = None
+cnt = 0
 
 def rcv_detection(msg):
     global image
@@ -35,6 +36,11 @@ def rcv_detection(msg):
         p1 = (p1[0]-10, p1[1])
         cv2.putText(im, "%s %.2f" % (classmap[c],s), p1, cv2.FONT_HERSHEY_SIMPLEX, 0.8, col, 2)
     cv2.imshow('Image', im)
+    # img_name
+    global cnt
+    img_name = "image_" +str(cnt)+".jpg" 
+    cnt = cnt + 1
+    cv2.imwrite(img_name, im)
     cv2.waitKey(100)
 
 def rcv_image(msg):

@@ -9,19 +9,27 @@ import ros_numpy
 from detector import Detector
 from classmap import category_map as classmap 
 
+import argparse
+ap = argparse.ArgumentParser()
+ap.add_argument("-m", "--model", help="Path to the model", default='ssd_mobilenet_v2_320x320_coco17_tpu-8/saved_model')
+ap.add_argument("-p", "--publish_bb", help="Publish bounding boxes and image",  default=True)
+ap.add_argument("-t", "--topic", help="Image topic", default="/pepper_robot/camera/front/camera/image_raw")
+args = vars(ap.parse_args())
+
 class DetectionService():
    
     def __init__(self):
         rospy.init_node('detection_node')
         rospy.loginfo("Loading model")
         #self.DET_PATH=os.path.join(os.path.dirname(__file__),'efficientdet_d1_coco17_tpu-32')
-        self.DET_PATH=os.path.join(os.path.dirname(__file__),'ssd_mobilenet_v2_320x320_coco17_tpu-8/saved_model')
+        self.DET_PATH=os.path.join(os.path.dirname(__file__), args.get("model"))
         self.mydetector = Detector(self.DET_PATH)
         self.objects = []
         self.num_iteration = 2
         self.counter = self.num_iteration
         self.connectPepper()
         self.pub = rospy.Publisher('detection', Detection2DArray, queue_size=2)
+        self.pub_image = rospy.Publisher('image_detected', Image, queue_size=2)
 
     """def reset_service(self,topic):
         topic.unregister()
@@ -38,8 +46,8 @@ class DetectionService():
         
         while self.counter != 0:
             # for each new image perform classification
-            msg = rospy.wait_for_message("/pepper_robot/camera/front/camera/image_raw", Image)
-            # msg = rospy.wait_for_message("/webcam/image_raw", Image)
+            #msg = rospy.wait_for_message("/pepper_robot/camera/front/camera/image_raw", Image)
+            msg = rospy.wait_for_message(args.get("topic"), Image)
             self.rcv_image(msg)
         
         return DetectorResponse(self.objects)
@@ -51,6 +59,7 @@ class DetectionService():
 
 
     def rcv_image(self, msg):
+
         rospy.loginfo("Image received")
         image = ros_numpy.numpify(msg)
         detections = self.mydetector(image, threshold=0.6)
@@ -69,7 +78,9 @@ class DetectionService():
             o.id = clabel
             d.results.append(o)
             message.detections.append(d)
-            self.pub.publish(message)
+            if args.get("publish_bb") == True:
+                self.pub.publish(message)
+                self.pub_image.publish(msg)
 
             print(classmap[clabel])
             if classmap[clabel] not in self.objects:
