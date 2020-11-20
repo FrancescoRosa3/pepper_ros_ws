@@ -14,6 +14,7 @@ ap = argparse.ArgumentParser()
 ap.add_argument("-m", "--model", help="Path to the model", default='ssd_mobilenet_v2_320x320_coco17_tpu-8/saved_model')
 ap.add_argument("-p", "--publish_bb", help="Publish bounding boxes and image",  default=True)
 ap.add_argument("-t", "--topic", help="Image topic", default="/pepper_robot/camera/front/camera/image_raw")
+ap.add_argument("-f", "--frames", help="analized frames number", default=1)
 args = vars(ap.parse_args())
 
 class DetectionService():
@@ -25,7 +26,7 @@ class DetectionService():
         self.DET_PATH=os.path.join(os.path.dirname(__file__), args.get("model"))
         self.mydetector = Detector(self.DET_PATH)
         self.objects = []
-        self.num_iteration = 5
+        self.num_iteration = args.get("frames")
         self.counter = self.num_iteration
         self.connectPepper()
         self.pub = rospy.Publisher('detection', Detection2DArray, queue_size=2)
