@@ -10,7 +10,6 @@ from detector import Detector
 from classmap import category_map as classmap 
 
 
-
 class DetectionService():
    
     def __init__(self):
@@ -21,6 +20,7 @@ class DetectionService():
         ap.add_argument("-m", "--model", dest="model", help="Path to the model", default='ssd_mobilenet_v2_320x320_coco17_tpu-8/saved_model')
         ap.add_argument("-p", "--publish_bb", dest="publish_bb", help="Publish bounding boxes and image",  default="True")
         ap.add_argument("-t", "--topic", dest="topic", help="Image topic", default="/pepper_robot/camera/front/camera/image_raw")
+        ap.add_argument("-f", "--frames",dest="frames", type=int, help="analized frames number", default=1)
         # args = vars(ap.parse_args())
 
         import sys
@@ -28,13 +28,14 @@ class DetectionService():
         self.model = args.model
         self.publish_bb = args.publish_bb
         self.topic = args.topic
-        print(self.model, self.publish_bb, self.topic)
+
+        print(self.model, self.publish_bb, self.topic, args.frames)
 
         rospy.loginfo("Loading model")
         self.DET_PATH=os.path.join(os.path.dirname(__file__), self.model)
         self.mydetector = Detector(self.DET_PATH)
         self.objects = []
-        self.num_iteration = 5
+        self.num_iteration = args.frames
         self.counter = self.num_iteration
         self.connectPepper()
         self.pub = rospy.Publisher('detection', Detection2DArray, queue_size=2)
@@ -57,6 +58,7 @@ class DetectionService():
             # for each new image perform classification
             #msg = rospy.wait_for_message("/pepper_robot/camera/front/camera/image_raw", Image)
             msg = rospy.wait_for_message(self.topic, Image)
+            rospy.loginfo("image size: " + str(msg.height) + " - " + str(msg.width))
             self.rcv_image(msg)
         
         return DetectorResponse(self.objects)
@@ -90,8 +92,8 @@ class DetectionService():
             
 
             print(classmap[clabel])
-            if classmap[clabel] not in self.objects:
-                self.objects.append(classmap[clabel])
+            # if classmap[clabel] not in self.objects:
+            self.objects.append(classmap[clabel])
         
         if self.publish_bb == "True":
             self.pub_image.publish(msg)

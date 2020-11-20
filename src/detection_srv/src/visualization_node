@@ -56,7 +56,7 @@ def rcv_image(msg):
     image_lock.release()
 
 
-si = rospy.Subscriber("image", Image, rcv_image)
+si = rospy.Subscriber("image_detected", Image, rcv_image)
 sd = rospy.Subscriber("detection", Detection2DArray, rcv_detection)
 
 

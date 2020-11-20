@@ -67,15 +67,33 @@ class Controller:
             rospy.loginfo("Waiting for pepper talk")
             return self.pepper_talk_srv(msg)
 
+    def create_numObjDict(self, index):
+        numObj_dict = {}
+        for v in self.dict_obj[index].objects:
+            if v not in numObj_dict:
+                numObj_dict[v] = self.dict_obj[index].objects.count(v)
+        return numObj_dict
+            
+
 
     def compose_msg(self):
-        for k in self.dict_obj: 
-            msg = "\\rspd=60\\On the " + k + " I can see "
+        msg = ""
+        for k in self.dict_obj:
+            rospy.loginfo("side: " + k)
+            # create a temporary dictionary that contains the number of objects for each of them 
+            temp_dict = self.create_numObjDict(k)
+            # Start creating the sentence
+            msg = msg + "\\rspd=60\\On the " + k + " I can see "
+            # check if list is empty
             obj_num = len(self.dict_obj[k].objects)
-            for v in self.dict_obj[k].objects:
-                msg = msg +" a " + v + ","
             if obj_num == 0:
-                msg = msg +" nothing"
+                msg = msg +"nothing"
+            # else append objects to the sentence
+            for k, v in temp_dict.items():
+                msg = msg + str(v) + " " + k
+                if v > 1:
+                    msg = msg + "s"
+                msg = msg + ","
             msg = msg + "\\pau=1500\\"
         rospy.loginfo("COMPOSED MESSAGE: " + msg)
         return msg

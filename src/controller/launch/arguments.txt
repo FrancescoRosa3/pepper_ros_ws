@@ -1,0 +1,11 @@
+<arg name="detector" default="True" doc="Run detector service" />
+<arg name="move_head" default="True" doc="Run move head service" />
+<arg name="speech" default="True" doc="Run speech service" />
+
+<!-- Detector args-->
+<arg name="model" default="ssd_mobilenet_v2_320x320_coco17_tpu-8/saved_model" doc="Path to the model" />
+<arg name="publish_bb" default="True" doc="Publish the detected image" />
+<arg name="topic" default="/pepper_robot/camera/front/camera/image_raw" doc="Camera topic" />
+<arg name="frame" default="1" doc="Number of iteration"/>
+
+<arg name="D" value="/home/ciccio/Robotica_Cognitiva/pepper_ros/src/pynaoqi-python2.7-2.5.7.1-linux64"/>
