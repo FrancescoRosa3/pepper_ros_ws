@@ -9,20 +9,29 @@ import ros_numpy
 from detector import Detector
 from classmap import category_map as classmap 
 
-import argparse
-ap = argparse.ArgumentParser()
-ap.add_argument("-m", "--model", help="Path to the model", default='ssd_mobilenet_v2_320x320_coco17_tpu-8/saved_model')
-ap.add_argument("-p", "--publish_bb", help="Publish bounding boxes and image",  default=True)
-ap.add_argument("-t", "--topic", help="Image topic", default="/pepper_robot/camera/front/camera/image_raw")
-args = vars(ap.parse_args())
+
 
 class DetectionService():
    
     def __init__(self):
         rospy.init_node('detection_node')
+
+        import argparse
+        ap = argparse.ArgumentParser()
+        ap.add_argument("-m", "--model", dest="model", help="Path to the model", default='ssd_mobilenet_v2_320x320_coco17_tpu-8/saved_model')
+        ap.add_argument("-p", "--publish_bb", dest="publish_bb", help="Publish bounding boxes and image",  default="True")
+        ap.add_argument("-t", "--topic", dest="topic", help="Image topic", default="/pepper_robot/camera/front/camera/image_raw")
+        # args = vars(ap.parse_args())
+
+        import sys
+        args, _ = ap.parse_known_args(args=rospy.myargv(argv=sys.argv)[1:])
+        self.model = args.model
+        self.publish_bb = args.publish_bb
+        self.topic = args.topic
+        print(self.model, self.publish_bb, self.topic)
+
         rospy.loginfo("Loading model")
-        #self.DET_PATH=os.path.join(os.path.dirname(__file__),'efficientdet_d1_coco17_tpu-32')
-        self.DET_PATH=os.path.join(os.path.dirname(__file__), args.get("model"))
+        self.DET_PATH=os.path.join(os.path.dirname(__file__), self.model)
         self.mydetector = Detector(self.DET_PATH)
         self.objects = []
         self.num_iteration = 5
@@ -47,7 +56,7 @@ class DetectionService():
         while self.counter != 0:
             # for each new image perform classification
             #msg = rospy.wait_for_message("/pepper_robot/camera/front/camera/image_raw", Image)
-            msg = rospy.wait_for_message(args.get("topic"), Image)
+            msg = rospy.wait_for_message(self.topic, Image)
             self.rcv_image(msg)
         
         return DetectorResponse(self.objects)
@@ -84,7 +93,7 @@ class DetectionService():
             if classmap[clabel] not in self.objects:
                 self.objects.append(classmap[clabel])
         
-        if args.get("publish_bb") == True:
+        if self.publish_bb == "True":
             self.pub_image.publish(msg)
             self.pub.publish(message)
             
