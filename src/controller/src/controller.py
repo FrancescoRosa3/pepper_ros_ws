@@ -59,22 +59,24 @@ class Controller:
     def create_numObjDict(self, index):
         numObj_dict = {}
         for v in self.dict_obj[index].objects:
-            if not numObj_dict.has_keys(v): # DA VERIFICARE
+            if v not in numObj_dict: # DA VERIFICARE
                 numObj_dict[v] = self.dict_obj[index].objects.count(v)
         return numObj_dict
             
 
 
     def compose_msg(self):
+        msg = ""
         for k in self.dict_obj:
+            rospy.loginfo("side: " + k)
             # create a temporary dictionary that contains the number of objects for each of them 
-            temp_dict = self.create_numObjDict(k); 
+            temp_dict = self.create_numObjDict(k)
             # Start creating the sentence
-            msg = "\\rspd=60\\On the " + k + " I can see "
+            msg = msg + "\\rspd=60\\On the " + k + " I can see "
             # check if list is empty
             obj_num = len(self.dict_obj[k].objects)
             if obj_num == 0:
-                msg = msg +" nothing"
+                msg = msg +"nothing"
             # else append objects to the sentence
             for k, v in temp_dict.items():
                 msg = msg + str(v) + " " + k

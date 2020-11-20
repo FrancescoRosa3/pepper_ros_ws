@@ -49,6 +49,7 @@ class DetectionService():
             # for each new image perform classification
             #msg = rospy.wait_for_message("/pepper_robot/camera/front/camera/image_raw", Image)
             msg = rospy.wait_for_message(args.get("topic"), Image)
+            rospy.loginfo("image size: " + str(msg.height) + " - " + str(msg.width))
             self.rcv_image(msg)
         
         return DetectorResponse(self.objects)
@@ -82,8 +83,8 @@ class DetectionService():
             
 
             print(classmap[clabel])
-            if classmap[clabel] not in self.objects:
-                self.objects.append(classmap[clabel])
+            # if classmap[clabel] not in self.objects:
+            self.objects.append(classmap[clabel])
         
         if args.get("publish_bb") == True:
             self.pub_image.publish(msg)
