@@ -11,6 +11,7 @@ from classmap import category_map as classmap # https://gist.github.com/xhlulu/f
 import argparse
 ap = argparse.ArgumentParser()
 ap.add_argument("-m", "--model", help="Name of the model", default='mobile_net')
+ap.add_argument("-p", "--path", help="Path to folder")
 args = vars(ap.parse_args())
 
 rospy.init_node('visualization_node')
@@ -45,7 +46,8 @@ def rcv_detection(msg):
     global cnt
     img_name = args.get("model") + "_" + str(cnt) + ".jpg" 
     cnt = cnt + 1
-    cv2.imwrite(img_name, im)
+    path = args.get("path") + "/" +img_name
+    cv2.imwrite(path, im)
     cv2.waitKey(100)
 
 def rcv_image(msg):
