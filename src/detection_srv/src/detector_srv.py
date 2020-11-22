@@ -72,8 +72,15 @@ class DetectionService():
     def rcv_image(self, msg):
 
         rospy.loginfo("Image received")
+        
+        import time
+        start_time = time.time()
         image = ros_numpy.numpify(msg)
+        # run inference
         detections = self.mydetector(image, threshold=0.6)
+        # compute inference time
+        elapsed_time = time.time() - start_time
+        print(elapsed_time * 1000) # print ms
         # Create the message and fill the data in the message (format conversion)
         message = Detection2DArray()
         
