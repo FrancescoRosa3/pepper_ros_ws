@@ -23,9 +23,9 @@ class Controller:
 
         import argparse
         ap = argparse.ArgumentParser()
-        ap.add_argument("-d", "--detector", dest="detector", help="Run detector service", default="True")
-        ap.add_argument("-mh", "--move_head", dest="move_head", help="Run move head service", default="True")
-        ap.add_argument("-s","--speech", dest="speech", help="Run speech service", default="True")
+        ap.add_argument("-d", "--detector", dest="detector", type = int, help="Run detector service", default=1)
+        ap.add_argument("-mh", "--move_head", dest="move_head", type = int, help="Run move head service", default=1)
+        ap.add_argument("-s","--speech", dest="speech", type = int, help="Run speech service", default=1)
         #args = vars(ap.parse_args())
 
         import sys
@@ -35,18 +35,18 @@ class Controller:
         self.s = args.speech
         print(self.detector, self.mh, self.s)
 
-        if self.detector == "True":
+        if self.detector:
             # Wait for detection_srv 
             rospy.loginfo("Wait for detection_srv")
             rospy.wait_for_service('detection_srv')   
             # Service client             
             self.detection_srv = rospy.ServiceProxy('detection_srv', Detector)
-        if  self.mh == "True":
+        if  self.mh:
             # Wait for move_head service
             rospy.loginfo("Wait for move_head")
             rospy.wait_for_service('move_head')  
             self.move_head_srv = rospy.ServiceProxy('move_head', Head_position)
-        if  self.s == "True":
+        if  self.s:
             # Wait for pepper_talk service
             rospy.loginfo("Wait for pepper_talk service")
             rospy.wait_for_service('animated_say')
@@ -54,20 +54,20 @@ class Controller:
 
     # call the service for receiving object detected
     def get_detections(self):
-        if  self.detector == "True":
+        if  self.detector:
             rospy.loginfo("Waiting for service response")
             obj_detected = self.detection_srv()
             return obj_detected
 
     # call the service for moving the head, given the angles
     def move_head(self, yaw, pitch):
-        if  self.mh == "True":
+        if  self.mh:
             rospy.loginfo("Waiting for head movement")
             return self.move_head_srv(yaw, pitch)
     
     # call the pepper_talk speech service
     def speech(self):
-        if  self.s  == "True":
+        if  self.s:
             msg = self.compose_msg()
             # msg = "ciao sono pepper"
             rospy.loginfo("Waiting for pepper talk")

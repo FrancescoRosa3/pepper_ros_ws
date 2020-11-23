@@ -41,7 +41,7 @@ def rcv_detection(msg):
         cv2.rectangle(im, p1, p2, col, 3 )
         p1 = (p1[0]-10, p1[1])
         cv2.putText(im, "%s %.2f" % (classmap[c],s), p1, cv2.FONT_HERSHEY_SIMPLEX, 0.8, col, 2)
-    cv2.imshow('Image', im)
+    # cv2.imshow('Image', im)
     # img_name
     global cnt
     img_name = args.get("model") + "_" + str(cnt) + ".jpg" 
