@@ -1,9 +1,9 @@
-PEPPER_ROS
+**EPPER_ROS**
 
 Control of Pepper for performing the following actions:
--) Move the Pepper's head in three different direction right, front and left;
--) For each direction perform an object detection;
--) Say all the object detected;
+-) Move the Pepper's head in three different direction right, front and left;<br />
+-) For each direction perform an object detection;<br />
+-) Say all the object detected;<br />
 
 In order to run the code run the following commands:
 
