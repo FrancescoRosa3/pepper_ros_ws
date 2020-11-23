@@ -14,5 +14,5 @@ In the pepper_ros folder
 4. roslaunch controller controller.launch D:=$PATH_TO_PEPPER_WS/src/pynaoqi-python2.7-2.5.7.1-linux64
 
 If you want to visualize the image and the bounding boxes run
-1. rosrun detection_srv visualization_node -m [MODEL_NAME] -p [PATH_TO_THE_FOLDER_IN_WHICH_SAVE_THE_IMAGES]
+1. rosrun detection_srv visualization_node -m [MODEL_NAME] -p [PATH_TO_THE_FOLDER_IN_WHICH_SAVE_THE_IMAGES]<br />
 Note: In order to visualize the image the publish_bb arguments must be "True"
