@@ -1,6 +1,6 @@
-**EPPER_ROS**
+**PEPPER_ROS**
 
-Control of Pepper for performing the following actions:
+Control of Pepper for performing the following actions:<br />
 -) Move the Pepper's head in three different direction right, front and left;<br />
 -) For each direction perform an object detection;<br />
 -) Say all the object detected;<br />
