@@ -6,6 +6,9 @@ from naoqi_bridge_msgs.msg import JointAnglesWithSpeed, JointAnglesWithSpeedGoal
 from move_head.srv import Head_position, Head_positionResponse
 import actionlib
 
+# This class implements the head controll.
+# It advertises a service called move_head
+# It performs the movement by using the JointAnglesWithSpeedAngles proposed by the pose controller
 class Move_head:
 
     # Given the request 

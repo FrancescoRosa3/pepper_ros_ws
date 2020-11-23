@@ -9,7 +9,10 @@ import ros_numpy
 from detector import Detector
 from classmap import category_map as classmap 
 
-
+# This class implements the Detection node.
+# It advertises a service, called detection_srv, that can be used in order to require a detection on the frame published on the topic
+# It returns the objected detected.
+# It publish the image and the bounding box computed if publish_bb is true
 class DetectionService():
    
     def __init__(self):
@@ -31,12 +34,14 @@ class DetectionService():
 
         print(self.model, self.publish_bb, self.topic, args.frames)
 
+        # Load the model
         rospy.loginfo("Loading model")
         self.DET_PATH=os.path.join(os.path.dirname(__file__), self.model)
         self.mydetector = Detector(self.DET_PATH)
         self.objects = []
         self.num_iteration = args.frames
         self.counter = self.num_iteration
+        # Advertise the service
         self.connectPepper()
         self.pub = rospy.Publisher('detection', Detection2DArray, queue_size=2)
         self.pub_image = rospy.Publisher('image_detected', Image, queue_size=2)
@@ -46,6 +51,7 @@ class DetectionService():
         self.objects.clear()
         self.counter = 1"""
 
+    # Service Callback
     def serviceCallback(self, data):
         rospy.loginfo("Subscribe to image topic")
         
@@ -63,12 +69,12 @@ class DetectionService():
         
         return DetectorResponse(self.objects)
 
-
+    # Advertise the service
     def connectPepper(self):
         rospy.loginfo("Advertise service")
         s = rospy.Service('detection_srv', D_srv, self.serviceCallback)
 
-
+    # Perform the inference on the given msg
     def rcv_image(self, msg):
 
         rospy.loginfo("Image received")
@@ -86,6 +92,7 @@ class DetectionService():
         
         for clabel,score,box in zip(detections['detection_classes'], detections['detection_scores'], detections['detection_boxes']):
             
+            # compute the Bounding Box
             d = Detection2D()
             d.bbox.size_x = box[3]-box[1]
             d.bbox.size_y = box[2]-box[0]
@@ -97,11 +104,11 @@ class DetectionService():
             d.results.append(o)
             message.detections.append(d)
             
-
             print(classmap[clabel])
             # if classmap[clabel] not in self.objects:
             self.objects.append(classmap[clabel])
         
+        # Publish the image and the bounding box if enabled
         if self.publish_bb == "True":
             self.pub_image.publish(msg)
             self.pub.publish(message)

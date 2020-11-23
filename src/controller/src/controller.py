@@ -6,7 +6,12 @@ from pepper_talk.srv import Say
 
 import argparse
 
-args = {"detector": True, "move_head":True, "speech":True}
+# args = {"detector": True, "move_head":True, "speech":True}
+
+# This class implements the following methods:
+# get_detections: if the detector is enabled, the controller requires to the detector module to perform a detection by using the advertised service;
+# move_head(yaw, pitch): if the move_head node is enabled, the controller requires to the move_head module to perform the given head rotation
+# speech: if the pepper_talk node is enabled, the controller require to the pepper_talk node to say the given text by using the advertised service;
 
 class Controller:
 
@@ -53,7 +58,8 @@ class Controller:
             rospy.loginfo("Waiting for service response")
             obj_detected = self.detection_srv()
             return obj_detected
-    
+
+    # call the service for moving the head, given the angles
     def move_head(self, yaw, pitch):
         if  self.mh == "True":
             rospy.loginfo("Waiting for head movement")
@@ -74,8 +80,6 @@ class Controller:
                 numObj_dict[v] = self.dict_obj[index].objects.count(v)
         return numObj_dict
             
-
-
     def compose_msg(self):
         msg = ""
         for k in self.dict_obj:
