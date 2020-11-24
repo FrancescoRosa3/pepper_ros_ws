@@ -16,7 +16,7 @@
     <node name="controller" pkg="controller" type="controller.py"  output="screen" args="-d=$(arg detector) -mh=$(arg move_head) -s=$(arg speech)"></node> 
     
      <!-- launch detector node -->
-    <node name="detector" pkg="detection_srv" type="detector_srv.py"  output="screen" args="-m=$(arg model) -p=$(arg publish_bb) -t=$(arg topic) -f=$(arg frame)"></node> 
+    <node name="detector" pkg="detection_srv" type="detector_srv.py"  output="screen" args="-m=$(arg model) -p=$(arg publish_bb) -t=$(arg topic) -f=$(arg frame)" cwd = "node"></node> 
     
     <!-- launch pepper_talk node-->
     <arg name="D" value="/home/mivia/pepper_ros_ws/src/pynaoqi-python2.7-2.5.7.1-linux64"/>

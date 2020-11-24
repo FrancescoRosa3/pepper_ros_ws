@@ -7,7 +7,8 @@ from vision_msgs.msg import Detection2D, Detection2DArray, ObjectHypothesisWithP
 from sensor_msgs.msg import Image
 import ros_numpy
 from detector import Detector
-from classmap import category_map as classmap 
+from classmap import category_map as classmap
+import cv2
 
 # This class implements the Detection node.
 # It advertises a service, called detection_srv, that can be used in order to require a detection on the frame published on the topic
@@ -45,6 +46,8 @@ class DetectionService():
         self.connectPepper()
         self.pub = rospy.Publisher('detection', Detection2DArray, queue_size=2)
         self.pub_image = rospy.Publisher('image_detected', Image, queue_size=2)
+
+        self.cnt = 0
 
     """def reset_service(self,topic):
         topic.unregister()
@@ -113,9 +116,38 @@ class DetectionService():
             self.pub_image.publish(msg)
             self.pub.publish(message)
             
-        self.counter = self.counter-1
-    
+        self.save_image(image, message)
 
+        self.counter = self.counter-1
+
+    def save_image(self, image, msg):
+        rospy.loginfo('saving image')
+        im = image.copy()
+        h,w,_ = im.shape
+        for d in msg.detections:
+            c = d.results[0].id
+            s = d.results[0].score
+            b = [d.bbox.center.y,d.bbox.center.x,d.bbox.size_y, d.bbox.size_x]
+            b[0]-=b[2]/2
+            b[1]-=b[3]/2
+            p1 = (int(b[1]*w+.5), int(b[0]*h+.5))
+            p2 = (int((b[3]+b[1])*w+.5), int((b[2]+b[0])*h+.5))
+            print(p1, p2, c, classmap[c], s)
+            col = (255,0,0) 
+            cv2.rectangle(im, p1, p2, col, 3 )
+            p1 = (p1[0]-10, p1[1])
+            cv2.putText(im, "%s %.2f" % (classmap[c],s), p1, cv2.FONT_HERSHEY_SIMPLEX, 0.8, col, 2)
+        
+        img_name = self.model.split('/')[0] + "_" + str(self.cnt) + ".jpg"
+        rospy.loginfo('FILE NAME: ' + img_name)
+        self.cnt = self.cnt + 1
+        path = "images" + "/" + img_name
+        rospy.loginfo('PATH: ' + path)
+        if not cv2.imwrite(path, im):
+            raise Exception("Could not write image")
+        else:
+            rospy.loginfo('SALVATO')
+        
 if __name__=="__main__":
     detection_service = DetectionService()
     
