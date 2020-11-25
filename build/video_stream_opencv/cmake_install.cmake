@@ -1,8 +1,8 @@
-# Install script for directory: /home/ciccio/Robotica_Cognitiva/pepper_ros/src/video_stream_opencv
+# Install script for directory: /home/mivia/pepper_ros_ws/src/video_stream_opencv
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/ciccio/Robotica_Cognitiva/pepper_ros/install")
+  set(CMAKE_INSTALL_PREFIX "/home/mivia/pepper_ros_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -49,114 +49,114 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/ciccio/Robotica_Cognitiva/pepper_ros/install/_setup_util.py")
+   "/home/mivia/pepper_ros_ws/install/_setup_util.py")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/ciccio/Robotica_Cognitiva/pepper_ros/install" TYPE PROGRAM FILES "/home/ciccio/Robotica_Cognitiva/pepper_ros/build/video_stream_opencv/catkin_generated/installspace/_setup_util.py")
+file(INSTALL DESTINATION "/home/mivia/pepper_ros_ws/install" TYPE PROGRAM FILES "/home/mivia/pepper_ros_ws/build/video_stream_opencv/catkin_generated/installspace/_setup_util.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/ciccio/Robotica_Cognitiva/pepper_ros/install/env.sh")
+   "/home/mivia/pepper_ros_ws/install/env.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/ciccio/Robotica_Cognitiva/pepper_ros/install" TYPE PROGRAM FILES "/home/ciccio/Robotica_Cognitiva/pepper_ros/build/video_stream_opencv/catkin_generated/installspace/env.sh")
+file(INSTALL DESTINATION "/home/mivia/pepper_ros_ws/install" TYPE PROGRAM FILES "/home/mivia/pepper_ros_ws/build/video_stream_opencv/catkin_generated/installspace/env.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/ciccio/Robotica_Cognitiva/pepper_ros/install/setup.bash;/home/ciccio/Robotica_Cognitiva/pepper_ros/install/local_setup.bash")
+   "/home/mivia/pepper_ros_ws/install/setup.bash;/home/mivia/pepper_ros_ws/install/local_setup.bash")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/ciccio/Robotica_Cognitiva/pepper_ros/install" TYPE FILE FILES
-    "/home/ciccio/Robotica_Cognitiva/pepper_ros/build/video_stream_opencv/catkin_generated/installspace/setup.bash"
-    "/home/ciccio/Robotica_Cognitiva/pepper_ros/build/video_stream_opencv/catkin_generated/installspace/local_setup.bash"
+file(INSTALL DESTINATION "/home/mivia/pepper_ros_ws/install" TYPE FILE FILES
+    "/home/mivia/pepper_ros_ws/build/video_stream_opencv/catkin_generated/installspace/setup.bash"
+    "/home/mivia/pepper_ros_ws/build/video_stream_opencv/catkin_generated/installspace/local_setup.bash"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/ciccio/Robotica_Cognitiva/pepper_ros/install/setup.sh;/home/ciccio/Robotica_Cognitiva/pepper_ros/install/local_setup.sh")
+   "/home/mivia/pepper_ros_ws/install/setup.sh;/home/mivia/pepper_ros_ws/install/local_setup.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/ciccio/Robotica_Cognitiva/pepper_ros/install" TYPE FILE FILES
-    "/home/ciccio/Robotica_Cognitiva/pepper_ros/build/video_stream_opencv/catkin_generated/installspace/setup.sh"
-    "/home/ciccio/Robotica_Cognitiva/pepper_ros/build/video_stream_opencv/catkin_generated/installspace/local_setup.sh"
+file(INSTALL DESTINATION "/home/mivia/pepper_ros_ws/install" TYPE FILE FILES
+    "/home/mivia/pepper_ros_ws/build/video_stream_opencv/catkin_generated/installspace/setup.sh"
+    "/home/mivia/pepper_ros_ws/build/video_stream_opencv/catkin_generated/installspace/local_setup.sh"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/ciccio/Robotica_Cognitiva/pepper_ros/install/setup.zsh;/home/ciccio/Robotica_Cognitiva/pepper_ros/install/local_setup.zsh")
+   "/home/mivia/pepper_ros_ws/install/setup.zsh;/home/mivia/pepper_ros_ws/install/local_setup.zsh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/ciccio/Robotica_Cognitiva/pepper_ros/install" TYPE FILE FILES
-    "/home/ciccio/Robotica_Cognitiva/pepper_ros/build/video_stream_opencv/catkin_generated/installspace/setup.zsh"
-    "/home/ciccio/Robotica_Cognitiva/pepper_ros/build/video_stream_opencv/catkin_generated/installspace/local_setup.zsh"
+file(INSTALL DESTINATION "/home/mivia/pepper_ros_ws/install" TYPE FILE FILES
+    "/home/mivia/pepper_ros_ws/build/video_stream_opencv/catkin_generated/installspace/setup.zsh"
+    "/home/mivia/pepper_ros_ws/build/video_stream_opencv/catkin_generated/installspace/local_setup.zsh"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/ciccio/Robotica_Cognitiva/pepper_ros/install/.rosinstall")
+   "/home/mivia/pepper_ros_ws/install/.rosinstall")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/ciccio/Robotica_Cognitiva/pepper_ros/install" TYPE FILE FILES "/home/ciccio/Robotica_Cognitiva/pepper_ros/build/video_stream_opencv/catkin_generated/installspace/.rosinstall")
+file(INSTALL DESTINATION "/home/mivia/pepper_ros_ws/install" TYPE FILE FILES "/home/mivia/pepper_ros_ws/build/video_stream_opencv/catkin_generated/installspace/.rosinstall")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/video_stream_opencv" TYPE FILE FILES "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/video_stream_opencv/include/video_stream_opencv/VideoStreamConfig.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/video_stream_opencv" TYPE FILE FILES "/home/mivia/pepper_ros_ws/devel/.private/video_stream_opencv/include/video_stream_opencv/VideoStreamConfig.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/video_stream_opencv" TYPE FILE FILES "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/video_stream_opencv/lib/python2.7/dist-packages/video_stream_opencv/__init__.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/video_stream_opencv" TYPE FILE FILES "/home/mivia/pepper_ros_ws/devel/.private/video_stream_opencv/lib/python2.7/dist-packages/video_stream_opencv/__init__.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  execute_process(COMMAND "/usr/bin/python2" -m compileall "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/video_stream_opencv/lib/python2.7/dist-packages/video_stream_opencv/cfg")
+  execute_process(COMMAND "/usr/bin/python2" -m compileall "/home/mivia/pepper_ros_ws/devel/.private/video_stream_opencv/lib/python2.7/dist-packages/video_stream_opencv/cfg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/video_stream_opencv" TYPE DIRECTORY FILES "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/video_stream_opencv/lib/python2.7/dist-packages/video_stream_opencv/cfg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/video_stream_opencv" TYPE DIRECTORY FILES "/home/mivia/pepper_ros_ws/devel/.private/video_stream_opencv/lib/python2.7/dist-packages/video_stream_opencv/cfg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ciccio/Robotica_Cognitiva/pepper_ros/build/video_stream_opencv/catkin_generated/installspace/video_stream_opencv.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/mivia/pepper_ros_ws/build/video_stream_opencv/catkin_generated/installspace/video_stream_opencv.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/video_stream_opencv/cmake" TYPE FILE FILES
-    "/home/ciccio/Robotica_Cognitiva/pepper_ros/build/video_stream_opencv/catkin_generated/installspace/video_stream_opencvConfig.cmake"
-    "/home/ciccio/Robotica_Cognitiva/pepper_ros/build/video_stream_opencv/catkin_generated/installspace/video_stream_opencvConfig-version.cmake"
+    "/home/mivia/pepper_ros_ws/build/video_stream_opencv/catkin_generated/installspace/video_stream_opencvConfig.cmake"
+    "/home/mivia/pepper_ros_ws/build/video_stream_opencv/catkin_generated/installspace/video_stream_opencvConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/video_stream_opencv" TYPE FILE FILES "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/video_stream_opencv/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/video_stream_opencv" TYPE FILE FILES "/home/mivia/pepper_ros_ws/src/video_stream_opencv/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -166,7 +166,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/video_stream_opencv/video_stream"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/video_stream_opencv" TYPE EXECUTABLE FILES "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/video_stream_opencv" TYPE EXECUTABLE FILES "/home/mivia/pepper_ros_ws/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/video_stream_opencv/video_stream" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/video_stream_opencv/video_stream")
     file(RPATH_CHANGE
@@ -186,7 +186,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvideo_stream_opencv.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/video_stream_opencv/lib/libvideo_stream_opencv.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/mivia/pepper_ros_ws/devel/.private/video_stream_opencv/lib/libvideo_stream_opencv.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvideo_stream_opencv.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvideo_stream_opencv.so")
     file(RPATH_CHANGE
@@ -200,23 +200,23 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/video_stream_opencv" TYPE PROGRAM FILES "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/video_stream_opencv/scripts/test_video_resource.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/video_stream_opencv" TYPE PROGRAM FILES "/home/mivia/pepper_ros_ws/src/video_stream_opencv/scripts/test_video_resource.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/video_stream_opencv" TYPE DIRECTORY FILES
-    "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/video_stream_opencv/launch"
-    "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/video_stream_opencv/test"
+    "/home/mivia/pepper_ros_ws/src/video_stream_opencv/launch"
+    "/home/mivia/pepper_ros_ws/src/video_stream_opencv/test"
     USE_SOURCE_PERMISSIONS)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/video_stream_opencv" TYPE FILE FILES "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/video_stream_opencv/nodelet_plugins.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/video_stream_opencv" TYPE FILE FILES "/home/mivia/pepper_ros_ws/src/video_stream_opencv/nodelet_plugins.xml")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/ciccio/Robotica_Cognitiva/pepper_ros/build/video_stream_opencv/gtest/cmake_install.cmake")
+  include("/home/mivia/pepper_ros_ws/build/video_stream_opencv/gtest/cmake_install.cmake")
 
 endif()
 
@@ -228,5 +228,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/ciccio/Robotica_Cognitiva/pepper_ros/build/video_stream_opencv/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/mivia/pepper_ros_ws/build/video_stream_opencv/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/octomap_python.dir/octomap_python.cpp.o"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_sensors_py/lib/python2.7/dist-packages/naoqi_sensors_py/boost/octomap_python.pdb"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_sensors_py/lib/python2.7/dist-packages/naoqi_sensors_py/boost/octomap_python.so"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_sensors_py/lib/python2.7/dist-packages/naoqi_sensors_py/boost/octomap_python.pdb"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_sensors_py/lib/python2.7/dist-packages/naoqi_sensors_py/boost/octomap_python.so"
 )
 
 # Per-language clean rules from dependency scanning.

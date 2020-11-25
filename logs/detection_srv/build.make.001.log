@@ -2,8 +2,8 @@
 [  0%] Built target sensor_msgs_generate_messages_nodejs
 [  0%] Built target sensor_msgs_generate_messages_py
 [  0%] Built target sensor_msgs_generate_messages_cpp
-[  0%] Built target sensor_msgs_generate_messages_lisp
 [  0%] Built target sensor_msgs_generate_messages_eus
+[  0%] Built target sensor_msgs_generate_messages_lisp
 [ 14%] Built target detection_srv_generate_messages_nodejs
 [ 42%] Built target detection_srv_generate_messages_py
 [ 57%] Built target detection_srv_generate_messages_cpp

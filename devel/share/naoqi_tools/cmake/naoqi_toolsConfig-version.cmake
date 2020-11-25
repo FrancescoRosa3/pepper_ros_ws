@@ -1,1 +1,1 @@
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_tools/share/naoqi_tools/cmake/naoqi_toolsConfig-version.cmake
+/home/mivia/pepper_ros_ws/devel/.private/naoqi_tools/share/naoqi_tools/cmake/naoqi_toolsConfig-version.cmake

@@ -43,170 +43,170 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ciccio/Robotica_Cognitiva/pepper_ros/src/vision_msgs
+CMAKE_SOURCE_DIR = /home/mivia/pepper_ros_ws/src/vision_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ciccio/Robotica_Cognitiva/pepper_ros/build/vision_msgs
+CMAKE_BINARY_DIR = /home/mivia/pepper_ros_ws/build/vision_msgs
 
 # Utility rule file for vision_msgs_generate_messages_py.
 
 # Include the progress variables for this target.
 include CMakeFiles/vision_msgs_generate_messages_py.dir/progress.make
 
-CMakeFiles/vision_msgs_generate_messages_py: /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection2D.py
-CMakeFiles/vision_msgs_generate_messages_py: /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_ObjectHypothesisWithPose.py
-CMakeFiles/vision_msgs_generate_messages_py: /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection3DArray.py
-CMakeFiles/vision_msgs_generate_messages_py: /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_VisionInfo.py
-CMakeFiles/vision_msgs_generate_messages_py: /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Classification3D.py
-CMakeFiles/vision_msgs_generate_messages_py: /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_BoundingBox2D.py
-CMakeFiles/vision_msgs_generate_messages_py: /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_ObjectHypothesis.py
-CMakeFiles/vision_msgs_generate_messages_py: /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection3D.py
-CMakeFiles/vision_msgs_generate_messages_py: /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection2DArray.py
-CMakeFiles/vision_msgs_generate_messages_py: /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Classification2D.py
-CMakeFiles/vision_msgs_generate_messages_py: /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_BoundingBox3D.py
-CMakeFiles/vision_msgs_generate_messages_py: /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/__init__.py
+CMakeFiles/vision_msgs_generate_messages_py: /home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_BoundingBox2D.py
+CMakeFiles/vision_msgs_generate_messages_py: /home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_BoundingBox3D.py
+CMakeFiles/vision_msgs_generate_messages_py: /home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection2DArray.py
+CMakeFiles/vision_msgs_generate_messages_py: /home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection3D.py
+CMakeFiles/vision_msgs_generate_messages_py: /home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection3DArray.py
+CMakeFiles/vision_msgs_generate_messages_py: /home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_ObjectHypothesis.py
+CMakeFiles/vision_msgs_generate_messages_py: /home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_VisionInfo.py
+CMakeFiles/vision_msgs_generate_messages_py: /home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Classification3D.py
+CMakeFiles/vision_msgs_generate_messages_py: /home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection2D.py
+CMakeFiles/vision_msgs_generate_messages_py: /home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Classification2D.py
+CMakeFiles/vision_msgs_generate_messages_py: /home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_ObjectHypothesisWithPose.py
+CMakeFiles/vision_msgs_generate_messages_py: /home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/__init__.py
 
 
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection2D.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection2D.py: /home/ciccio/Robotica_Cognitiva/pepper_ros/src/vision_msgs/msg/Detection2D.msg
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection2D.py: /opt/ros/melodic/share/sensor_msgs/msg/Image.msg
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection2D.py: /opt/ros/melodic/share/geometry_msgs/msg/Pose2D.msg
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection2D.py: /opt/ros/melodic/share/geometry_msgs/msg/Pose.msg
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection2D.py: /opt/ros/melodic/share/geometry_msgs/msg/PoseWithCovariance.msg
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection2D.py: /home/ciccio/Robotica_Cognitiva/pepper_ros/src/vision_msgs/msg/ObjectHypothesisWithPose.msg
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection2D.py: /opt/ros/melodic/share/std_msgs/msg/Header.msg
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection2D.py: /opt/ros/melodic/share/geometry_msgs/msg/Point.msg
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection2D.py: /home/ciccio/Robotica_Cognitiva/pepper_ros/src/vision_msgs/msg/BoundingBox2D.msg
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection2D.py: /opt/ros/melodic/share/geometry_msgs/msg/Quaternion.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ciccio/Robotica_Cognitiva/pepper_ros/build/vision_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG vision_msgs/Detection2D"
-	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/ciccio/Robotica_Cognitiva/pepper_ros/src/vision_msgs/msg/Detection2D.msg -Ivision_msgs:/home/ciccio/Robotica_Cognitiva/pepper_ros/src/vision_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -p vision_msgs -o /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_BoundingBox2D.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_BoundingBox2D.py: /home/mivia/pepper_ros_ws/src/vision_msgs/msg/BoundingBox2D.msg
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_BoundingBox2D.py: /opt/ros/melodic/share/geometry_msgs/msg/Pose2D.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/mivia/pepper_ros_ws/build/vision_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG vision_msgs/BoundingBox2D"
+	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/mivia/pepper_ros_ws/src/vision_msgs/msg/BoundingBox2D.msg -Ivision_msgs:/home/mivia/pepper_ros_ws/src/vision_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -p vision_msgs -o /home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg
 
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_ObjectHypothesisWithPose.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_ObjectHypothesisWithPose.py: /home/ciccio/Robotica_Cognitiva/pepper_ros/src/vision_msgs/msg/ObjectHypothesisWithPose.msg
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_ObjectHypothesisWithPose.py: /opt/ros/melodic/share/geometry_msgs/msg/Pose.msg
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_ObjectHypothesisWithPose.py: /opt/ros/melodic/share/geometry_msgs/msg/PoseWithCovariance.msg
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_ObjectHypothesisWithPose.py: /opt/ros/melodic/share/geometry_msgs/msg/Quaternion.msg
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_ObjectHypothesisWithPose.py: /opt/ros/melodic/share/geometry_msgs/msg/Point.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ciccio/Robotica_Cognitiva/pepper_ros/build/vision_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python from MSG vision_msgs/ObjectHypothesisWithPose"
-	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/ciccio/Robotica_Cognitiva/pepper_ros/src/vision_msgs/msg/ObjectHypothesisWithPose.msg -Ivision_msgs:/home/ciccio/Robotica_Cognitiva/pepper_ros/src/vision_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -p vision_msgs -o /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_BoundingBox3D.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_BoundingBox3D.py: /home/mivia/pepper_ros_ws/src/vision_msgs/msg/BoundingBox3D.msg
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_BoundingBox3D.py: /opt/ros/melodic/share/geometry_msgs/msg/Vector3.msg
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_BoundingBox3D.py: /opt/ros/melodic/share/geometry_msgs/msg/Pose.msg
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_BoundingBox3D.py: /opt/ros/melodic/share/geometry_msgs/msg/Quaternion.msg
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_BoundingBox3D.py: /opt/ros/melodic/share/geometry_msgs/msg/Point.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/mivia/pepper_ros_ws/build/vision_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python from MSG vision_msgs/BoundingBox3D"
+	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/mivia/pepper_ros_ws/src/vision_msgs/msg/BoundingBox3D.msg -Ivision_msgs:/home/mivia/pepper_ros_ws/src/vision_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -p vision_msgs -o /home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg
 
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection3DArray.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection3DArray.py: /home/ciccio/Robotica_Cognitiva/pepper_ros/src/vision_msgs/msg/Detection3DArray.msg
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection3DArray.py: /opt/ros/melodic/share/geometry_msgs/msg/Pose.msg
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection3DArray.py: /opt/ros/melodic/share/sensor_msgs/msg/PointCloud2.msg
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection3DArray.py: /opt/ros/melodic/share/sensor_msgs/msg/PointField.msg
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection3DArray.py: /opt/ros/melodic/share/geometry_msgs/msg/Vector3.msg
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection3DArray.py: /home/ciccio/Robotica_Cognitiva/pepper_ros/src/vision_msgs/msg/Detection3D.msg
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection3DArray.py: /home/ciccio/Robotica_Cognitiva/pepper_ros/src/vision_msgs/msg/BoundingBox3D.msg
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection3DArray.py: /opt/ros/melodic/share/geometry_msgs/msg/PoseWithCovariance.msg
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection3DArray.py: /home/ciccio/Robotica_Cognitiva/pepper_ros/src/vision_msgs/msg/ObjectHypothesisWithPose.msg
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection3DArray.py: /opt/ros/melodic/share/std_msgs/msg/Header.msg
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection3DArray.py: /opt/ros/melodic/share/geometry_msgs/msg/Quaternion.msg
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection3DArray.py: /opt/ros/melodic/share/geometry_msgs/msg/Point.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ciccio/Robotica_Cognitiva/pepper_ros/build/vision_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python from MSG vision_msgs/Detection3DArray"
-	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/ciccio/Robotica_Cognitiva/pepper_ros/src/vision_msgs/msg/Detection3DArray.msg -Ivision_msgs:/home/ciccio/Robotica_Cognitiva/pepper_ros/src/vision_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -p vision_msgs -o /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection2DArray.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection2DArray.py: /home/mivia/pepper_ros_ws/src/vision_msgs/msg/Detection2DArray.msg
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection2DArray.py: /home/mivia/pepper_ros_ws/src/vision_msgs/msg/BoundingBox2D.msg
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection2DArray.py: /opt/ros/melodic/share/sensor_msgs/msg/Image.msg
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection2DArray.py: /opt/ros/melodic/share/geometry_msgs/msg/Pose2D.msg
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection2DArray.py: /home/mivia/pepper_ros_ws/src/vision_msgs/msg/Detection2D.msg
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection2DArray.py: /opt/ros/melodic/share/geometry_msgs/msg/Pose.msg
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection2DArray.py: /opt/ros/melodic/share/geometry_msgs/msg/PoseWithCovariance.msg
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection2DArray.py: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection2DArray.py: /home/mivia/pepper_ros_ws/src/vision_msgs/msg/ObjectHypothesisWithPose.msg
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection2DArray.py: /opt/ros/melodic/share/geometry_msgs/msg/Quaternion.msg
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection2DArray.py: /opt/ros/melodic/share/geometry_msgs/msg/Point.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/mivia/pepper_ros_ws/build/vision_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python from MSG vision_msgs/Detection2DArray"
+	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/mivia/pepper_ros_ws/src/vision_msgs/msg/Detection2DArray.msg -Ivision_msgs:/home/mivia/pepper_ros_ws/src/vision_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -p vision_msgs -o /home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg
 
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_VisionInfo.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_VisionInfo.py: /home/ciccio/Robotica_Cognitiva/pepper_ros/src/vision_msgs/msg/VisionInfo.msg
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_VisionInfo.py: /opt/ros/melodic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ciccio/Robotica_Cognitiva/pepper_ros/build/vision_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Python from MSG vision_msgs/VisionInfo"
-	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/ciccio/Robotica_Cognitiva/pepper_ros/src/vision_msgs/msg/VisionInfo.msg -Ivision_msgs:/home/ciccio/Robotica_Cognitiva/pepper_ros/src/vision_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -p vision_msgs -o /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection3D.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection3D.py: /home/mivia/pepper_ros_ws/src/vision_msgs/msg/Detection3D.msg
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection3D.py: /opt/ros/melodic/share/sensor_msgs/msg/PointCloud2.msg
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection3D.py: /opt/ros/melodic/share/sensor_msgs/msg/PointField.msg
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection3D.py: /opt/ros/melodic/share/geometry_msgs/msg/Vector3.msg
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection3D.py: /opt/ros/melodic/share/geometry_msgs/msg/Pose.msg
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection3D.py: /opt/ros/melodic/share/geometry_msgs/msg/PoseWithCovariance.msg
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection3D.py: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection3D.py: /home/mivia/pepper_ros_ws/src/vision_msgs/msg/ObjectHypothesisWithPose.msg
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection3D.py: /opt/ros/melodic/share/geometry_msgs/msg/Quaternion.msg
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection3D.py: /home/mivia/pepper_ros_ws/src/vision_msgs/msg/BoundingBox3D.msg
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection3D.py: /opt/ros/melodic/share/geometry_msgs/msg/Point.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/mivia/pepper_ros_ws/build/vision_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Python from MSG vision_msgs/Detection3D"
+	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/mivia/pepper_ros_ws/src/vision_msgs/msg/Detection3D.msg -Ivision_msgs:/home/mivia/pepper_ros_ws/src/vision_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -p vision_msgs -o /home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg
 
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Classification3D.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Classification3D.py: /home/ciccio/Robotica_Cognitiva/pepper_ros/src/vision_msgs/msg/Classification3D.msg
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Classification3D.py: /opt/ros/melodic/share/sensor_msgs/msg/PointCloud2.msg
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Classification3D.py: /home/ciccio/Robotica_Cognitiva/pepper_ros/src/vision_msgs/msg/ObjectHypothesis.msg
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Classification3D.py: /opt/ros/melodic/share/sensor_msgs/msg/PointField.msg
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Classification3D.py: /opt/ros/melodic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ciccio/Robotica_Cognitiva/pepper_ros/build/vision_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Python from MSG vision_msgs/Classification3D"
-	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/ciccio/Robotica_Cognitiva/pepper_ros/src/vision_msgs/msg/Classification3D.msg -Ivision_msgs:/home/ciccio/Robotica_Cognitiva/pepper_ros/src/vision_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -p vision_msgs -o /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection3DArray.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection3DArray.py: /home/mivia/pepper_ros_ws/src/vision_msgs/msg/Detection3DArray.msg
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection3DArray.py: /opt/ros/melodic/share/sensor_msgs/msg/PointCloud2.msg
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection3DArray.py: /home/mivia/pepper_ros_ws/src/vision_msgs/msg/Detection3D.msg
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection3DArray.py: /opt/ros/melodic/share/sensor_msgs/msg/PointField.msg
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection3DArray.py: /opt/ros/melodic/share/geometry_msgs/msg/Vector3.msg
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection3DArray.py: /opt/ros/melodic/share/geometry_msgs/msg/Pose.msg
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection3DArray.py: /opt/ros/melodic/share/geometry_msgs/msg/PoseWithCovariance.msg
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection3DArray.py: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection3DArray.py: /home/mivia/pepper_ros_ws/src/vision_msgs/msg/ObjectHypothesisWithPose.msg
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection3DArray.py: /opt/ros/melodic/share/geometry_msgs/msg/Quaternion.msg
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection3DArray.py: /home/mivia/pepper_ros_ws/src/vision_msgs/msg/BoundingBox3D.msg
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection3DArray.py: /opt/ros/melodic/share/geometry_msgs/msg/Point.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/mivia/pepper_ros_ws/build/vision_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Python from MSG vision_msgs/Detection3DArray"
+	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/mivia/pepper_ros_ws/src/vision_msgs/msg/Detection3DArray.msg -Ivision_msgs:/home/mivia/pepper_ros_ws/src/vision_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -p vision_msgs -o /home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg
 
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_BoundingBox2D.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_BoundingBox2D.py: /home/ciccio/Robotica_Cognitiva/pepper_ros/src/vision_msgs/msg/BoundingBox2D.msg
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_BoundingBox2D.py: /opt/ros/melodic/share/geometry_msgs/msg/Pose2D.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ciccio/Robotica_Cognitiva/pepper_ros/build/vision_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating Python from MSG vision_msgs/BoundingBox2D"
-	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/ciccio/Robotica_Cognitiva/pepper_ros/src/vision_msgs/msg/BoundingBox2D.msg -Ivision_msgs:/home/ciccio/Robotica_Cognitiva/pepper_ros/src/vision_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -p vision_msgs -o /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_ObjectHypothesis.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_ObjectHypothesis.py: /home/mivia/pepper_ros_ws/src/vision_msgs/msg/ObjectHypothesis.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/mivia/pepper_ros_ws/build/vision_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating Python from MSG vision_msgs/ObjectHypothesis"
+	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/mivia/pepper_ros_ws/src/vision_msgs/msg/ObjectHypothesis.msg -Ivision_msgs:/home/mivia/pepper_ros_ws/src/vision_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -p vision_msgs -o /home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg
 
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_ObjectHypothesis.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_ObjectHypothesis.py: /home/ciccio/Robotica_Cognitiva/pepper_ros/src/vision_msgs/msg/ObjectHypothesis.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ciccio/Robotica_Cognitiva/pepper_ros/build/vision_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating Python from MSG vision_msgs/ObjectHypothesis"
-	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/ciccio/Robotica_Cognitiva/pepper_ros/src/vision_msgs/msg/ObjectHypothesis.msg -Ivision_msgs:/home/ciccio/Robotica_Cognitiva/pepper_ros/src/vision_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -p vision_msgs -o /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_VisionInfo.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_VisionInfo.py: /home/mivia/pepper_ros_ws/src/vision_msgs/msg/VisionInfo.msg
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_VisionInfo.py: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/mivia/pepper_ros_ws/build/vision_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating Python from MSG vision_msgs/VisionInfo"
+	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/mivia/pepper_ros_ws/src/vision_msgs/msg/VisionInfo.msg -Ivision_msgs:/home/mivia/pepper_ros_ws/src/vision_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -p vision_msgs -o /home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg
 
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection3D.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection3D.py: /home/ciccio/Robotica_Cognitiva/pepper_ros/src/vision_msgs/msg/Detection3D.msg
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection3D.py: /opt/ros/melodic/share/sensor_msgs/msg/PointCloud2.msg
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection3D.py: /opt/ros/melodic/share/sensor_msgs/msg/PointField.msg
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection3D.py: /opt/ros/melodic/share/geometry_msgs/msg/Vector3.msg
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection3D.py: /opt/ros/melodic/share/geometry_msgs/msg/Pose.msg
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection3D.py: /home/ciccio/Robotica_Cognitiva/pepper_ros/src/vision_msgs/msg/BoundingBox3D.msg
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection3D.py: /opt/ros/melodic/share/geometry_msgs/msg/PoseWithCovariance.msg
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection3D.py: /home/ciccio/Robotica_Cognitiva/pepper_ros/src/vision_msgs/msg/ObjectHypothesisWithPose.msg
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection3D.py: /opt/ros/melodic/share/std_msgs/msg/Header.msg
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection3D.py: /opt/ros/melodic/share/geometry_msgs/msg/Point.msg
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection3D.py: /opt/ros/melodic/share/geometry_msgs/msg/Quaternion.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ciccio/Robotica_Cognitiva/pepper_ros/build/vision_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating Python from MSG vision_msgs/Detection3D"
-	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/ciccio/Robotica_Cognitiva/pepper_ros/src/vision_msgs/msg/Detection3D.msg -Ivision_msgs:/home/ciccio/Robotica_Cognitiva/pepper_ros/src/vision_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -p vision_msgs -o /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Classification3D.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Classification3D.py: /home/mivia/pepper_ros_ws/src/vision_msgs/msg/Classification3D.msg
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Classification3D.py: /opt/ros/melodic/share/sensor_msgs/msg/PointCloud2.msg
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Classification3D.py: /home/mivia/pepper_ros_ws/src/vision_msgs/msg/ObjectHypothesis.msg
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Classification3D.py: /opt/ros/melodic/share/sensor_msgs/msg/PointField.msg
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Classification3D.py: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/mivia/pepper_ros_ws/build/vision_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating Python from MSG vision_msgs/Classification3D"
+	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/mivia/pepper_ros_ws/src/vision_msgs/msg/Classification3D.msg -Ivision_msgs:/home/mivia/pepper_ros_ws/src/vision_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -p vision_msgs -o /home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg
 
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection2DArray.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection2DArray.py: /home/ciccio/Robotica_Cognitiva/pepper_ros/src/vision_msgs/msg/Detection2DArray.msg
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection2DArray.py: /opt/ros/melodic/share/sensor_msgs/msg/Image.msg
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection2DArray.py: /opt/ros/melodic/share/geometry_msgs/msg/Pose2D.msg
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection2DArray.py: /home/ciccio/Robotica_Cognitiva/pepper_ros/src/vision_msgs/msg/Detection2D.msg
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection2DArray.py: /opt/ros/melodic/share/geometry_msgs/msg/Pose.msg
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection2DArray.py: /opt/ros/melodic/share/geometry_msgs/msg/PoseWithCovariance.msg
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection2DArray.py: /home/ciccio/Robotica_Cognitiva/pepper_ros/src/vision_msgs/msg/ObjectHypothesisWithPose.msg
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection2DArray.py: /opt/ros/melodic/share/std_msgs/msg/Header.msg
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection2DArray.py: /opt/ros/melodic/share/geometry_msgs/msg/Quaternion.msg
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection2DArray.py: /home/ciccio/Robotica_Cognitiva/pepper_ros/src/vision_msgs/msg/BoundingBox2D.msg
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection2DArray.py: /opt/ros/melodic/share/geometry_msgs/msg/Point.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ciccio/Robotica_Cognitiva/pepper_ros/build/vision_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating Python from MSG vision_msgs/Detection2DArray"
-	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/ciccio/Robotica_Cognitiva/pepper_ros/src/vision_msgs/msg/Detection2DArray.msg -Ivision_msgs:/home/ciccio/Robotica_Cognitiva/pepper_ros/src/vision_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -p vision_msgs -o /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection2D.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection2D.py: /home/mivia/pepper_ros_ws/src/vision_msgs/msg/Detection2D.msg
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection2D.py: /home/mivia/pepper_ros_ws/src/vision_msgs/msg/BoundingBox2D.msg
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection2D.py: /opt/ros/melodic/share/sensor_msgs/msg/Image.msg
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection2D.py: /opt/ros/melodic/share/geometry_msgs/msg/Pose2D.msg
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection2D.py: /opt/ros/melodic/share/geometry_msgs/msg/Pose.msg
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection2D.py: /opt/ros/melodic/share/geometry_msgs/msg/PoseWithCovariance.msg
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection2D.py: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection2D.py: /home/mivia/pepper_ros_ws/src/vision_msgs/msg/ObjectHypothesisWithPose.msg
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection2D.py: /opt/ros/melodic/share/geometry_msgs/msg/Quaternion.msg
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection2D.py: /opt/ros/melodic/share/geometry_msgs/msg/Point.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/mivia/pepper_ros_ws/build/vision_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating Python from MSG vision_msgs/Detection2D"
+	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/mivia/pepper_ros_ws/src/vision_msgs/msg/Detection2D.msg -Ivision_msgs:/home/mivia/pepper_ros_ws/src/vision_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -p vision_msgs -o /home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg
 
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Classification2D.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Classification2D.py: /home/ciccio/Robotica_Cognitiva/pepper_ros/src/vision_msgs/msg/Classification2D.msg
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Classification2D.py: /opt/ros/melodic/share/sensor_msgs/msg/Image.msg
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Classification2D.py: /home/ciccio/Robotica_Cognitiva/pepper_ros/src/vision_msgs/msg/ObjectHypothesis.msg
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Classification2D.py: /opt/ros/melodic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ciccio/Robotica_Cognitiva/pepper_ros/build/vision_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating Python from MSG vision_msgs/Classification2D"
-	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/ciccio/Robotica_Cognitiva/pepper_ros/src/vision_msgs/msg/Classification2D.msg -Ivision_msgs:/home/ciccio/Robotica_Cognitiva/pepper_ros/src/vision_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -p vision_msgs -o /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Classification2D.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Classification2D.py: /home/mivia/pepper_ros_ws/src/vision_msgs/msg/Classification2D.msg
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Classification2D.py: /opt/ros/melodic/share/sensor_msgs/msg/Image.msg
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Classification2D.py: /home/mivia/pepper_ros_ws/src/vision_msgs/msg/ObjectHypothesis.msg
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Classification2D.py: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/mivia/pepper_ros_ws/build/vision_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating Python from MSG vision_msgs/Classification2D"
+	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/mivia/pepper_ros_ws/src/vision_msgs/msg/Classification2D.msg -Ivision_msgs:/home/mivia/pepper_ros_ws/src/vision_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -p vision_msgs -o /home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg
 
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_BoundingBox3D.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_BoundingBox3D.py: /home/ciccio/Robotica_Cognitiva/pepper_ros/src/vision_msgs/msg/BoundingBox3D.msg
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_BoundingBox3D.py: /opt/ros/melodic/share/geometry_msgs/msg/Vector3.msg
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_BoundingBox3D.py: /opt/ros/melodic/share/geometry_msgs/msg/Pose.msg
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_BoundingBox3D.py: /opt/ros/melodic/share/geometry_msgs/msg/Quaternion.msg
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_BoundingBox3D.py: /opt/ros/melodic/share/geometry_msgs/msg/Point.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ciccio/Robotica_Cognitiva/pepper_ros/build/vision_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Generating Python from MSG vision_msgs/BoundingBox3D"
-	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/ciccio/Robotica_Cognitiva/pepper_ros/src/vision_msgs/msg/BoundingBox3D.msg -Ivision_msgs:/home/ciccio/Robotica_Cognitiva/pepper_ros/src/vision_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -p vision_msgs -o /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_ObjectHypothesisWithPose.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_ObjectHypothesisWithPose.py: /home/mivia/pepper_ros_ws/src/vision_msgs/msg/ObjectHypothesisWithPose.msg
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_ObjectHypothesisWithPose.py: /opt/ros/melodic/share/geometry_msgs/msg/Pose.msg
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_ObjectHypothesisWithPose.py: /opt/ros/melodic/share/geometry_msgs/msg/PoseWithCovariance.msg
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_ObjectHypothesisWithPose.py: /opt/ros/melodic/share/geometry_msgs/msg/Quaternion.msg
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_ObjectHypothesisWithPose.py: /opt/ros/melodic/share/geometry_msgs/msg/Point.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/mivia/pepper_ros_ws/build/vision_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Generating Python from MSG vision_msgs/ObjectHypothesisWithPose"
+	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/mivia/pepper_ros_ws/src/vision_msgs/msg/ObjectHypothesisWithPose.msg -Ivision_msgs:/home/mivia/pepper_ros_ws/src/vision_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -p vision_msgs -o /home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg
 
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/__init__.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/__init__.py: /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection2D.py
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/__init__.py: /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_ObjectHypothesisWithPose.py
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/__init__.py: /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection3DArray.py
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/__init__.py: /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_VisionInfo.py
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/__init__.py: /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Classification3D.py
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/__init__.py: /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_BoundingBox2D.py
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/__init__.py: /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_ObjectHypothesis.py
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/__init__.py: /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection3D.py
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/__init__.py: /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection2DArray.py
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/__init__.py: /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Classification2D.py
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/__init__.py: /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_BoundingBox3D.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ciccio/Robotica_Cognitiva/pepper_ros/build/vision_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Generating Python msg __init__.py for vision_msgs"
-	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg --initpy
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/__init__.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/__init__.py: /home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_BoundingBox2D.py
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/__init__.py: /home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_BoundingBox3D.py
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/__init__.py: /home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection2DArray.py
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/__init__.py: /home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection3D.py
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/__init__.py: /home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection3DArray.py
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/__init__.py: /home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_ObjectHypothesis.py
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/__init__.py: /home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_VisionInfo.py
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/__init__.py: /home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Classification3D.py
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/__init__.py: /home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection2D.py
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/__init__.py: /home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Classification2D.py
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/__init__.py: /home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_ObjectHypothesisWithPose.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/mivia/pepper_ros_ws/build/vision_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Generating Python msg __init__.py for vision_msgs"
+	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg --initpy
 
 vision_msgs_generate_messages_py: CMakeFiles/vision_msgs_generate_messages_py
-vision_msgs_generate_messages_py: /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection2D.py
-vision_msgs_generate_messages_py: /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_ObjectHypothesisWithPose.py
-vision_msgs_generate_messages_py: /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection3DArray.py
-vision_msgs_generate_messages_py: /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_VisionInfo.py
-vision_msgs_generate_messages_py: /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Classification3D.py
-vision_msgs_generate_messages_py: /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_BoundingBox2D.py
-vision_msgs_generate_messages_py: /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_ObjectHypothesis.py
-vision_msgs_generate_messages_py: /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection3D.py
-vision_msgs_generate_messages_py: /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection2DArray.py
-vision_msgs_generate_messages_py: /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Classification2D.py
-vision_msgs_generate_messages_py: /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_BoundingBox3D.py
-vision_msgs_generate_messages_py: /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/__init__.py
+vision_msgs_generate_messages_py: /home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_BoundingBox2D.py
+vision_msgs_generate_messages_py: /home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_BoundingBox3D.py
+vision_msgs_generate_messages_py: /home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection2DArray.py
+vision_msgs_generate_messages_py: /home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection3D.py
+vision_msgs_generate_messages_py: /home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection3DArray.py
+vision_msgs_generate_messages_py: /home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_ObjectHypothesis.py
+vision_msgs_generate_messages_py: /home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_VisionInfo.py
+vision_msgs_generate_messages_py: /home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Classification3D.py
+vision_msgs_generate_messages_py: /home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Detection2D.py
+vision_msgs_generate_messages_py: /home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_Classification2D.py
+vision_msgs_generate_messages_py: /home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/_ObjectHypothesisWithPose.py
+vision_msgs_generate_messages_py: /home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/python2.7/dist-packages/vision_msgs/msg/__init__.py
 vision_msgs_generate_messages_py: CMakeFiles/vision_msgs_generate_messages_py.dir/build.make
 
 .PHONY : vision_msgs_generate_messages_py
@@ -221,6 +221,6 @@ CMakeFiles/vision_msgs_generate_messages_py.dir/clean:
 .PHONY : CMakeFiles/vision_msgs_generate_messages_py.dir/clean
 
 CMakeFiles/vision_msgs_generate_messages_py.dir/depend:
-	cd /home/ciccio/Robotica_Cognitiva/pepper_ros/build/vision_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ciccio/Robotica_Cognitiva/pepper_ros/src/vision_msgs /home/ciccio/Robotica_Cognitiva/pepper_ros/src/vision_msgs /home/ciccio/Robotica_Cognitiva/pepper_ros/build/vision_msgs /home/ciccio/Robotica_Cognitiva/pepper_ros/build/vision_msgs /home/ciccio/Robotica_Cognitiva/pepper_ros/build/vision_msgs/CMakeFiles/vision_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/mivia/pepper_ros_ws/build/vision_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mivia/pepper_ros_ws/src/vision_msgs /home/mivia/pepper_ros_ws/src/vision_msgs /home/mivia/pepper_ros_ws/build/vision_msgs /home/mivia/pepper_ros_ws/build/vision_msgs /home/mivia/pepper_ros_ws/build/vision_msgs/CMakeFiles/vision_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/vision_msgs_generate_messages_py.dir/depend
 

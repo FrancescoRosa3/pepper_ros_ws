@@ -67,14 +67,14 @@ set(naoqi_tools_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(naoqi_tools_SOURCE_PREFIX /home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge/naoqi_tools)
-  set(naoqi_tools_DEVEL_PREFIX /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_tools)
+  set(naoqi_tools_SOURCE_PREFIX /home/mivia/pepper_ros_ws/src/naoqi_bridge/naoqi_tools)
+  set(naoqi_tools_DEVEL_PREFIX /home/mivia/pepper_ros_ws/devel/.private/naoqi_tools)
   set(naoqi_tools_INSTALL_PREFIX "")
   set(naoqi_tools_PREFIX ${naoqi_tools_DEVEL_PREFIX})
 else()
   set(naoqi_tools_SOURCE_PREFIX "")
   set(naoqi_tools_DEVEL_PREFIX "")
-  set(naoqi_tools_INSTALL_PREFIX /home/ciccio/Robotica_Cognitiva/pepper_ros/install)
+  set(naoqi_tools_INSTALL_PREFIX /home/mivia/pepper_ros_ws/install)
   set(naoqi_tools_PREFIX ${naoqi_tools_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/ciccio/Robotica_Cognitiva/pepper_ros/install/lib;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/lib;/opt/ros/melodic/lib)
+    foreach(path /home/mivia/pepper_ros_ws/install/lib;/home/mivia/pepper_ros_ws/devel/lib;/home/mivia/ws_moveit/devel/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

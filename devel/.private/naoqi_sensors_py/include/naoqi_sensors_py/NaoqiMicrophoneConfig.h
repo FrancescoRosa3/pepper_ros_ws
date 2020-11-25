@@ -415,9 +415,9 @@ NaoqiMicrophoneConfig::GroupDescription<NaoqiMicrophoneConfig::DEFAULT, NaoqiMic
 //#line 291 "/opt/ros/melodic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __default__.frequency = 16000;
 //#line 291 "/opt/ros/melodic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
-      Default.abstract_parameters.push_back(NaoqiMicrophoneConfig::AbstractParamDescriptionConstPtr(new NaoqiMicrophoneConfig::ParamDescription<int>("frequency", "int", 3, "Audio sampling frequency.", "{'enum_description': 'Possible values for audio sampling frequency', 'enum': [{'srcline': 42, 'description': '', 'srcfile': '/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge/naoqi_sensors_py/cfg/NaoqiMicrophone.cfg', 'cconsttype': 'const int', 'value': 16000, 'ctype': 'int', 'type': 'int', 'name': 'SlowRate'}, {'srcline': 43, 'description': '', 'srcfile': '/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge/naoqi_sensors_py/cfg/NaoqiMicrophone.cfg', 'cconsttype': 'const int', 'value': 48000, 'ctype': 'int', 'type': 'int', 'name': 'HighRate'}]}", &NaoqiMicrophoneConfig::frequency)));
+      Default.abstract_parameters.push_back(NaoqiMicrophoneConfig::AbstractParamDescriptionConstPtr(new NaoqiMicrophoneConfig::ParamDescription<int>("frequency", "int", 3, "Audio sampling frequency.", "{'enum_description': 'Possible values for audio sampling frequency', 'enum': [{'srcline': 42, 'description': '', 'srcfile': '/home/mivia/pepper_ros_ws/src/naoqi_bridge/naoqi_sensors_py/cfg/NaoqiMicrophone.cfg', 'cconsttype': 'const int', 'value': 16000, 'ctype': 'int', 'type': 'int', 'name': 'SlowRate'}, {'srcline': 43, 'description': '', 'srcfile': '/home/mivia/pepper_ros_ws/src/naoqi_bridge/naoqi_sensors_py/cfg/NaoqiMicrophone.cfg', 'cconsttype': 'const int', 'value': 48000, 'ctype': 'int', 'type': 'int', 'name': 'HighRate'}]}", &NaoqiMicrophoneConfig::frequency)));
 //#line 291 "/opt/ros/melodic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
-      __param_descriptions__.push_back(NaoqiMicrophoneConfig::AbstractParamDescriptionConstPtr(new NaoqiMicrophoneConfig::ParamDescription<int>("frequency", "int", 3, "Audio sampling frequency.", "{'enum_description': 'Possible values for audio sampling frequency', 'enum': [{'srcline': 42, 'description': '', 'srcfile': '/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge/naoqi_sensors_py/cfg/NaoqiMicrophone.cfg', 'cconsttype': 'const int', 'value': 16000, 'ctype': 'int', 'type': 'int', 'name': 'SlowRate'}, {'srcline': 43, 'description': '', 'srcfile': '/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge/naoqi_sensors_py/cfg/NaoqiMicrophone.cfg', 'cconsttype': 'const int', 'value': 48000, 'ctype': 'int', 'type': 'int', 'name': 'HighRate'}]}", &NaoqiMicrophoneConfig::frequency)));
+      __param_descriptions__.push_back(NaoqiMicrophoneConfig::AbstractParamDescriptionConstPtr(new NaoqiMicrophoneConfig::ParamDescription<int>("frequency", "int", 3, "Audio sampling frequency.", "{'enum_description': 'Possible values for audio sampling frequency', 'enum': [{'srcline': 42, 'description': '', 'srcfile': '/home/mivia/pepper_ros_ws/src/naoqi_bridge/naoqi_sensors_py/cfg/NaoqiMicrophone.cfg', 'cconsttype': 'const int', 'value': 16000, 'ctype': 'int', 'type': 'int', 'name': 'SlowRate'}, {'srcline': 43, 'description': '', 'srcfile': '/home/mivia/pepper_ros_ws/src/naoqi_bridge/naoqi_sensors_py/cfg/NaoqiMicrophone.cfg', 'cconsttype': 'const int', 'value': 48000, 'ctype': 'int', 'type': 'int', 'name': 'HighRate'}]}", &NaoqiMicrophoneConfig::frequency)));
 //#line 291 "/opt/ros/melodic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __min__.use_ros_time = 0;
 //#line 291 "/opt/ros/melodic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
@@ -507,9 +507,9 @@ NaoqiMicrophoneConfig::GroupDescription<NaoqiMicrophoneConfig::DEFAULT, NaoqiMic
     return statics;
   }
 
-//#line 42 "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge/naoqi_sensors_py/cfg/NaoqiMicrophone.cfg"
+//#line 42 "/home/mivia/pepper_ros_ws/src/naoqi_bridge/naoqi_sensors_py/cfg/NaoqiMicrophone.cfg"
       const int NaoqiMicrophone_SlowRate = 16000;
-//#line 43 "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge/naoqi_sensors_py/cfg/NaoqiMicrophone.cfg"
+//#line 43 "/home/mivia/pepper_ros_ws/src/naoqi_bridge/naoqi_sensors_py/cfg/NaoqiMicrophone.cfg"
       const int NaoqiMicrophone_HighRate = 48000;
 }
 

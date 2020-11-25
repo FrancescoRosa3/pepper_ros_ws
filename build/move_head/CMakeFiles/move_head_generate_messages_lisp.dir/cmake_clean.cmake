@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/move_head_generate_messages_lisp"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/move_head/share/common-lisp/ros/move_head/srv/Head_position.lisp"
+  "/home/mivia/pepper_ros_ws/devel/.private/move_head/share/common-lisp/ros/move_head/srv/Head_position.lisp"
 )
 
 # Per-language clean rules from dependency scanning.

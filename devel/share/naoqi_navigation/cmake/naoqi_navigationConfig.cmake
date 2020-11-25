@@ -1,1 +1,1 @@
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_navigation/share/naoqi_navigation/cmake/naoqi_navigationConfig.cmake
+/home/mivia/pepper_ros_ws/devel/.private/naoqi_navigation/share/naoqi_navigation/cmake/naoqi_navigationConfig.cmake

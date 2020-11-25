@@ -1,4 +1,4 @@
-prefix=/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_pose
+prefix=/home/mivia/pepper_ros_ws/devel/.private/naoqi_pose
 
 Name: naoqi_pose
 Description: Description of naoqi_pose

@@ -1,8 +1,8 @@
-prefix=/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/detection_srv
+prefix=/home/mivia/pepper_ros_ws/devel/.private/detection_srv
 
 Name: detection_srv
 Description: Description of detection_srv
 Version: 0.0.0
-Cflags: -I/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/detection_srv/include
+Cflags: -I/home/mivia/pepper_ros_ws/devel/.private/detection_srv/include
 Libs: -L${prefix}/lib 
 Requires: 

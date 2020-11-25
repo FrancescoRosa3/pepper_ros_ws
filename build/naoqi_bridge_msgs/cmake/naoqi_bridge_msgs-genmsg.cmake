@@ -2,7 +2,7 @@
 
 message(STATUS "naoqi_bridge_msgs: 89 messages, 15 services")
 
-set(MSG_I_FLAGS "-Inaoqi_bridge_msgs:/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg;-Inaoqi_bridge_msgs:/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg;-Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg;-Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg;-Inav_msgs:/opt/ros/melodic/share/nav_msgs/cmake/../msg;-Itrajectory_msgs:/opt/ros/melodic/share/trajectory_msgs/cmake/../msg;-Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg")
+set(MSG_I_FLAGS "-Inaoqi_bridge_msgs:/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg;-Inaoqi_bridge_msgs:/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg;-Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg;-Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg;-Inav_msgs:/opt/ros/melodic/share/nav_msgs/cmake/../msg;-Itrajectory_msgs:/opt/ros/melodic/share/trajectory_msgs/cmake/../msg;-Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg")
 
 # Find all generators
 find_package(gencpp REQUIRED)
@@ -17,524 +17,524 @@ add_custom_target(naoqi_bridge_msgs_generate_messages ALL)
 
 
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionFeedback.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseResult.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionFeedback.msg" "std_msgs/ColorRGBA:actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:naoqi_bridge_msgs/BlinkFeedback:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/CmdPoseService.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/FadeRGB.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/CmdPoseService.srv" "geometry_msgs/Pose2D"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/FadeRGB.msg" "std_msgs/ColorRGBA"
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyFeedback.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyResult.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyFeedback.msg" ""
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryAction.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionGoal.msg" "naoqi_bridge_msgs/BodyPoseGoal:actionlib_msgs/GoalID:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryAction.msg" "actionlib_msgs/GoalID:naoqi_bridge_msgs/JointTrajectoryActionGoal:trajectory_msgs/JointTrajectory:naoqi_bridge_msgs/JointTrajectoryFeedback:naoqi_bridge_msgs/JointTrajectoryActionFeedback:actionlib_msgs/GoalStatus:sensor_msgs/JointState:naoqi_bridge_msgs/JointTrajectoryActionResult:naoqi_bridge_msgs/JointTrajectoryGoal:naoqi_bridge_msgs/JointTrajectoryResult:std_msgs/Header:trajectory_msgs/JointTrajectoryPoint"
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionResult.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionResult.msg" "actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:naoqi_bridge_msgs/FollowPathResult:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionResult.msg" "naoqi_bridge_msgs/RunBehaviorResult:actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionFeedback.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionResult.msg" "actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:naoqi_bridge_msgs/SetSpeechVocabularyResult:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionFeedback.msg" "actionlib_msgs/GoalID:naoqi_bridge_msgs/BodyPoseFeedback:actionlib_msgs/GoalStatus:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackResult.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathFeedback.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackResult.msg" ""
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/SetFloat.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkGoal.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/SetFloat.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkGoal.msg" "std_msgs/ColorRGBA"
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionGoal.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionGoal.msg" "actionlib_msgs/GoalID:nav_msgs/Path:geometry_msgs/Pose:std_msgs/Header:naoqi_bridge_msgs/FollowPathGoal:geometry_msgs/Quaternion:geometry_msgs/PoseStamped:geometry_msgs/Point"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionGoal.msg" "actionlib_msgs/GoalID:naoqi_bridge_msgs/SpeechWithFeedbackGoal:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathResult.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionFeedback.msg" "naoqi_bridge_msgs/SetSpeechVocabularyFeedback:actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathResult.msg" ""
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/StringStamped.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionGoal.msg" "actionlib_msgs/GoalID:naoqi_bridge_msgs/JointAnglesWithSpeed:naoqi_bridge_msgs/JointAnglesWithSpeedGoal:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/StringStamped.msg" "std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/PoseWithConfidenceStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorGoal.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/PoseWithConfidenceStamped.msg" "geometry_msgs/Pose:geometry_msgs/Point:geometry_msgs/Quaternion:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorGoal.msg" ""
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedAction.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/HeadTouch.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedAction.msg" "actionlib_msgs/GoalID:naoqi_bridge_msgs/JointAnglesWithSpeedActionGoal:actionlib_msgs/GoalStatus:naoqi_bridge_msgs/JointAnglesWithSpeedActionResult:naoqi_bridge_msgs/JointAnglesWithSpeedActionFeedback:sensor_msgs/JointState:naoqi_bridge_msgs/JointAnglesWithSpeedResult:std_msgs/Header:naoqi_bridge_msgs/JointAnglesWithSpeedFeedback:naoqi_bridge_msgs/JointAnglesWithSpeed:naoqi_bridge_msgs/JointAnglesWithSpeedGoal"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/HeadTouch.msg" ""
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/JointAnglesWithSpeed.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/SoundLocated.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/JointAnglesWithSpeed.msg" "std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/SoundLocated.msg" "geometry_msgs/Vector3:geometry_msgs/Twist:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/HandTouch.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkAction.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/HandTouch.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkAction.msg" "actionlib_msgs/GoalID:naoqi_bridge_msgs/BlinkActionFeedback:actionlib_msgs/GoalStatus:std_msgs/Header:naoqi_bridge_msgs/BlinkActionResult:naoqi_bridge_msgs/BlinkActionGoal:naoqi_bridge_msgs/BlinkGoal:std_msgs/ColorRGBA:naoqi_bridge_msgs/BlinkFeedback:naoqi_bridge_msgs/BlinkResult"
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/FloatStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/TangentialSecurityDistance.srv" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/FloatStamped.msg" "std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/TangentialSecurityDistance.srv" "std_msgs/Float32"
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetTruepose.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetFloat.srv" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetTruepose.srv" "geometry_msgs/PoseWithCovarianceStamped:geometry_msgs/Pose:geometry_msgs/PoseWithCovariance:std_msgs/Header:geometry_msgs/Quaternion:geometry_msgs/Point"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetFloat.srv" ""
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionResult.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackFeedback.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionResult.msg" "actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:naoqi_bridge_msgs/BlinkResult:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetString.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/FloatStamped.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetString.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/FloatStamped.msg" "std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/SetString.srv" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathGoal.msg" "nav_msgs/Path:geometry_msgs/Pose:std_msgs/Header:geometry_msgs/Point:geometry_msgs/PoseStamped:geometry_msgs/Quaternion"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/SetString.srv" ""
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/MemoryPairFloat.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/MemoryPairInt.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/MemoryPairFloat.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/MemoryPairInt.msg" ""
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionGoal.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryFeedback.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionGoal.msg" "actionlib_msgs/GoalID:naoqi_bridge_msgs/SetSpeechVocabularyGoal:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/EventStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/Bumper.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/EventStamped.msg" "std_msgs/String:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/Bumper.msg" ""
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorAction.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedResult.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorAction.msg" "actionlib_msgs/GoalID:naoqi_bridge_msgs/RunBehaviorActionGoal:naoqi_bridge_msgs/RunBehaviorResult:actionlib_msgs/GoalStatus:naoqi_bridge_msgs/RunBehaviorActionFeedback:naoqi_bridge_msgs/RunBehaviorActionResult:std_msgs/Header:naoqi_bridge_msgs/RunBehaviorGoal:naoqi_bridge_msgs/RunBehaviorFeedback"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedResult.msg" "sensor_msgs/JointState:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/FloatArrayStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetString.srv" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/FloatArrayStamped.msg" "std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetString.srv" ""
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyResult.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionGoal.msg" "actionlib_msgs/GoalID:naoqi_bridge_msgs/SpeechWithFeedbackGoal:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyResult.msg" ""
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/OrthogonalSecurityDistance.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/MemoryPairString.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/OrthogonalSecurityDistance.srv" "std_msgs/Float32"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/MemoryPairString.msg" ""
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/CmdVelService.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionResult.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/CmdVelService.srv" "geometry_msgs/Twist:geometry_msgs/Vector3"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionResult.msg" "actionlib_msgs/GoalID:sensor_msgs/JointState:actionlib_msgs/GoalStatus:naoqi_bridge_msgs/JointAnglesWithSpeedResult:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/StatusChangeStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedGoal.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/StatusChangeStamped.msg" "std_msgs/String:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedGoal.msg" "naoqi_bridge_msgs/JointAnglesWithSpeed:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/StringStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/FloatArrayStamped.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/StringStamped.msg" "std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/FloatArrayStamped.msg" "std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedAction.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionFeedback.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedAction.msg" "actionlib_msgs/GoalID:naoqi_bridge_msgs/BodyPoseWithSpeedActionGoal:actionlib_msgs/GoalStatus:naoqi_bridge_msgs/BodyPoseWithSpeedActionResult:naoqi_bridge_msgs/BodyPoseWithSpeedActionFeedback:naoqi_bridge_msgs/BodyPoseWithSpeedResult:naoqi_bridge_msgs/BodyPoseWithSpeedGoal:std_msgs/Header:naoqi_bridge_msgs/BodyPoseWithSpeedFeedback"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionFeedback.msg" "actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:naoqi_bridge_msgs/FollowPathFeedback:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionResult.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedResult.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionResult.msg" "actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:naoqi_bridge_msgs/BodyPoseWithSpeedResult:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/SetTransform.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryResult.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/SetTransform.srv" "geometry_msgs/Transform:geometry_msgs/Quaternion:geometry_msgs/Vector3"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryResult.msg" "sensor_msgs/JointState:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/MemoryList.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionGoal.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/MemoryList.msg" "naoqi_bridge_msgs/MemoryPairInt:naoqi_bridge_msgs/MemoryPairFloat:naoqi_bridge_msgs/MemoryPairString:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionGoal.msg" "actionlib_msgs/GoalID:naoqi_bridge_msgs/BodyPoseGoal:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/FadeRGB.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedGoal.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/FadeRGB.msg" "std_msgs/ColorRGBA"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedGoal.msg" ""
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/JointAngleTrajectory.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/BodyROI.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/JointAngleTrajectory.msg" "std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/BodyROI.msg" ""
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/AudioBuffer.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedFeedback.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/AudioBuffer.msg" "std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryFeedback.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionResult.msg" "naoqi_bridge_msgs/SpeechWithFeedbackResult:actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryFeedback.msg" ""
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionFeedback.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseGoal.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionFeedback.msg" "actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:naoqi_bridge_msgs/SetSpeechVocabularyFeedback:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/BoolStamped.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkResult.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/BoolStamped.msg" "std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedResult.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackResult.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedResult.msg" ""
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetFacesROI.srv" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionGoal.msg" "actionlib_msgs/GoalID:naoqi_bridge_msgs/BodyPoseWithSpeedGoal:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetFacesROI.srv" "naoqi_bridge_msgs/FaceROI"
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/OrthogonalSecurityDistance.srv" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionResult.msg" "naoqi_bridge_msgs/JointAnglesWithSpeedResult:actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:sensor_msgs/JointState:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/OrthogonalSecurityDistance.srv" "std_msgs/Float32"
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/CmdPoseService.srv" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorFeedback.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/CmdPoseService.srv" "geometry_msgs/Pose2D"
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetInstalledBehaviors.srv" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionGoal.msg" "naoqi_bridge_msgs/SetSpeechVocabularyGoal:actionlib_msgs/GoalID:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetInstalledBehaviors.srv" ""
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedFeedback.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionGoal.msg" "actionlib_msgs/GoalID:naoqi_bridge_msgs/JointTrajectoryGoal:trajectory_msgs/JointTrajectory:trajectory_msgs/JointTrajectoryPoint:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedFeedback.msg" ""
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/RobotInfo.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionFeedback.msg" "actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:naoqi_bridge_msgs/JointAnglesWithSpeedFeedback:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/RobotInfo.msg" ""
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackFeedback.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionResult.msg" "naoqi_bridge_msgs/BlinkResult:actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackFeedback.msg" ""
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetBodyROI.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/StatusChangeStamped.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetBodyROI.srv" "naoqi_bridge_msgs/BodyROI"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/StatusChangeStamped.msg" "std_msgs/String:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackAction.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathFeedback.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackAction.msg" "naoqi_bridge_msgs/SpeechWithFeedbackResult:actionlib_msgs/GoalID:naoqi_bridge_msgs/SpeechWithFeedbackActionGoal:actionlib_msgs/GoalStatus:naoqi_bridge_msgs/SpeechWithFeedbackActionFeedback:naoqi_bridge_msgs/SpeechWithFeedbackFeedback:std_msgs/Header:naoqi_bridge_msgs/SpeechWithFeedbackActionResult:naoqi_bridge_msgs/SpeechWithFeedbackGoal"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathFeedback.msg" ""
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkResult.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedGoal.msg" "naoqi_bridge_msgs/JointAnglesWithSpeed:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkResult.msg" ""
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackAction.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionGoal.msg" "actionlib_msgs/GoalID:naoqi_bridge_msgs/RunBehaviorGoal:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackAction.msg" "actionlib_msgs/GoalID:naoqi_bridge_msgs/SpeechWithFeedbackActionGoal:actionlib_msgs/GoalStatus:naoqi_bridge_msgs/SpeechWithFeedbackActionResult:naoqi_bridge_msgs/SpeechWithFeedbackResult:std_msgs/Header:naoqi_bridge_msgs/SpeechWithFeedbackFeedback:naoqi_bridge_msgs/SpeechWithFeedbackGoal:naoqi_bridge_msgs/SpeechWithFeedbackActionFeedback"
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/HeadTouch.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/IntArrayStamped.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/HeadTouch.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/IntArrayStamped.msg" "std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/SoundLocated.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/HandTouch.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/SoundLocated.msg" "geometry_msgs/Vector3:geometry_msgs/Twist:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/HandTouch.msg" ""
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/JointAngleTrajectory.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionResult.msg" "actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:naoqi_bridge_msgs/RunBehaviorResult:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/JointAngleTrajectory.msg" "std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathAction.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/SetArmsEnabled.srv" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathAction.msg" "actionlib_msgs/GoalID:naoqi_bridge_msgs/FollowPathActionGoal:nav_msgs/Path:actionlib_msgs/GoalStatus:naoqi_bridge_msgs/FollowPathActionFeedback:naoqi_bridge_msgs/FollowPathFeedback:geometry_msgs/Pose:naoqi_bridge_msgs/FollowPathResult:std_msgs/Header:naoqi_bridge_msgs/FollowPathGoal:geometry_msgs/Quaternion:geometry_msgs/PoseStamped:naoqi_bridge_msgs/FollowPathActionResult:geometry_msgs/Point"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/SetArmsEnabled.srv" ""
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/BoolStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionResult.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/BoolStamped.msg" "std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionResult.msg" "actionlib_msgs/GoalID:naoqi_bridge_msgs/BodyPoseResult:actionlib_msgs/GoalStatus:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetInstalledBehaviors.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionFeedback.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetInstalledBehaviors.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionFeedback.msg" "naoqi_bridge_msgs/JointAnglesWithSpeedFeedback:actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/AudioBuffer.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseGoal.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/AudioBuffer.msg" "std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseGoal.msg" ""
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/MemoryPairInt.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionResult.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/MemoryPairInt.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionResult.msg" "actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:naoqi_bridge_msgs/FollowPathResult:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorResult.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorResult.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorResult.msg" ""
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyGoal.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkFeedback.msg" "std_msgs/ColorRGBA"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyGoal.msg" ""
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/StringArrayStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionResult.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/StringArrayStamped.msg" "std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionResult.msg" "actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:naoqi_bridge_msgs/SetSpeechVocabularyResult:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/FaceROI.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionResult.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/FaceROI.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionResult.msg" "actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:naoqi_bridge_msgs/SpeechWithFeedbackResult:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/Bumper.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathAction.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/Bumper.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathAction.msg" "actionlib_msgs/GoalID:nav_msgs/Path:naoqi_bridge_msgs/FollowPathResult:naoqi_bridge_msgs/FollowPathActionFeedback:geometry_msgs/Pose:actionlib_msgs/GoalStatus:naoqi_bridge_msgs/FollowPathActionGoal:naoqi_bridge_msgs/FollowPathGoal:naoqi_bridge_msgs/FollowPathFeedback:std_msgs/Header:naoqi_bridge_msgs/FollowPathActionResult:geometry_msgs/Quaternion:geometry_msgs/PoseStamped:geometry_msgs/Point"
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseAction.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedAction.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseAction.msg" "naoqi_bridge_msgs/BodyPoseFeedback:actionlib_msgs/GoalID:naoqi_bridge_msgs/BodyPoseResult:actionlib_msgs/GoalStatus:naoqi_bridge_msgs/BodyPoseActionFeedback:naoqi_bridge_msgs/BodyPoseGoal:std_msgs/Header:naoqi_bridge_msgs/BodyPoseActionGoal:naoqi_bridge_msgs/BodyPoseActionResult"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedAction.msg" "actionlib_msgs/GoalID:naoqi_bridge_msgs/JointAnglesWithSpeedActionResult:actionlib_msgs/GoalStatus:naoqi_bridge_msgs/JointAnglesWithSpeedActionFeedback:sensor_msgs/JointState:naoqi_bridge_msgs/JointAnglesWithSpeedActionGoal:naoqi_bridge_msgs/JointAnglesWithSpeedGoal:std_msgs/Header:naoqi_bridge_msgs/JointAnglesWithSpeedFeedback:naoqi_bridge_msgs/JointAnglesWithSpeed:naoqi_bridge_msgs/JointAnglesWithSpeedResult"
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/IntStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionGoal.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/IntStamped.msg" "std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionGoal.msg" "actionlib_msgs/GoalID:naoqi_bridge_msgs/JointTrajectoryGoal:trajectory_msgs/JointTrajectoryPoint:trajectory_msgs/JointTrajectory:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyAction.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/WordRecognized.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyAction.msg" "naoqi_bridge_msgs/SetSpeechVocabularyActionFeedback:actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:naoqi_bridge_msgs/SetSpeechVocabularyActionGoal:naoqi_bridge_msgs/SetSpeechVocabularyFeedback:naoqi_bridge_msgs/SetSpeechVocabularyGoal:naoqi_bridge_msgs/SetSpeechVocabularyActionResult:std_msgs/Header:naoqi_bridge_msgs/SetSpeechVocabularyResult"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/WordRecognized.msg" ""
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyAction.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionFeedback.msg" "std_msgs/ColorRGBA:actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:naoqi_bridge_msgs/BlinkFeedback:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyAction.msg" "actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:naoqi_bridge_msgs/SetSpeechVocabularyFeedback:naoqi_bridge_msgs/SetSpeechVocabularyActionResult:naoqi_bridge_msgs/SetSpeechVocabularyResult:naoqi_bridge_msgs/SetSpeechVocabularyActionGoal:std_msgs/Header:naoqi_bridge_msgs/SetSpeechVocabularyGoal:naoqi_bridge_msgs/SetSpeechVocabularyActionFeedback"
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/IntArrayStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/MemoryList.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/IntArrayStamped.msg" "std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/MemoryList.msg" "naoqi_bridge_msgs/MemoryPairString:naoqi_bridge_msgs/MemoryPairInt:naoqi_bridge_msgs/MemoryPairFloat:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryAction.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionFeedback.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryAction.msg" "actionlib_msgs/GoalID:naoqi_bridge_msgs/JointTrajectoryActionFeedback:naoqi_bridge_msgs/JointTrajectoryActionResult:trajectory_msgs/JointTrajectory:naoqi_bridge_msgs/JointTrajectoryFeedback:naoqi_bridge_msgs/JointTrajectoryActionGoal:actionlib_msgs/GoalStatus:sensor_msgs/JointState:naoqi_bridge_msgs/JointTrajectoryResult:std_msgs/Header:naoqi_bridge_msgs/JointTrajectoryGoal:trajectory_msgs/JointTrajectoryPoint"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionFeedback.msg" "naoqi_bridge_msgs/JointTrajectoryFeedback:actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/IntStamped.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackGoal.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/IntStamped.msg" "std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetTruepose.srv" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionResult.msg" "actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:sensor_msgs/JointState:naoqi_bridge_msgs/JointTrajectoryResult:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetTruepose.srv" "geometry_msgs/PoseWithCovarianceStamped:geometry_msgs/Pose:geometry_msgs/PoseWithCovariance:std_msgs/Header:geometry_msgs/Quaternion:geometry_msgs/Point"
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseFeedback.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionResult.msg" "naoqi_bridge_msgs/BodyPoseWithSpeedResult:actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseFeedback.msg" ""
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/TangentialSecurityDistance.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/EventStamped.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/TangentialSecurityDistance.srv" "std_msgs/Float32"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/EventStamped.msg" "std_msgs/String:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/JointAnglesWithSpeed.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedResult.msg" "sensor_msgs/JointState:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/JointAnglesWithSpeed.msg" "std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionResult.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathResult.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionResult.msg" "actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:sensor_msgs/JointState:naoqi_bridge_msgs/JointTrajectoryResult:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackGoal.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyFeedback.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackGoal.msg" ""
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/MemoryPairString.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/CmdVelService.srv" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/MemoryPairString.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/CmdVelService.srv" "geometry_msgs/Twist:geometry_msgs/Vector3"
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/RobotInfo.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionGoal.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/RobotInfo.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionGoal.msg" "actionlib_msgs/GoalID:nav_msgs/Path:naoqi_bridge_msgs/FollowPathGoal:geometry_msgs/Pose:std_msgs/Header:geometry_msgs/Quaternion:geometry_msgs/PoseStamped:geometry_msgs/Point"
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/FaceROI.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedGoal.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/FaceROI.msg" ""
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/SetArmsEnabled.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionFeedback.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/SetArmsEnabled.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionFeedback.msg" "actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:naoqi_bridge_msgs/BodyPoseWithSpeedFeedback:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseAction.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionFeedback.msg" "actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:naoqi_bridge_msgs/BodyPoseWithSpeedFeedback:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseAction.msg" "actionlib_msgs/GoalID:naoqi_bridge_msgs/BodyPoseActionFeedback:actionlib_msgs/GoalStatus:naoqi_bridge_msgs/BodyPoseActionResult:naoqi_bridge_msgs/BodyPoseResult:naoqi_bridge_msgs/BodyPoseFeedback:std_msgs/Header:naoqi_bridge_msgs/BodyPoseGoal:naoqi_bridge_msgs/BodyPoseActionGoal"
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/BodyROI.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionGoal.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/BodyROI.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionGoal.msg" "actionlib_msgs/GoalID:naoqi_bridge_msgs/RunBehaviorGoal:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathGoal.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionGoal.msg" "actionlib_msgs/GoalID:std_msgs/ColorRGBA:naoqi_bridge_msgs/BlinkGoal:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathGoal.msg" "nav_msgs/Path:geometry_msgs/Pose:std_msgs/Header:geometry_msgs/Point:geometry_msgs/PoseStamped:geometry_msgs/Quaternion"
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionGoal.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionFeedback.msg" "actionlib_msgs/GoalID:naoqi_bridge_msgs/JointTrajectoryFeedback:actionlib_msgs/GoalStatus:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionGoal.msg" "actionlib_msgs/GoalID:std_msgs/ColorRGBA:naoqi_bridge_msgs/BlinkGoal:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetFacesROI.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/PoseWithConfidenceStamped.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetFacesROI.srv" "naoqi_bridge_msgs/FaceROI"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/PoseWithConfidenceStamped.msg" "geometry_msgs/Pose:geometry_msgs/Point:geometry_msgs/Quaternion:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkAction.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionFeedback.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkAction.msg" "actionlib_msgs/GoalID:naoqi_bridge_msgs/BlinkFeedback:actionlib_msgs/GoalStatus:std_msgs/Header:naoqi_bridge_msgs/BlinkActionFeedback:naoqi_bridge_msgs/BlinkActionResult:naoqi_bridge_msgs/BlinkGoal:std_msgs/ColorRGBA:naoqi_bridge_msgs/BlinkResult:naoqi_bridge_msgs/BlinkActionGoal"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionFeedback.msg" "actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:naoqi_bridge_msgs/RunBehaviorFeedback:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedAction.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionFeedback.msg" "actionlib_msgs/GoalID:naoqi_bridge_msgs/RunBehaviorFeedback:actionlib_msgs/GoalStatus:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedAction.msg" "actionlib_msgs/GoalID:naoqi_bridge_msgs/BodyPoseWithSpeedActionFeedback:actionlib_msgs/GoalStatus:naoqi_bridge_msgs/BodyPoseWithSpeedGoal:naoqi_bridge_msgs/BodyPoseWithSpeedActionGoal:std_msgs/Header:naoqi_bridge_msgs/BodyPoseWithSpeedFeedback:naoqi_bridge_msgs/BodyPoseWithSpeedResult:naoqi_bridge_msgs/BodyPoseWithSpeedActionResult"
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetFloat.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionFeedback.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetFloat.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionFeedback.msg" "naoqi_bridge_msgs/SpeechWithFeedbackFeedback:actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/MemoryPairFloat.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionFeedback.msg" "actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:naoqi_bridge_msgs/SpeechWithFeedbackFeedback:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/MemoryPairFloat.msg" ""
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetRobotInfo.srv" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkGoal.msg" "std_msgs/ColorRGBA"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetRobotInfo.srv" "naoqi_bridge_msgs/RobotInfo"
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionGoal.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionFeedback.msg" "naoqi_bridge_msgs/BodyPoseFeedback:actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionGoal.msg" "actionlib_msgs/GoalID:naoqi_bridge_msgs/BodyPoseWithSpeedGoal:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseResult.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionFeedback.msg" "actionlib_msgs/GoalID:naoqi_bridge_msgs/FollowPathFeedback:actionlib_msgs/GoalStatus:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseResult.msg" ""
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/SetString.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorAction.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/SetString.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorAction.msg" "naoqi_bridge_msgs/RunBehaviorActionGoal:actionlib_msgs/GoalID:naoqi_bridge_msgs/RunBehaviorActionResult:actionlib_msgs/GoalStatus:naoqi_bridge_msgs/RunBehaviorGoal:naoqi_bridge_msgs/RunBehaviorActionFeedback:std_msgs/Header:naoqi_bridge_msgs/RunBehaviorResult:naoqi_bridge_msgs/RunBehaviorFeedback"
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/StringArrayStamped.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorGoal.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/StringArrayStamped.msg" "std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkFeedback.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionResult.msg" "actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:naoqi_bridge_msgs/BodyPoseResult:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkFeedback.msg" "std_msgs/ColorRGBA"
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorFeedback.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryGoal.msg" "trajectory_msgs/JointTrajectory:trajectory_msgs/JointTrajectoryPoint:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorFeedback.msg" ""
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/SetFloat.srv" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyGoal.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/SetFloat.srv" ""
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryGoal.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryResult.msg" "sensor_msgs/JointState:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryGoal.msg" "trajectory_msgs/JointTrajectory:trajectory_msgs/JointTrajectoryPoint:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/WordRecognized.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetBodyROI.srv" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/WordRecognized.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetBodyROI.srv" "naoqi_bridge_msgs/BodyROI"
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetRobotInfo.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedFeedback.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetRobotInfo.srv" "naoqi_bridge_msgs/RobotInfo"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedFeedback.msg" ""
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionGoal.msg" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseFeedback.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionGoal.msg" "actionlib_msgs/GoalID:naoqi_bridge_msgs/JointAnglesWithSpeed:naoqi_bridge_msgs/JointAnglesWithSpeedGoal:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/SetTransform.srv" NAME_WE)
 add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedFeedback.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "naoqi_bridge_msgs" "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/SetTransform.srv" "geometry_msgs/Transform:geometry_msgs/Quaternion:geometry_msgs/Vector3"
 )
 
 #
@@ -544,627 +544,627 @@ add_custom_target(_naoqi_bridge_msgs_generate_messages_check_deps_${_filename}
 ### Section generating for lang: gencpp
 ### Generating Messages
 _generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseResult.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  ""
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/ColorRGBA.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyResult.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathFeedback.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/nav_msgs/cmake/../msg/Path.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathGoal.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/JointAnglesWithSpeed.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/PoseWithConfidenceStamped.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedAction.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionResult.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionFeedback.msg;/opt/ros/melodic/share/sensor_msgs/cmake/../msg/JointState.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedFeedback.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/JointAnglesWithSpeed.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedGoal.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/JointAnglesWithSpeed.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/HandTouch.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/FloatStamped.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackFeedback.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/nav_msgs/cmake/../msg/Path.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/MemoryPairFloat.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryFeedback.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/EventStamped.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/String.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorAction.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionGoal.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionFeedback.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorGoal.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorFeedback.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/FloatArrayStamped.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/StatusChangeStamped.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/String.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/StringStamped.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedAction.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionResult.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionFeedback.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedResult.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedFeedback.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedResult.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/MemoryList.msg"
-  "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/MemoryPairInt.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/MemoryPairFloat.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/MemoryPairString.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/FadeRGB.msg"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/FadeRGB.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/ColorRGBA.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/JointAngleTrajectory.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyFeedback.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_cpp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_cpp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_cpp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_cpp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackResult.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_cpp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkResult.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_cpp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_cpp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathResult.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_cpp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/StringStamped.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedFeedback.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorGoal.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseGoal.msg"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/HeadTouch.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkResult.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackResult.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/sensor_msgs/cmake/../msg/JointState.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorFeedback.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryGoal.msg;/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg;/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackAction.msg"
-  "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionFeedback.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionResult.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackGoal.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/JointAnglesWithSpeed.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/HeadTouch.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/SoundLocated.msg"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/SoundLocated.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionResult.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkAction.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionResult.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionGoal.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/ColorRGBA.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkFeedback.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkResult.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathAction.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionGoal.msg;/opt/ros/melodic/share/nav_msgs/cmake/../msg/Path.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionFeedback.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathFeedback.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathGoal.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionResult.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/BoolStamped.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/AudioBuffer.msg"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/FloatStamped.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/MemoryPairInt.msg"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/MemoryPairInt.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorResult.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryAction.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionGoal.msg;/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryFeedback.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/sensor_msgs/cmake/../msg/JointState.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionResult.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryGoal.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_cpp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/Bumper.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/ColorRGBA.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/StringArrayStamped.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/FaceROI.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/Bumper.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseAction.msg"
-  "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionFeedback.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionGoal.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionResult.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/IntStamped.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyAction.msg"
-  "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionGoal.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyFeedback.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyGoal.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyResult.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/ColorRGBA.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/IntArrayStamped.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryAction.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionFeedback.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionResult.msg;/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryFeedback.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/sensor_msgs/cmake/../msg/JointState.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryGoal.msg;/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackGoal.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/sensor_msgs/cmake/../msg/JointState.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedResult.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedResult.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/sensor_msgs/cmake/../msg/JointState.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathResult.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyResult.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyFeedback.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseAction.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionResult.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseResult.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseGoal.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionGoal.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_cpp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/sensor_msgs/cmake/../msg/JointState.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_cpp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/JointAnglesWithSpeed.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_cpp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_cpp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_cpp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_cpp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/sensor_msgs/cmake/../msg/JointState.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_cpp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_cpp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedGoal.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/MemoryPairString.msg"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/IntStamped.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_cpp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/AudioBuffer.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_cpp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryFeedback.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/RobotInfo.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_cpp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/BoolStamped.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_cpp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedResult.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedGoal.msg"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/HandTouch.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/BodyROI.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedFeedback.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionGoal.msg"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/RobotInfo.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/ColorRGBA.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionFeedback.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkAction.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionFeedback.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionResult.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/ColorRGBA.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkResult.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionGoal.msg"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionFeedback.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkGoal.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkGoal.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/ColorRGBA.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionFeedback.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackAction.msg"
   "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionResult.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackFeedback.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackGoal.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionFeedback.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionFeedback.msg"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/IntArrayStamped.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorGoal.msg"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/BodyROI.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionResult.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryGoal.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_cpp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseGoal.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_cpp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_cpp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorResult.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_cpp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyGoal.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_cpp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_cpp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_cpp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathAction.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/nav_msgs/cmake/../msg/Path.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathResult.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionFeedback.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionGoal.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathGoal.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionResult.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_cpp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedAction.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionFeedback.msg;/opt/ros/melodic/share/sensor_msgs/cmake/../msg/JointState.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionGoal.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedFeedback.msg;/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/JointAnglesWithSpeed.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedResult.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_cpp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryGoal.msg;/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg;/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_cpp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/StringArrayStamped.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_cpp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyAction.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyFeedback.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionResult.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyResult.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyGoal.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionFeedback.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_cpp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/MemoryList.msg"
+  "${MSG_I_FLAGS}"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/MemoryPairString.msg;/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/MemoryPairInt.msg;/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/MemoryPairFloat.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_cpp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_cpp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/JointAngleTrajectory.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_cpp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseFeedback.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_cpp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/EventStamped.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/String.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_cpp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/JointAnglesWithSpeed.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_cpp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/sensor_msgs/cmake/../msg/JointState.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_cpp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackGoal.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_cpp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/nav_msgs/cmake/../msg/Path.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathGoal.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_cpp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/FaceROI.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_cpp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_cpp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/MemoryPairString.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_cpp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/FloatArrayStamped.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_cpp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/nav_msgs/cmake/../msg/Path.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_cpp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/ColorRGBA.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_cpp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/PoseWithConfidenceStamped.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_cpp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_cpp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedAction.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedGoal.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedFeedback.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedResult.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionResult.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_cpp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_cpp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/MemoryPairFloat.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_cpp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/StatusChangeStamped.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/String.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_cpp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseResult.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_cpp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorAction.msg"
+  "${MSG_I_FLAGS}"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorGoal.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorResult.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorFeedback.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_cpp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/WordRecognized.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_cpp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/ColorRGBA.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_cpp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorFeedback.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_cpp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryGoal.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg;/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyGoal.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedFeedback.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryResult.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/sensor_msgs/cmake/../msg/JointState.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/WordRecognized.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseFeedback.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedFeedback.msg"
-  "${MSG_I_FLAGS}"
-  ""
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/JointAnglesWithSpeed.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
 )
 
 ### Generating Services
 _generate_srv_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/CmdPoseService.srv"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetFacesROI.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose2D.msg"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/FaceROI.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_srv_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/SetString.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_srv_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/SetArmsEnabled.srv"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/SetArmsEnabled.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_srv_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetTruepose.srv"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseWithCovarianceStamped.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseWithCovariance.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_srv_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/OrthogonalSecurityDistance.srv"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Float32.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_srv_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/SetTransform.srv"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Transform.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_srv_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetString.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_srv_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetFloat.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_srv_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/SetFloat.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_srv_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/CmdVelService.srv"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/CmdVelService.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_srv_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetFacesROI.srv"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetInstalledBehaviors.srv"
   "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/FaceROI.msg"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_srv_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetRobotInfo.srv"
-  "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/RobotInfo.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_srv_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetBodyROI.srv"
-  "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/BodyROI.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_srv_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/TangentialSecurityDistance.srv"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/OrthogonalSecurityDistance.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/Float32.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_srv_cpp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetInstalledBehaviors.srv"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetFloat.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_srv_cpp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetTruepose.srv"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseWithCovarianceStamped.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseWithCovariance.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_srv_cpp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/SetFloat.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_srv_cpp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetRobotInfo.srv"
+  "${MSG_I_FLAGS}"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/RobotInfo.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_srv_cpp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetString.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_srv_cpp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetBodyROI.srv"
+  "${MSG_I_FLAGS}"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/BodyROI.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_srv_cpp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/CmdPoseService.srv"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose2D.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_srv_cpp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/TangentialSecurityDistance.srv"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Float32.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_srv_cpp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/SetTransform.srv"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Transform.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_srv_cpp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/SetString.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/naoqi_bridge_msgs
@@ -1182,213 +1182,213 @@ add_custom_target(naoqi_bridge_msgs_generate_messages_cpp
 add_dependencies(naoqi_bridge_msgs_generate_messages naoqi_bridge_msgs_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/CmdPoseService.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/FadeRGB.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryAction.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/SetFloat.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/StringStamped.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/PoseWithConfidenceStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedAction.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/HeadTouch.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/JointAnglesWithSpeed.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/SoundLocated.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/HandTouch.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkAction.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/FloatStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/TangentialSecurityDistance.srv" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetTruepose.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetFloat.srv" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetString.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/FloatStamped.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/SetString.srv" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/MemoryPairFloat.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/MemoryPairInt.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/EventStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/Bumper.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorAction.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/FloatArrayStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetString.srv" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/OrthogonalSecurityDistance.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/MemoryPairString.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/CmdVelService.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/StatusChangeStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/StringStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/FloatArrayStamped.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedAction.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/SetTransform.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/MemoryList.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/FadeRGB.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/JointAngleTrajectory.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/BodyROI.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/AudioBuffer.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/BoolStamped.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetFacesROI.srv" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/OrthogonalSecurityDistance.srv" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/CmdPoseService.srv" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetInstalledBehaviors.srv" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/RobotInfo.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetBodyROI.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/StatusChangeStamped.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackAction.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackAction.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/HeadTouch.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/IntArrayStamped.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/SoundLocated.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/HandTouch.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/JointAngleTrajectory.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathAction.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/SetArmsEnabled.srv" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/BoolStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetInstalledBehaviors.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/AudioBuffer.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/MemoryPairInt.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/StringArrayStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/FaceROI.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/Bumper.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathAction.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseAction.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedAction.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/IntStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyAction.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/WordRecognized.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyAction.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/IntArrayStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/MemoryList.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryAction.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/IntStamped.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetTruepose.srv" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/TangentialSecurityDistance.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/EventStamped.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/JointAnglesWithSpeed.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/MemoryPairString.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/CmdVelService.srv" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/RobotInfo.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/FaceROI.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/SetArmsEnabled.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseAction.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/BodyROI.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetFacesROI.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/PoseWithConfidenceStamped.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkAction.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedAction.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetFloat.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/MemoryPairFloat.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetRobotInfo.srv" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/SetString.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorAction.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/StringArrayStamped.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/SetFloat.srv" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/WordRecognized.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetBodyROI.srv" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetRobotInfo.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/SetTransform.srv" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_cpp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -1401,627 +1401,627 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS naoqi_bridge_msgs_generate_messages
 ### Section generating for lang: geneus
 ### Generating Messages
 _generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseResult.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  ""
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/ColorRGBA.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyResult.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathFeedback.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/nav_msgs/cmake/../msg/Path.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathGoal.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/JointAnglesWithSpeed.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/PoseWithConfidenceStamped.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedAction.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionResult.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionFeedback.msg;/opt/ros/melodic/share/sensor_msgs/cmake/../msg/JointState.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedFeedback.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/JointAnglesWithSpeed.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedGoal.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/JointAnglesWithSpeed.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/HandTouch.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/FloatStamped.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackFeedback.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/nav_msgs/cmake/../msg/Path.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/MemoryPairFloat.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryFeedback.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/EventStamped.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/String.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorAction.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionGoal.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionFeedback.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorGoal.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorFeedback.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/FloatArrayStamped.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/StatusChangeStamped.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/String.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/StringStamped.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedAction.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionResult.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionFeedback.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedResult.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedFeedback.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedResult.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/MemoryList.msg"
-  "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/MemoryPairInt.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/MemoryPairFloat.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/MemoryPairString.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/FadeRGB.msg"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/FadeRGB.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/ColorRGBA.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/JointAngleTrajectory.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyFeedback.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_eus(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_eus(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_eus(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_eus(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackResult.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_eus(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkResult.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_eus(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_eus(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathResult.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_eus(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/StringStamped.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedFeedback.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorGoal.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseGoal.msg"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/HeadTouch.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkResult.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackResult.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/sensor_msgs/cmake/../msg/JointState.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorFeedback.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryGoal.msg;/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg;/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackAction.msg"
-  "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionFeedback.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionResult.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackGoal.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/JointAnglesWithSpeed.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/HeadTouch.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/SoundLocated.msg"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/SoundLocated.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionResult.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkAction.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionResult.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionGoal.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/ColorRGBA.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkFeedback.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkResult.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathAction.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionGoal.msg;/opt/ros/melodic/share/nav_msgs/cmake/../msg/Path.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionFeedback.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathFeedback.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathGoal.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionResult.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/BoolStamped.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/AudioBuffer.msg"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/FloatStamped.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/MemoryPairInt.msg"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/MemoryPairInt.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorResult.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryAction.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionGoal.msg;/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryFeedback.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/sensor_msgs/cmake/../msg/JointState.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionResult.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryGoal.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_eus(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/Bumper.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/ColorRGBA.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/StringArrayStamped.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/FaceROI.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/Bumper.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseAction.msg"
-  "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionFeedback.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionGoal.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionResult.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/IntStamped.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyAction.msg"
-  "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionGoal.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyFeedback.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyGoal.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyResult.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/ColorRGBA.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/IntArrayStamped.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryAction.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionFeedback.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionResult.msg;/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryFeedback.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/sensor_msgs/cmake/../msg/JointState.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryGoal.msg;/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackGoal.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/sensor_msgs/cmake/../msg/JointState.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedResult.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedResult.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/sensor_msgs/cmake/../msg/JointState.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathResult.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyResult.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyFeedback.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseAction.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionResult.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseResult.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseGoal.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionGoal.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_eus(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/sensor_msgs/cmake/../msg/JointState.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_eus(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/JointAnglesWithSpeed.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_eus(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_eus(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_eus(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_eus(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/sensor_msgs/cmake/../msg/JointState.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_eus(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_eus(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedGoal.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/MemoryPairString.msg"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/IntStamped.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_eus(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/AudioBuffer.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_eus(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryFeedback.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/RobotInfo.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_eus(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/BoolStamped.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_eus(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedResult.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedGoal.msg"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/HandTouch.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/BodyROI.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedFeedback.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionGoal.msg"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/RobotInfo.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/ColorRGBA.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionFeedback.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkAction.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionFeedback.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionResult.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/ColorRGBA.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkResult.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionGoal.msg"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionFeedback.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkGoal.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkGoal.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/ColorRGBA.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionFeedback.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackAction.msg"
   "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionResult.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackFeedback.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackGoal.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionFeedback.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionFeedback.msg"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/IntArrayStamped.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorGoal.msg"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/BodyROI.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionResult.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryGoal.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_eus(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseGoal.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_eus(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_eus(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorResult.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_eus(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyGoal.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_eus(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_eus(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_eus(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathAction.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/nav_msgs/cmake/../msg/Path.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathResult.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionFeedback.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionGoal.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathGoal.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionResult.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_eus(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedAction.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionFeedback.msg;/opt/ros/melodic/share/sensor_msgs/cmake/../msg/JointState.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionGoal.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedFeedback.msg;/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/JointAnglesWithSpeed.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedResult.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_eus(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryGoal.msg;/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg;/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_eus(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/StringArrayStamped.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_eus(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyAction.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyFeedback.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionResult.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyResult.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyGoal.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionFeedback.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_eus(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/MemoryList.msg"
+  "${MSG_I_FLAGS}"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/MemoryPairString.msg;/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/MemoryPairInt.msg;/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/MemoryPairFloat.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_eus(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_eus(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/JointAngleTrajectory.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_eus(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseFeedback.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_eus(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/EventStamped.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/String.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_eus(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/JointAnglesWithSpeed.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_eus(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/sensor_msgs/cmake/../msg/JointState.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_eus(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackGoal.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_eus(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/nav_msgs/cmake/../msg/Path.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathGoal.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_eus(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/FaceROI.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_eus(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_eus(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/MemoryPairString.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_eus(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/FloatArrayStamped.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_eus(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/nav_msgs/cmake/../msg/Path.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_eus(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/ColorRGBA.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_eus(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/PoseWithConfidenceStamped.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_eus(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_eus(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedAction.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedGoal.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedFeedback.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedResult.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionResult.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_eus(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_eus(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/MemoryPairFloat.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_eus(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/StatusChangeStamped.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/String.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_eus(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseResult.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_eus(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorAction.msg"
+  "${MSG_I_FLAGS}"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorGoal.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorResult.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorFeedback.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_eus(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/WordRecognized.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_eus(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/ColorRGBA.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_eus(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorFeedback.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_eus(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryGoal.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg;/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyGoal.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedFeedback.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryResult.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/sensor_msgs/cmake/../msg/JointState.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/WordRecognized.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseFeedback.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedFeedback.msg"
-  "${MSG_I_FLAGS}"
-  ""
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/JointAnglesWithSpeed.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
 )
 
 ### Generating Services
 _generate_srv_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/CmdPoseService.srv"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetFacesROI.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose2D.msg"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/FaceROI.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_srv_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/SetString.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_srv_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/SetArmsEnabled.srv"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/SetArmsEnabled.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_srv_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetTruepose.srv"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseWithCovarianceStamped.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseWithCovariance.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_srv_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/OrthogonalSecurityDistance.srv"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Float32.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_srv_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/SetTransform.srv"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Transform.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_srv_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetString.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_srv_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetFloat.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_srv_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/SetFloat.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_srv_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/CmdVelService.srv"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/CmdVelService.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_srv_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetFacesROI.srv"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetInstalledBehaviors.srv"
   "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/FaceROI.msg"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_srv_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetRobotInfo.srv"
-  "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/RobotInfo.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_srv_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetBodyROI.srv"
-  "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/BodyROI.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_srv_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/TangentialSecurityDistance.srv"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/OrthogonalSecurityDistance.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/Float32.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_srv_eus(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetInstalledBehaviors.srv"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetFloat.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_srv_eus(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetTruepose.srv"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseWithCovarianceStamped.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseWithCovariance.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_srv_eus(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/SetFloat.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_srv_eus(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetRobotInfo.srv"
+  "${MSG_I_FLAGS}"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/RobotInfo.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_srv_eus(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetString.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_srv_eus(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetBodyROI.srv"
+  "${MSG_I_FLAGS}"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/BodyROI.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_srv_eus(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/CmdPoseService.srv"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose2D.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_srv_eus(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/TangentialSecurityDistance.srv"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Float32.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_srv_eus(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/SetTransform.srv"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Transform.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_srv_eus(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/SetString.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/naoqi_bridge_msgs
@@ -2039,213 +2039,213 @@ add_custom_target(naoqi_bridge_msgs_generate_messages_eus
 add_dependencies(naoqi_bridge_msgs_generate_messages naoqi_bridge_msgs_generate_messages_eus)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/CmdPoseService.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/FadeRGB.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryAction.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/SetFloat.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/StringStamped.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/PoseWithConfidenceStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedAction.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/HeadTouch.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/JointAnglesWithSpeed.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/SoundLocated.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/HandTouch.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkAction.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/FloatStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/TangentialSecurityDistance.srv" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetTruepose.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetFloat.srv" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetString.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/FloatStamped.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/SetString.srv" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/MemoryPairFloat.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/MemoryPairInt.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/EventStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/Bumper.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorAction.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/FloatArrayStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetString.srv" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/OrthogonalSecurityDistance.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/MemoryPairString.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/CmdVelService.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/StatusChangeStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/StringStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/FloatArrayStamped.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedAction.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/SetTransform.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/MemoryList.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/FadeRGB.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/JointAngleTrajectory.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/BodyROI.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/AudioBuffer.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/BoolStamped.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetFacesROI.srv" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/OrthogonalSecurityDistance.srv" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/CmdPoseService.srv" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetInstalledBehaviors.srv" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/RobotInfo.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetBodyROI.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/StatusChangeStamped.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackAction.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackAction.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/HeadTouch.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/IntArrayStamped.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/SoundLocated.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/HandTouch.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/JointAngleTrajectory.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathAction.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/SetArmsEnabled.srv" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/BoolStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetInstalledBehaviors.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/AudioBuffer.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/MemoryPairInt.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/StringArrayStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/FaceROI.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/Bumper.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathAction.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseAction.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedAction.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/IntStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyAction.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/WordRecognized.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyAction.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/IntArrayStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/MemoryList.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryAction.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/IntStamped.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetTruepose.srv" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/TangentialSecurityDistance.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/EventStamped.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/JointAnglesWithSpeed.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/MemoryPairString.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/CmdVelService.srv" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/RobotInfo.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/FaceROI.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/SetArmsEnabled.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseAction.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/BodyROI.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetFacesROI.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/PoseWithConfidenceStamped.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkAction.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedAction.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetFloat.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/MemoryPairFloat.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetRobotInfo.srv" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/SetString.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorAction.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/StringArrayStamped.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/SetFloat.srv" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/WordRecognized.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetBodyROI.srv" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetRobotInfo.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/SetTransform.srv" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_eus _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -2258,627 +2258,627 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS naoqi_bridge_msgs_generate_messages
 ### Section generating for lang: genlisp
 ### Generating Messages
 _generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseResult.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  ""
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/ColorRGBA.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyResult.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathFeedback.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/nav_msgs/cmake/../msg/Path.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathGoal.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/JointAnglesWithSpeed.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/PoseWithConfidenceStamped.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedAction.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionResult.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionFeedback.msg;/opt/ros/melodic/share/sensor_msgs/cmake/../msg/JointState.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedFeedback.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/JointAnglesWithSpeed.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedGoal.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/JointAnglesWithSpeed.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/HandTouch.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/FloatStamped.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackFeedback.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/nav_msgs/cmake/../msg/Path.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/MemoryPairFloat.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryFeedback.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/EventStamped.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/String.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorAction.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionGoal.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionFeedback.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorGoal.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorFeedback.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/FloatArrayStamped.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/StatusChangeStamped.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/String.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/StringStamped.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedAction.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionResult.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionFeedback.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedResult.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedFeedback.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedResult.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/MemoryList.msg"
-  "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/MemoryPairInt.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/MemoryPairFloat.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/MemoryPairString.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/FadeRGB.msg"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/FadeRGB.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/ColorRGBA.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/JointAngleTrajectory.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyFeedback.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_lisp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_lisp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_lisp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_lisp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackResult.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_lisp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkResult.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_lisp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_lisp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathResult.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_lisp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/StringStamped.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedFeedback.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorGoal.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseGoal.msg"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/HeadTouch.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkResult.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackResult.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/sensor_msgs/cmake/../msg/JointState.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorFeedback.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryGoal.msg;/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg;/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackAction.msg"
-  "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionFeedback.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionResult.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackGoal.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/JointAnglesWithSpeed.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/HeadTouch.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/SoundLocated.msg"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/SoundLocated.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionResult.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkAction.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionResult.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionGoal.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/ColorRGBA.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkFeedback.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkResult.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathAction.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionGoal.msg;/opt/ros/melodic/share/nav_msgs/cmake/../msg/Path.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionFeedback.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathFeedback.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathGoal.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionResult.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/BoolStamped.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/AudioBuffer.msg"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/FloatStamped.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/MemoryPairInt.msg"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/MemoryPairInt.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorResult.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryAction.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionGoal.msg;/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryFeedback.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/sensor_msgs/cmake/../msg/JointState.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionResult.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryGoal.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_lisp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/Bumper.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/ColorRGBA.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/StringArrayStamped.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/FaceROI.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/Bumper.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseAction.msg"
-  "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionFeedback.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionGoal.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionResult.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/IntStamped.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyAction.msg"
-  "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionGoal.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyFeedback.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyGoal.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyResult.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/ColorRGBA.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/IntArrayStamped.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryAction.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionFeedback.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionResult.msg;/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryFeedback.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/sensor_msgs/cmake/../msg/JointState.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryGoal.msg;/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackGoal.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/sensor_msgs/cmake/../msg/JointState.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedResult.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedResult.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/sensor_msgs/cmake/../msg/JointState.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathResult.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyResult.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyFeedback.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseAction.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionResult.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseResult.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseGoal.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionGoal.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_lisp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/sensor_msgs/cmake/../msg/JointState.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_lisp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/JointAnglesWithSpeed.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_lisp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_lisp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_lisp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_lisp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/sensor_msgs/cmake/../msg/JointState.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_lisp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_lisp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedGoal.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/MemoryPairString.msg"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/IntStamped.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_lisp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/AudioBuffer.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_lisp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryFeedback.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/RobotInfo.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_lisp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/BoolStamped.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_lisp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedResult.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedGoal.msg"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/HandTouch.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/BodyROI.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedFeedback.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionGoal.msg"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/RobotInfo.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/ColorRGBA.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionFeedback.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkAction.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionFeedback.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionResult.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/ColorRGBA.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkResult.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionGoal.msg"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionFeedback.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkGoal.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkGoal.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/ColorRGBA.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionFeedback.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackAction.msg"
   "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionResult.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackFeedback.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackGoal.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionFeedback.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionFeedback.msg"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/IntArrayStamped.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorGoal.msg"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/BodyROI.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionResult.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryGoal.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_lisp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseGoal.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_lisp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_lisp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorResult.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_lisp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyGoal.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_lisp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_lisp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_lisp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathAction.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/nav_msgs/cmake/../msg/Path.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathResult.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionFeedback.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionGoal.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathGoal.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionResult.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_lisp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedAction.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionFeedback.msg;/opt/ros/melodic/share/sensor_msgs/cmake/../msg/JointState.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionGoal.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedFeedback.msg;/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/JointAnglesWithSpeed.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedResult.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_lisp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryGoal.msg;/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg;/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_lisp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/StringArrayStamped.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_lisp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyAction.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyFeedback.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionResult.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyResult.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyGoal.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionFeedback.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_lisp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/MemoryList.msg"
+  "${MSG_I_FLAGS}"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/MemoryPairString.msg;/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/MemoryPairInt.msg;/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/MemoryPairFloat.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_lisp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_lisp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/JointAngleTrajectory.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_lisp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseFeedback.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_lisp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/EventStamped.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/String.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_lisp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/JointAnglesWithSpeed.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_lisp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/sensor_msgs/cmake/../msg/JointState.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_lisp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackGoal.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_lisp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/nav_msgs/cmake/../msg/Path.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathGoal.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_lisp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/FaceROI.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_lisp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_lisp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/MemoryPairString.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_lisp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/FloatArrayStamped.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_lisp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/nav_msgs/cmake/../msg/Path.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_lisp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/ColorRGBA.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_lisp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/PoseWithConfidenceStamped.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_lisp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_lisp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedAction.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedGoal.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedFeedback.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedResult.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionResult.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_lisp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_lisp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/MemoryPairFloat.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_lisp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/StatusChangeStamped.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/String.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_lisp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseResult.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_lisp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorAction.msg"
+  "${MSG_I_FLAGS}"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorGoal.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorResult.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorFeedback.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_lisp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/WordRecognized.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_lisp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/ColorRGBA.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_lisp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorFeedback.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_lisp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryGoal.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg;/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyGoal.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedFeedback.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryResult.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/sensor_msgs/cmake/../msg/JointState.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/WordRecognized.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseFeedback.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedFeedback.msg"
-  "${MSG_I_FLAGS}"
-  ""
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/JointAnglesWithSpeed.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
 )
 
 ### Generating Services
 _generate_srv_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/CmdPoseService.srv"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetFacesROI.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose2D.msg"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/FaceROI.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_srv_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/SetString.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_srv_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/SetArmsEnabled.srv"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/SetArmsEnabled.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_srv_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetTruepose.srv"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseWithCovarianceStamped.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseWithCovariance.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_srv_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/OrthogonalSecurityDistance.srv"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Float32.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_srv_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/SetTransform.srv"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Transform.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_srv_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetString.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_srv_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetFloat.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_srv_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/SetFloat.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_srv_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/CmdVelService.srv"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/CmdVelService.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_srv_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetFacesROI.srv"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetInstalledBehaviors.srv"
   "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/FaceROI.msg"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_srv_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetRobotInfo.srv"
-  "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/RobotInfo.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_srv_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetBodyROI.srv"
-  "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/BodyROI.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_srv_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/TangentialSecurityDistance.srv"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/OrthogonalSecurityDistance.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/Float32.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_srv_lisp(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetInstalledBehaviors.srv"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetFloat.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_srv_lisp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetTruepose.srv"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseWithCovarianceStamped.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseWithCovariance.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_srv_lisp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/SetFloat.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_srv_lisp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetRobotInfo.srv"
+  "${MSG_I_FLAGS}"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/RobotInfo.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_srv_lisp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetString.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_srv_lisp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetBodyROI.srv"
+  "${MSG_I_FLAGS}"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/BodyROI.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_srv_lisp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/CmdPoseService.srv"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose2D.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_srv_lisp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/TangentialSecurityDistance.srv"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Float32.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_srv_lisp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/SetTransform.srv"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Transform.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_srv_lisp(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/SetString.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/naoqi_bridge_msgs
@@ -2896,213 +2896,213 @@ add_custom_target(naoqi_bridge_msgs_generate_messages_lisp
 add_dependencies(naoqi_bridge_msgs_generate_messages naoqi_bridge_msgs_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/CmdPoseService.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/FadeRGB.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryAction.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/SetFloat.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/StringStamped.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/PoseWithConfidenceStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedAction.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/HeadTouch.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/JointAnglesWithSpeed.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/SoundLocated.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/HandTouch.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkAction.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/FloatStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/TangentialSecurityDistance.srv" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetTruepose.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetFloat.srv" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetString.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/FloatStamped.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/SetString.srv" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/MemoryPairFloat.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/MemoryPairInt.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/EventStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/Bumper.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorAction.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/FloatArrayStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetString.srv" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/OrthogonalSecurityDistance.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/MemoryPairString.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/CmdVelService.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/StatusChangeStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/StringStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/FloatArrayStamped.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedAction.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/SetTransform.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/MemoryList.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/FadeRGB.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/JointAngleTrajectory.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/BodyROI.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/AudioBuffer.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/BoolStamped.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetFacesROI.srv" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/OrthogonalSecurityDistance.srv" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/CmdPoseService.srv" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetInstalledBehaviors.srv" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/RobotInfo.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetBodyROI.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/StatusChangeStamped.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackAction.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackAction.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/HeadTouch.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/IntArrayStamped.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/SoundLocated.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/HandTouch.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/JointAngleTrajectory.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathAction.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/SetArmsEnabled.srv" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/BoolStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetInstalledBehaviors.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/AudioBuffer.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/MemoryPairInt.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/StringArrayStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/FaceROI.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/Bumper.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathAction.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseAction.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedAction.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/IntStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyAction.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/WordRecognized.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyAction.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/IntArrayStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/MemoryList.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryAction.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/IntStamped.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetTruepose.srv" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/TangentialSecurityDistance.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/EventStamped.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/JointAnglesWithSpeed.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/MemoryPairString.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/CmdVelService.srv" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/RobotInfo.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/FaceROI.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/SetArmsEnabled.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseAction.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/BodyROI.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetFacesROI.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/PoseWithConfidenceStamped.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkAction.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedAction.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetFloat.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/MemoryPairFloat.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetRobotInfo.srv" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/SetString.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorAction.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/StringArrayStamped.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/SetFloat.srv" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/WordRecognized.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetBodyROI.srv" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetRobotInfo.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/SetTransform.srv" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_lisp _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -3115,627 +3115,627 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS naoqi_bridge_msgs_generate_messages
 ### Section generating for lang: gennodejs
 ### Generating Messages
 _generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseResult.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  ""
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/ColorRGBA.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyResult.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathFeedback.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/nav_msgs/cmake/../msg/Path.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathGoal.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/JointAnglesWithSpeed.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/PoseWithConfidenceStamped.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedAction.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionResult.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionFeedback.msg;/opt/ros/melodic/share/sensor_msgs/cmake/../msg/JointState.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedFeedback.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/JointAnglesWithSpeed.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedGoal.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/JointAnglesWithSpeed.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/HandTouch.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/FloatStamped.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackFeedback.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/nav_msgs/cmake/../msg/Path.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/MemoryPairFloat.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryFeedback.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/EventStamped.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/String.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorAction.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionGoal.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionFeedback.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorGoal.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorFeedback.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/FloatArrayStamped.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/StatusChangeStamped.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/String.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/StringStamped.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedAction.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionResult.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionFeedback.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedResult.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedFeedback.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedResult.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/MemoryList.msg"
-  "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/MemoryPairInt.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/MemoryPairFloat.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/MemoryPairString.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/FadeRGB.msg"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/FadeRGB.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/ColorRGBA.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/JointAngleTrajectory.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyFeedback.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_nodejs(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_nodejs(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_nodejs(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_nodejs(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackResult.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_nodejs(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkResult.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_nodejs(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_nodejs(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathResult.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_nodejs(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/StringStamped.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedFeedback.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorGoal.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseGoal.msg"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/HeadTouch.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkResult.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackResult.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/sensor_msgs/cmake/../msg/JointState.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorFeedback.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryGoal.msg;/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg;/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackAction.msg"
-  "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionFeedback.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionResult.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackGoal.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/JointAnglesWithSpeed.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/HeadTouch.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/SoundLocated.msg"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/SoundLocated.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionResult.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkAction.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionResult.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionGoal.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/ColorRGBA.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkFeedback.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkResult.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathAction.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionGoal.msg;/opt/ros/melodic/share/nav_msgs/cmake/../msg/Path.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionFeedback.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathFeedback.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathGoal.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionResult.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/BoolStamped.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/AudioBuffer.msg"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/FloatStamped.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/MemoryPairInt.msg"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/MemoryPairInt.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorResult.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryAction.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionGoal.msg;/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryFeedback.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/sensor_msgs/cmake/../msg/JointState.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionResult.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryGoal.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_nodejs(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/Bumper.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/ColorRGBA.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/StringArrayStamped.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/FaceROI.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/Bumper.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseAction.msg"
-  "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionFeedback.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionGoal.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionResult.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/IntStamped.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyAction.msg"
-  "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionGoal.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyFeedback.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyGoal.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyResult.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/ColorRGBA.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/IntArrayStamped.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryAction.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionFeedback.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionResult.msg;/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryFeedback.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/sensor_msgs/cmake/../msg/JointState.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryGoal.msg;/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackGoal.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/sensor_msgs/cmake/../msg/JointState.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedResult.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedResult.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/sensor_msgs/cmake/../msg/JointState.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathResult.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyResult.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyFeedback.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseAction.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionResult.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseResult.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseGoal.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionGoal.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_nodejs(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/sensor_msgs/cmake/../msg/JointState.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_nodejs(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/JointAnglesWithSpeed.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_nodejs(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_nodejs(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_nodejs(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_nodejs(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/sensor_msgs/cmake/../msg/JointState.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_nodejs(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_nodejs(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedGoal.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/MemoryPairString.msg"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/IntStamped.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_nodejs(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/AudioBuffer.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_nodejs(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryFeedback.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/RobotInfo.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_nodejs(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/BoolStamped.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_nodejs(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedResult.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedGoal.msg"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/HandTouch.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/BodyROI.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedFeedback.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionGoal.msg"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/RobotInfo.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/ColorRGBA.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionFeedback.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkAction.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionFeedback.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionResult.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/ColorRGBA.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkResult.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionGoal.msg"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionFeedback.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkGoal.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkGoal.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/ColorRGBA.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionFeedback.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackAction.msg"
   "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionResult.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackFeedback.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackGoal.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionFeedback.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionFeedback.msg"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/IntArrayStamped.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorGoal.msg"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/BodyROI.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionResult.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryGoal.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_nodejs(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseGoal.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_nodejs(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_nodejs(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorResult.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_nodejs(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyGoal.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_nodejs(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_nodejs(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_nodejs(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathAction.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/nav_msgs/cmake/../msg/Path.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathResult.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionFeedback.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionGoal.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathGoal.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionResult.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_nodejs(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedAction.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionFeedback.msg;/opt/ros/melodic/share/sensor_msgs/cmake/../msg/JointState.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionGoal.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedFeedback.msg;/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/JointAnglesWithSpeed.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedResult.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_nodejs(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryGoal.msg;/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg;/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_nodejs(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/StringArrayStamped.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_nodejs(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyAction.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyFeedback.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionResult.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyResult.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyGoal.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionFeedback.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_nodejs(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/MemoryList.msg"
+  "${MSG_I_FLAGS}"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/MemoryPairString.msg;/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/MemoryPairInt.msg;/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/MemoryPairFloat.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_nodejs(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_nodejs(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/JointAngleTrajectory.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_nodejs(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseFeedback.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_nodejs(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/EventStamped.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/String.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_nodejs(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/JointAnglesWithSpeed.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_nodejs(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/sensor_msgs/cmake/../msg/JointState.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_nodejs(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackGoal.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_nodejs(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/nav_msgs/cmake/../msg/Path.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathGoal.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_nodejs(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/FaceROI.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_nodejs(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_nodejs(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/MemoryPairString.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_nodejs(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/FloatArrayStamped.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_nodejs(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/nav_msgs/cmake/../msg/Path.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_nodejs(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/ColorRGBA.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_nodejs(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/PoseWithConfidenceStamped.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_nodejs(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_nodejs(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedAction.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedGoal.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedFeedback.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedResult.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionResult.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_nodejs(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_nodejs(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/MemoryPairFloat.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_nodejs(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/StatusChangeStamped.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/String.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_nodejs(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseResult.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_nodejs(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorAction.msg"
+  "${MSG_I_FLAGS}"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorGoal.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorResult.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorFeedback.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_nodejs(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/WordRecognized.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_nodejs(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/ColorRGBA.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_nodejs(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorFeedback.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_nodejs(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryGoal.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg;/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyGoal.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedFeedback.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryResult.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/sensor_msgs/cmake/../msg/JointState.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/WordRecognized.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseFeedback.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedFeedback.msg"
-  "${MSG_I_FLAGS}"
-  ""
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/JointAnglesWithSpeed.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
 )
 
 ### Generating Services
 _generate_srv_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/CmdPoseService.srv"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetFacesROI.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose2D.msg"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/FaceROI.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_srv_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/SetString.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_srv_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/SetArmsEnabled.srv"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/SetArmsEnabled.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_srv_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetTruepose.srv"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseWithCovarianceStamped.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseWithCovariance.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_srv_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/OrthogonalSecurityDistance.srv"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Float32.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_srv_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/SetTransform.srv"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Transform.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_srv_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetString.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_srv_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetFloat.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_srv_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/SetFloat.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_srv_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/CmdVelService.srv"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/CmdVelService.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_srv_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetFacesROI.srv"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetInstalledBehaviors.srv"
   "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/FaceROI.msg"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_srv_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetRobotInfo.srv"
-  "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/RobotInfo.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_srv_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetBodyROI.srv"
-  "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/BodyROI.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_srv_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/TangentialSecurityDistance.srv"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/OrthogonalSecurityDistance.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/Float32.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_srv_nodejs(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetInstalledBehaviors.srv"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetFloat.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_srv_nodejs(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetTruepose.srv"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseWithCovarianceStamped.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseWithCovariance.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_srv_nodejs(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/SetFloat.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_srv_nodejs(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetRobotInfo.srv"
+  "${MSG_I_FLAGS}"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/RobotInfo.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_srv_nodejs(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetString.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_srv_nodejs(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetBodyROI.srv"
+  "${MSG_I_FLAGS}"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/BodyROI.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_srv_nodejs(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/CmdPoseService.srv"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose2D.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_srv_nodejs(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/TangentialSecurityDistance.srv"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Float32.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_srv_nodejs(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/SetTransform.srv"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Transform.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_srv_nodejs(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/SetString.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/naoqi_bridge_msgs
@@ -3753,213 +3753,213 @@ add_custom_target(naoqi_bridge_msgs_generate_messages_nodejs
 add_dependencies(naoqi_bridge_msgs_generate_messages naoqi_bridge_msgs_generate_messages_nodejs)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/CmdPoseService.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/FadeRGB.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryAction.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/SetFloat.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/StringStamped.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/PoseWithConfidenceStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedAction.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/HeadTouch.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/JointAnglesWithSpeed.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/SoundLocated.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/HandTouch.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkAction.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/FloatStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/TangentialSecurityDistance.srv" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetTruepose.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetFloat.srv" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetString.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/FloatStamped.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/SetString.srv" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/MemoryPairFloat.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/MemoryPairInt.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/EventStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/Bumper.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorAction.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/FloatArrayStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetString.srv" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/OrthogonalSecurityDistance.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/MemoryPairString.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/CmdVelService.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/StatusChangeStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/StringStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/FloatArrayStamped.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedAction.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/SetTransform.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/MemoryList.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/FadeRGB.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/JointAngleTrajectory.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/BodyROI.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/AudioBuffer.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/BoolStamped.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetFacesROI.srv" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/OrthogonalSecurityDistance.srv" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/CmdPoseService.srv" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetInstalledBehaviors.srv" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/RobotInfo.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetBodyROI.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/StatusChangeStamped.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackAction.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackAction.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/HeadTouch.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/IntArrayStamped.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/SoundLocated.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/HandTouch.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/JointAngleTrajectory.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathAction.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/SetArmsEnabled.srv" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/BoolStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetInstalledBehaviors.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/AudioBuffer.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/MemoryPairInt.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/StringArrayStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/FaceROI.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/Bumper.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathAction.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseAction.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedAction.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/IntStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyAction.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/WordRecognized.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyAction.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/IntArrayStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/MemoryList.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryAction.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/IntStamped.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetTruepose.srv" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/TangentialSecurityDistance.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/EventStamped.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/JointAnglesWithSpeed.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/MemoryPairString.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/CmdVelService.srv" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/RobotInfo.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/FaceROI.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/SetArmsEnabled.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseAction.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/BodyROI.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetFacesROI.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/PoseWithConfidenceStamped.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkAction.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedAction.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetFloat.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/MemoryPairFloat.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetRobotInfo.srv" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/SetString.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorAction.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/StringArrayStamped.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/SetFloat.srv" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/WordRecognized.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetBodyROI.srv" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetRobotInfo.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/SetTransform.srv" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_nodejs _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -3972,627 +3972,627 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS naoqi_bridge_msgs_generate_messages
 ### Section generating for lang: genpy
 ### Generating Messages
 _generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseResult.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  ""
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/ColorRGBA.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyResult.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathFeedback.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/nav_msgs/cmake/../msg/Path.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathGoal.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/JointAnglesWithSpeed.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/PoseWithConfidenceStamped.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedAction.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionResult.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionFeedback.msg;/opt/ros/melodic/share/sensor_msgs/cmake/../msg/JointState.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedFeedback.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/JointAnglesWithSpeed.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedGoal.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/JointAnglesWithSpeed.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/HandTouch.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/FloatStamped.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackFeedback.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/nav_msgs/cmake/../msg/Path.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/MemoryPairFloat.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryFeedback.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/EventStamped.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/String.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorAction.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionGoal.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionFeedback.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorGoal.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorFeedback.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/FloatArrayStamped.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/StatusChangeStamped.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/String.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/StringStamped.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedAction.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionResult.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionFeedback.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedResult.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedFeedback.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedResult.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/MemoryList.msg"
-  "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/MemoryPairInt.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/MemoryPairFloat.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/MemoryPairString.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/FadeRGB.msg"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/FadeRGB.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/ColorRGBA.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/JointAngleTrajectory.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyFeedback.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_py(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_py(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_py(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_py(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackResult.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_py(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkResult.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_py(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_py(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathResult.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_py(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/StringStamped.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedFeedback.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorGoal.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseGoal.msg"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/HeadTouch.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkResult.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackResult.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/sensor_msgs/cmake/../msg/JointState.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorFeedback.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryGoal.msg;/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg;/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackAction.msg"
-  "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionFeedback.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionResult.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackGoal.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/JointAnglesWithSpeed.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/HeadTouch.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/SoundLocated.msg"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/SoundLocated.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionResult.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkAction.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionResult.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionGoal.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/ColorRGBA.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkFeedback.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkResult.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathAction.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionGoal.msg;/opt/ros/melodic/share/nav_msgs/cmake/../msg/Path.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionFeedback.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathFeedback.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathGoal.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionResult.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/BoolStamped.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/AudioBuffer.msg"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/FloatStamped.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/MemoryPairInt.msg"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/MemoryPairInt.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorResult.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryAction.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionGoal.msg;/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryFeedback.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/sensor_msgs/cmake/../msg/JointState.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionResult.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryGoal.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_py(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/Bumper.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/ColorRGBA.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/StringArrayStamped.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/FaceROI.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/Bumper.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseAction.msg"
-  "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionFeedback.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionGoal.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionResult.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/IntStamped.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyAction.msg"
-  "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionGoal.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyFeedback.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyGoal.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyResult.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/ColorRGBA.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/IntArrayStamped.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryAction.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionFeedback.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionResult.msg;/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryFeedback.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/sensor_msgs/cmake/../msg/JointState.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryGoal.msg;/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackGoal.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/sensor_msgs/cmake/../msg/JointState.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedResult.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedResult.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/sensor_msgs/cmake/../msg/JointState.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathResult.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyResult.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyFeedback.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseAction.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionResult.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseResult.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseGoal.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionGoal.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_py(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/sensor_msgs/cmake/../msg/JointState.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_py(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/JointAnglesWithSpeed.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_py(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_py(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_py(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_py(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/sensor_msgs/cmake/../msg/JointState.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_py(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_py(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedGoal.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/MemoryPairString.msg"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/IntStamped.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_py(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/AudioBuffer.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_py(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryFeedback.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/RobotInfo.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_py(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/BoolStamped.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_py(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedResult.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedGoal.msg"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/HandTouch.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/BodyROI.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedFeedback.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionGoal.msg"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/RobotInfo.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/ColorRGBA.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionFeedback.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkAction.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionFeedback.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionResult.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/ColorRGBA.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkResult.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionGoal.msg"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionFeedback.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkGoal.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkGoal.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/ColorRGBA.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionFeedback.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackAction.msg"
   "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionResult.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackFeedback.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackGoal.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionFeedback.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionFeedback.msg"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/IntArrayStamped.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorGoal.msg"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/BodyROI.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionResult.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryGoal.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_py(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseGoal.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_py(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_py(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorResult.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_py(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyGoal.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_py(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_py(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_py(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathAction.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/nav_msgs/cmake/../msg/Path.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathResult.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionFeedback.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionGoal.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathGoal.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionResult.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_py(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedAction.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionFeedback.msg;/opt/ros/melodic/share/sensor_msgs/cmake/../msg/JointState.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionGoal.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedFeedback.msg;/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/JointAnglesWithSpeed.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedResult.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_py(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryGoal.msg;/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg;/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_py(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/StringArrayStamped.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_py(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyAction.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyFeedback.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionResult.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyResult.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyGoal.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionFeedback.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_py(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/MemoryList.msg"
+  "${MSG_I_FLAGS}"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/MemoryPairString.msg;/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/MemoryPairInt.msg;/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/MemoryPairFloat.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_py(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_py(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/JointAngleTrajectory.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_py(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseFeedback.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_py(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/EventStamped.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/String.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_py(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/JointAnglesWithSpeed.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_py(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/sensor_msgs/cmake/../msg/JointState.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_py(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackGoal.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_py(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/nav_msgs/cmake/../msg/Path.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathGoal.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_py(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/FaceROI.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_py(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_py(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/MemoryPairString.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_py(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/FloatArrayStamped.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_py(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/nav_msgs/cmake/../msg/Path.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_py(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/ColorRGBA.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_py(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/PoseWithConfidenceStamped.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_py(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_py(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedAction.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedGoal.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedFeedback.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedResult.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionResult.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_py(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_py(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/MemoryPairFloat.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_py(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/StatusChangeStamped.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/String.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_py(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseResult.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_py(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorAction.msg"
+  "${MSG_I_FLAGS}"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorGoal.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorResult.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorFeedback.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_py(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/WordRecognized.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_py(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/ColorRGBA.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_py(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorFeedback.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_msg_py(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryGoal.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg;/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyGoal.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedFeedback.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryResult.msg"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/sensor_msgs/cmake/../msg/JointState.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/WordRecognized.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseFeedback.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_msg_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedFeedback.msg"
-  "${MSG_I_FLAGS}"
-  ""
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/JointAnglesWithSpeed.msg;/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
 )
 
 ### Generating Services
 _generate_srv_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/CmdPoseService.srv"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetFacesROI.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose2D.msg"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/FaceROI.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_srv_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/SetString.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_srv_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/SetArmsEnabled.srv"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/SetArmsEnabled.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_srv_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetTruepose.srv"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseWithCovarianceStamped.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseWithCovariance.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_srv_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/OrthogonalSecurityDistance.srv"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Float32.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_srv_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/SetTransform.srv"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Transform.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_srv_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetString.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_srv_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetFloat.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_srv_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/SetFloat.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_srv_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/CmdVelService.srv"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/CmdVelService.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_srv_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetFacesROI.srv"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetInstalledBehaviors.srv"
   "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/FaceROI.msg"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_srv_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetRobotInfo.srv"
-  "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/RobotInfo.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_srv_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetBodyROI.srv"
-  "${MSG_I_FLAGS}"
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/BodyROI.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
-)
-_generate_srv_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/TangentialSecurityDistance.srv"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/OrthogonalSecurityDistance.srv"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/Float32.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
 )
 _generate_srv_py(naoqi_bridge_msgs
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetInstalledBehaviors.srv"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetFloat.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_srv_py(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetTruepose.srv"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseWithCovarianceStamped.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseWithCovariance.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_srv_py(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/SetFloat.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_srv_py(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetRobotInfo.srv"
+  "${MSG_I_FLAGS}"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/RobotInfo.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_srv_py(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetString.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_srv_py(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetBodyROI.srv"
+  "${MSG_I_FLAGS}"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/BodyROI.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_srv_py(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/CmdPoseService.srv"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose2D.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_srv_py(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/TangentialSecurityDistance.srv"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Float32.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_srv_py(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/SetTransform.srv"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Transform.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
+)
+_generate_srv_py(naoqi_bridge_msgs
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/SetString.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/naoqi_bridge_msgs
@@ -4610,213 +4610,213 @@ add_custom_target(naoqi_bridge_msgs_generate_messages_py
 add_dependencies(naoqi_bridge_msgs_generate_messages naoqi_bridge_msgs_generate_messages_py)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/CmdPoseService.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/FadeRGB.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryAction.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/SetFloat.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/StringStamped.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/PoseWithConfidenceStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedAction.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/HeadTouch.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/JointAnglesWithSpeed.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/SoundLocated.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/HandTouch.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkAction.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/FloatStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/TangentialSecurityDistance.srv" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetTruepose.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetFloat.srv" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetString.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/FloatStamped.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/SetString.srv" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/MemoryPairFloat.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/MemoryPairInt.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/EventStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/Bumper.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorAction.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/FloatArrayStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetString.srv" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/OrthogonalSecurityDistance.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/MemoryPairString.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/CmdVelService.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/StatusChangeStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/StringStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/FloatArrayStamped.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedAction.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/SetTransform.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/MemoryList.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/FadeRGB.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/JointAngleTrajectory.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/BodyROI.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/AudioBuffer.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/BoolStamped.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetFacesROI.srv" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/OrthogonalSecurityDistance.srv" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/CmdPoseService.srv" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetInstalledBehaviors.srv" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/RobotInfo.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetBodyROI.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/StatusChangeStamped.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackAction.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackAction.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/HeadTouch.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/IntArrayStamped.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/SoundLocated.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/HandTouch.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/JointAngleTrajectory.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathAction.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/SetArmsEnabled.srv" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/BoolStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetInstalledBehaviors.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/AudioBuffer.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/MemoryPairInt.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/StringArrayStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyActionResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/FaceROI.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/Bumper.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathAction.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseAction.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedAction.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/IntStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyAction.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/WordRecognized.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyAction.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/IntArrayStamped.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/MemoryList.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryAction.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/IntStamped.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetTruepose.srv" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/TangentialSecurityDistance.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/EventStamped.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/JointAnglesWithSpeed.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/MemoryPairString.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/CmdVelService.srv" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/RobotInfo.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/FaceROI.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/SetArmsEnabled.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseAction.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/BodyROI.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkActionGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetFacesROI.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/PoseWithConfidenceStamped.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkAction.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedAction.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetFloat.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SpeechWithFeedbackActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/MemoryPairFloat.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetRobotInfo.srv" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedActionGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/FollowPathActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseResult.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/SetString.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorAction.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/msg/StringArrayStamped.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BlinkFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/RunBehaviorFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/SetSpeechVocabularyGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/SetFloat.srv" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryResult.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointTrajectoryGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/msg/WordRecognized.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/GetBodyROI.srv" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs/srv/GetRobotInfo.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseWithSpeedFeedback.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/BodyPoseFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedActionGoal.msg" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/share/naoqi_bridge_msgs/msg/JointAnglesWithSpeedFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs/srv/SetTransform.srv" NAME_WE)
 add_dependencies(naoqi_bridge_msgs_generate_messages_py _naoqi_bridge_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

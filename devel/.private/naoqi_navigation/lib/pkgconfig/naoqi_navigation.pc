@@ -1,4 +1,4 @@
-prefix=/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_navigation
+prefix=/home/mivia/pepper_ros_ws/devel/.private/naoqi_navigation
 
 Name: naoqi_navigation
 Description: Description of naoqi_navigation

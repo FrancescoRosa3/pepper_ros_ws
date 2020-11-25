@@ -43,33 +43,33 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ciccio/Robotica_Cognitiva/pepper_ros/src/pepper_talk
+CMAKE_SOURCE_DIR = /home/mivia/pepper_ros_ws/src/pepper_talk
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ciccio/Robotica_Cognitiva/pepper_ros/build/pepper_talk
+CMAKE_BINARY_DIR = /home/mivia/pepper_ros_ws/build/pepper_talk
 
 # Utility rule file for pepper_talk_generate_messages_py.
 
 # Include the progress variables for this target.
 include CMakeFiles/pepper_talk_generate_messages_py.dir/progress.make
 
-CMakeFiles/pepper_talk_generate_messages_py: /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/pepper_talk/lib/python2.7/dist-packages/pepper_talk/srv/_Say.py
-CMakeFiles/pepper_talk_generate_messages_py: /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/pepper_talk/lib/python2.7/dist-packages/pepper_talk/srv/__init__.py
+CMakeFiles/pepper_talk_generate_messages_py: /home/mivia/pepper_ros_ws/devel/.private/pepper_talk/lib/python2.7/dist-packages/pepper_talk/srv/_Say.py
+CMakeFiles/pepper_talk_generate_messages_py: /home/mivia/pepper_ros_ws/devel/.private/pepper_talk/lib/python2.7/dist-packages/pepper_talk/srv/__init__.py
 
 
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/pepper_talk/lib/python2.7/dist-packages/pepper_talk/srv/_Say.py: /opt/ros/melodic/lib/genpy/gensrv_py.py
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/pepper_talk/lib/python2.7/dist-packages/pepper_talk/srv/_Say.py: /home/ciccio/Robotica_Cognitiva/pepper_ros/src/pepper_talk/srv/Say.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ciccio/Robotica_Cognitiva/pepper_ros/build/pepper_talk/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code from SRV pepper_talk/Say"
-	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/ciccio/Robotica_Cognitiva/pepper_ros/src/pepper_talk/srv/Say.srv -p pepper_talk -o /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/pepper_talk/lib/python2.7/dist-packages/pepper_talk/srv
+/home/mivia/pepper_ros_ws/devel/.private/pepper_talk/lib/python2.7/dist-packages/pepper_talk/srv/_Say.py: /opt/ros/melodic/lib/genpy/gensrv_py.py
+/home/mivia/pepper_ros_ws/devel/.private/pepper_talk/lib/python2.7/dist-packages/pepper_talk/srv/_Say.py: /home/mivia/pepper_ros_ws/src/pepper_talk/srv/Say.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/mivia/pepper_ros_ws/build/pepper_talk/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code from SRV pepper_talk/Say"
+	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/mivia/pepper_ros_ws/src/pepper_talk/srv/Say.srv -p pepper_talk -o /home/mivia/pepper_ros_ws/devel/.private/pepper_talk/lib/python2.7/dist-packages/pepper_talk/srv
 
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/pepper_talk/lib/python2.7/dist-packages/pepper_talk/srv/__init__.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/pepper_talk/lib/python2.7/dist-packages/pepper_talk/srv/__init__.py: /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/pepper_talk/lib/python2.7/dist-packages/pepper_talk/srv/_Say.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ciccio/Robotica_Cognitiva/pepper_ros/build/pepper_talk/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python srv __init__.py for pepper_talk"
-	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/pepper_talk/lib/python2.7/dist-packages/pepper_talk/srv --initpy
+/home/mivia/pepper_ros_ws/devel/.private/pepper_talk/lib/python2.7/dist-packages/pepper_talk/srv/__init__.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
+/home/mivia/pepper_ros_ws/devel/.private/pepper_talk/lib/python2.7/dist-packages/pepper_talk/srv/__init__.py: /home/mivia/pepper_ros_ws/devel/.private/pepper_talk/lib/python2.7/dist-packages/pepper_talk/srv/_Say.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/mivia/pepper_ros_ws/build/pepper_talk/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python srv __init__.py for pepper_talk"
+	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/mivia/pepper_ros_ws/devel/.private/pepper_talk/lib/python2.7/dist-packages/pepper_talk/srv --initpy
 
 pepper_talk_generate_messages_py: CMakeFiles/pepper_talk_generate_messages_py
-pepper_talk_generate_messages_py: /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/pepper_talk/lib/python2.7/dist-packages/pepper_talk/srv/_Say.py
-pepper_talk_generate_messages_py: /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/pepper_talk/lib/python2.7/dist-packages/pepper_talk/srv/__init__.py
+pepper_talk_generate_messages_py: /home/mivia/pepper_ros_ws/devel/.private/pepper_talk/lib/python2.7/dist-packages/pepper_talk/srv/_Say.py
+pepper_talk_generate_messages_py: /home/mivia/pepper_ros_ws/devel/.private/pepper_talk/lib/python2.7/dist-packages/pepper_talk/srv/__init__.py
 pepper_talk_generate_messages_py: CMakeFiles/pepper_talk_generate_messages_py.dir/build.make
 
 .PHONY : pepper_talk_generate_messages_py
@@ -84,6 +84,6 @@ CMakeFiles/pepper_talk_generate_messages_py.dir/clean:
 .PHONY : CMakeFiles/pepper_talk_generate_messages_py.dir/clean
 
 CMakeFiles/pepper_talk_generate_messages_py.dir/depend:
-	cd /home/ciccio/Robotica_Cognitiva/pepper_ros/build/pepper_talk && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ciccio/Robotica_Cognitiva/pepper_ros/src/pepper_talk /home/ciccio/Robotica_Cognitiva/pepper_ros/src/pepper_talk /home/ciccio/Robotica_Cognitiva/pepper_ros/build/pepper_talk /home/ciccio/Robotica_Cognitiva/pepper_ros/build/pepper_talk /home/ciccio/Robotica_Cognitiva/pepper_ros/build/pepper_talk/CMakeFiles/pepper_talk_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/mivia/pepper_ros_ws/build/pepper_talk && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mivia/pepper_ros_ws/src/pepper_talk /home/mivia/pepper_ros_ws/src/pepper_talk /home/mivia/pepper_ros_ws/build/pepper_talk /home/mivia/pepper_ros_ws/build/pepper_talk /home/mivia/pepper_ros_ws/build/pepper_talk/CMakeFiles/pepper_talk_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/pepper_talk_generate_messages_py.dir/depend
 

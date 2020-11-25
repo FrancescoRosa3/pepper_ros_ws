@@ -1,1 +1,1 @@
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/pepper_talk/share/gennodejs/ros/pepper_talk/srv/Say.js
+/home/mivia/pepper_ros_ws/devel/.private/pepper_talk/share/gennodejs/ros/pepper_talk/srv/Say.js

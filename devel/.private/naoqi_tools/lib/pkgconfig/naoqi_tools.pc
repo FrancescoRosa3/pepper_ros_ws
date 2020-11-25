@@ -1,4 +1,4 @@
-prefix=/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_tools
+prefix=/home/mivia/pepper_ros_ws/devel/.private/naoqi_tools
 
 Name: naoqi_tools
 Description: Description of naoqi_tools

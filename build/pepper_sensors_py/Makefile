@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ciccio/Robotica_Cognitiva/pepper_ros/src/pepper_robot/pepper_sensors_py
+CMAKE_SOURCE_DIR = /home/mivia/pepper_ros_ws/src/pepper_robot/pepper_sensors_py
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ciccio/Robotica_Cognitiva/pepper_ros/build/pepper_sensors_py
+CMAKE_BINARY_DIR = /home/mivia/pepper_ros_ws/build/pepper_sensors_py
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,9 +137,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ciccio/Robotica_Cognitiva/pepper_ros/build/pepper_sensors_py/CMakeFiles /home/ciccio/Robotica_Cognitiva/pepper_ros/build/pepper_sensors_py/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mivia/pepper_ros_ws/build/pepper_sensors_py/CMakeFiles /home/mivia/pepper_ros_ws/build/pepper_sensors_py/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ciccio/Robotica_Cognitiva/pepper_ros/build/pepper_sensors_py/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mivia/pepper_ros_ws/build/pepper_sensors_py/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

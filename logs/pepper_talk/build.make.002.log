@@ -1,7 +1,7 @@
 [  0%] Built target _pepper_talk_generate_messages_check_deps_Say
 [ 14%] Built target pepper_talk_generate_messages_nodejs
-[ 28%] Built target pepper_talk_generate_messages_cpp
-[ 57%] Built target pepper_talk_generate_messages_py
-[ 85%] Built target pepper_talk_generate_messages_eus
-[100%] Built target pepper_talk_generate_messages_lisp
+[ 42%] Built target pepper_talk_generate_messages_py
+[ 57%] Built target pepper_talk_generate_messages_cpp
+[ 71%] Built target pepper_talk_generate_messages_lisp
+[100%] Built target pepper_talk_generate_messages_eus
 [100%] Built target pepper_talk_generate_messages

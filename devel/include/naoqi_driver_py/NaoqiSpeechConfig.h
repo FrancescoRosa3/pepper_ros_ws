@@ -1,1 +1,1 @@
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_driver_py/include/naoqi_driver_py/NaoqiSpeechConfig.h
+/home/mivia/pepper_ros_ws/devel/.private/naoqi_driver_py/include/naoqi_driver_py/NaoqiSpeechConfig.h

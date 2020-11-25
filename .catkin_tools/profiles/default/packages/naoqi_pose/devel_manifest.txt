@@ -1,6 +1,6 @@
 naoqi_bridge/naoqi_pose
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_pose/cmake.lock /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/./cmake.lock
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_pose/lib/pkgconfig/naoqi_pose.pc /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/lib/pkgconfig/naoqi_pose.pc
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_pose/lib/python2.7/dist-packages/xapparser/__init__.py /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/lib/python2.7/dist-packages/xapparser/__init__.py
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_pose/share/naoqi_pose/cmake/naoqi_poseConfig.cmake /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/share/naoqi_pose/cmake/naoqi_poseConfig.cmake
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_pose/share/naoqi_pose/cmake/naoqi_poseConfig-version.cmake /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/share/naoqi_pose/cmake/naoqi_poseConfig-version.cmake
+/home/mivia/pepper_ros_ws/devel/.private/naoqi_pose/cmake.lock /home/mivia/pepper_ros_ws/devel/./cmake.lock
+/home/mivia/pepper_ros_ws/devel/.private/naoqi_pose/lib/python2.7/dist-packages/xapparser/__init__.py /home/mivia/pepper_ros_ws/devel/lib/python2.7/dist-packages/xapparser/__init__.py
+/home/mivia/pepper_ros_ws/devel/.private/naoqi_pose/lib/pkgconfig/naoqi_pose.pc /home/mivia/pepper_ros_ws/devel/lib/pkgconfig/naoqi_pose.pc
+/home/mivia/pepper_ros_ws/devel/.private/naoqi_pose/share/naoqi_pose/cmake/naoqi_poseConfig.cmake /home/mivia/pepper_ros_ws/devel/share/naoqi_pose/cmake/naoqi_poseConfig.cmake
+/home/mivia/pepper_ros_ws/devel/.private/naoqi_pose/share/naoqi_pose/cmake/naoqi_poseConfig-version.cmake /home/mivia/pepper_ros_ws/devel/share/naoqi_pose/cmake/naoqi_poseConfig-version.cmake

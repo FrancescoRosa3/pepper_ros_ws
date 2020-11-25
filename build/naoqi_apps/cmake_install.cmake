@@ -1,8 +1,8 @@
-# Install script for directory: /home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge/naoqi_apps
+# Install script for directory: /home/mivia/pepper_ros_ws/src/naoqi_bridge/naoqi_apps
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/ciccio/Robotica_Cognitiva/pepper_ros/install")
+  set(CMAKE_INSTALL_PREFIX "/home/mivia/pepper_ros_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -49,103 +49,103 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/ciccio/Robotica_Cognitiva/pepper_ros/install/_setup_util.py")
+   "/home/mivia/pepper_ros_ws/install/_setup_util.py")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/ciccio/Robotica_Cognitiva/pepper_ros/install" TYPE PROGRAM FILES "/home/ciccio/Robotica_Cognitiva/pepper_ros/build/naoqi_apps/catkin_generated/installspace/_setup_util.py")
+file(INSTALL DESTINATION "/home/mivia/pepper_ros_ws/install" TYPE PROGRAM FILES "/home/mivia/pepper_ros_ws/build/naoqi_apps/catkin_generated/installspace/_setup_util.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/ciccio/Robotica_Cognitiva/pepper_ros/install/env.sh")
+   "/home/mivia/pepper_ros_ws/install/env.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/ciccio/Robotica_Cognitiva/pepper_ros/install" TYPE PROGRAM FILES "/home/ciccio/Robotica_Cognitiva/pepper_ros/build/naoqi_apps/catkin_generated/installspace/env.sh")
+file(INSTALL DESTINATION "/home/mivia/pepper_ros_ws/install" TYPE PROGRAM FILES "/home/mivia/pepper_ros_ws/build/naoqi_apps/catkin_generated/installspace/env.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/ciccio/Robotica_Cognitiva/pepper_ros/install/setup.bash;/home/ciccio/Robotica_Cognitiva/pepper_ros/install/local_setup.bash")
+   "/home/mivia/pepper_ros_ws/install/setup.bash;/home/mivia/pepper_ros_ws/install/local_setup.bash")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/ciccio/Robotica_Cognitiva/pepper_ros/install" TYPE FILE FILES
-    "/home/ciccio/Robotica_Cognitiva/pepper_ros/build/naoqi_apps/catkin_generated/installspace/setup.bash"
-    "/home/ciccio/Robotica_Cognitiva/pepper_ros/build/naoqi_apps/catkin_generated/installspace/local_setup.bash"
+file(INSTALL DESTINATION "/home/mivia/pepper_ros_ws/install" TYPE FILE FILES
+    "/home/mivia/pepper_ros_ws/build/naoqi_apps/catkin_generated/installspace/setup.bash"
+    "/home/mivia/pepper_ros_ws/build/naoqi_apps/catkin_generated/installspace/local_setup.bash"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/ciccio/Robotica_Cognitiva/pepper_ros/install/setup.sh;/home/ciccio/Robotica_Cognitiva/pepper_ros/install/local_setup.sh")
+   "/home/mivia/pepper_ros_ws/install/setup.sh;/home/mivia/pepper_ros_ws/install/local_setup.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/ciccio/Robotica_Cognitiva/pepper_ros/install" TYPE FILE FILES
-    "/home/ciccio/Robotica_Cognitiva/pepper_ros/build/naoqi_apps/catkin_generated/installspace/setup.sh"
-    "/home/ciccio/Robotica_Cognitiva/pepper_ros/build/naoqi_apps/catkin_generated/installspace/local_setup.sh"
+file(INSTALL DESTINATION "/home/mivia/pepper_ros_ws/install" TYPE FILE FILES
+    "/home/mivia/pepper_ros_ws/build/naoqi_apps/catkin_generated/installspace/setup.sh"
+    "/home/mivia/pepper_ros_ws/build/naoqi_apps/catkin_generated/installspace/local_setup.sh"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/ciccio/Robotica_Cognitiva/pepper_ros/install/setup.zsh;/home/ciccio/Robotica_Cognitiva/pepper_ros/install/local_setup.zsh")
+   "/home/mivia/pepper_ros_ws/install/setup.zsh;/home/mivia/pepper_ros_ws/install/local_setup.zsh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/ciccio/Robotica_Cognitiva/pepper_ros/install" TYPE FILE FILES
-    "/home/ciccio/Robotica_Cognitiva/pepper_ros/build/naoqi_apps/catkin_generated/installspace/setup.zsh"
-    "/home/ciccio/Robotica_Cognitiva/pepper_ros/build/naoqi_apps/catkin_generated/installspace/local_setup.zsh"
+file(INSTALL DESTINATION "/home/mivia/pepper_ros_ws/install" TYPE FILE FILES
+    "/home/mivia/pepper_ros_ws/build/naoqi_apps/catkin_generated/installspace/setup.zsh"
+    "/home/mivia/pepper_ros_ws/build/naoqi_apps/catkin_generated/installspace/local_setup.zsh"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/ciccio/Robotica_Cognitiva/pepper_ros/install/.rosinstall")
+   "/home/mivia/pepper_ros_ws/install/.rosinstall")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/ciccio/Robotica_Cognitiva/pepper_ros/install" TYPE FILE FILES "/home/ciccio/Robotica_Cognitiva/pepper_ros/build/naoqi_apps/catkin_generated/installspace/.rosinstall")
+file(INSTALL DESTINATION "/home/mivia/pepper_ros_ws/install" TYPE FILE FILES "/home/mivia/pepper_ros_ws/build/naoqi_apps/catkin_generated/installspace/.rosinstall")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ciccio/Robotica_Cognitiva/pepper_ros/build/naoqi_apps/catkin_generated/installspace/naoqi_apps.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/mivia/pepper_ros_ws/build/naoqi_apps/catkin_generated/installspace/naoqi_apps.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/naoqi_apps/cmake" TYPE FILE FILES
-    "/home/ciccio/Robotica_Cognitiva/pepper_ros/build/naoqi_apps/catkin_generated/installspace/naoqi_appsConfig.cmake"
-    "/home/ciccio/Robotica_Cognitiva/pepper_ros/build/naoqi_apps/catkin_generated/installspace/naoqi_appsConfig-version.cmake"
+    "/home/mivia/pepper_ros_ws/build/naoqi_apps/catkin_generated/installspace/naoqi_appsConfig.cmake"
+    "/home/mivia/pepper_ros_ws/build/naoqi_apps/catkin_generated/installspace/naoqi_appsConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/naoqi_apps" TYPE FILE FILES "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge/naoqi_apps/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/naoqi_apps" TYPE FILE FILES "/home/mivia/pepper_ros_ws/src/naoqi_bridge/naoqi_apps/package.xml")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/ciccio/Robotica_Cognitiva/pepper_ros/build/naoqi_apps/gtest/cmake_install.cmake")
+  include("/home/mivia/pepper_ros_ws/build/naoqi_apps/gtest/cmake_install.cmake")
 
 endif()
 
@@ -157,5 +157,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/ciccio/Robotica_Cognitiva/pepper_ros/build/naoqi_apps/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/mivia/pepper_ros_ws/build/naoqi_apps/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

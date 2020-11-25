@@ -1,4 +1,4 @@
-Symlinking /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/lib/pkgconfig/naoqi_pose.pc
-Symlinking /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/lib/python2.7/dist-packages/xapparser/__init__.py
-Symlinking /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/share/naoqi_pose/cmake/naoqi_poseConfig.cmake
-Symlinking /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/share/naoqi_pose/cmake/naoqi_poseConfig-version.cmake
+Symlinking /home/mivia/pepper_ros_ws/devel/lib/python2.7/dist-packages/xapparser/__init__.py
+Symlinking /home/mivia/pepper_ros_ws/devel/lib/pkgconfig/naoqi_pose.pc
+Symlinking /home/mivia/pepper_ros_ws/devel/share/naoqi_pose/cmake/naoqi_poseConfig.cmake
+Symlinking /home/mivia/pepper_ros_ws/devel/share/naoqi_pose/cmake/naoqi_poseConfig-version.cmake

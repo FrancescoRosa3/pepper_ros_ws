@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ciccio/Robotica_Cognitiva/pepper_ros/src/move_head
+CMAKE_SOURCE_DIR = /home/mivia/pepper_ros_ws/src/move_head
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ciccio/Robotica_Cognitiva/pepper_ros/build/move_head
+CMAKE_BINARY_DIR = /home/mivia/pepper_ros_ws/build/move_head
 
 # Utility rule file for clean_test_results.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/ciccio/Robotica_Cognitiva/pepper_ros/build/move_head
 include CMakeFiles/clean_test_results.dir/progress.make
 
 CMakeFiles/clean_test_results:
-	/usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/remove_test_results.py /home/ciccio/Robotica_Cognitiva/pepper_ros/build/move_head/test_results
+	/usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/remove_test_results.py /home/mivia/pepper_ros_ws/build/move_head/test_results
 
 clean_test_results: CMakeFiles/clean_test_results
 clean_test_results: CMakeFiles/clean_test_results.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/clean_test_results.dir/clean:
 .PHONY : CMakeFiles/clean_test_results.dir/clean
 
 CMakeFiles/clean_test_results.dir/depend:
-	cd /home/ciccio/Robotica_Cognitiva/pepper_ros/build/move_head && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ciccio/Robotica_Cognitiva/pepper_ros/src/move_head /home/ciccio/Robotica_Cognitiva/pepper_ros/src/move_head /home/ciccio/Robotica_Cognitiva/pepper_ros/build/move_head /home/ciccio/Robotica_Cognitiva/pepper_ros/build/move_head /home/ciccio/Robotica_Cognitiva/pepper_ros/build/move_head/CMakeFiles/clean_test_results.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/mivia/pepper_ros_ws/build/move_head && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mivia/pepper_ros_ws/src/move_head /home/mivia/pepper_ros_ws/src/move_head /home/mivia/pepper_ros_ws/build/move_head /home/mivia/pepper_ros_ws/build/move_head /home/mivia/pepper_ros_ws/build/move_head/CMakeFiles/clean_test_results.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/clean_test_results.dir/depend
 

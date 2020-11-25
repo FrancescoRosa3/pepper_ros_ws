@@ -67,14 +67,14 @@ set(naoqi_driver_py_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(naoqi_driver_py_SOURCE_PREFIX /home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge/naoqi_driver_py)
-  set(naoqi_driver_py_DEVEL_PREFIX /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_driver_py)
+  set(naoqi_driver_py_SOURCE_PREFIX /home/mivia/pepper_ros_ws/src/naoqi_bridge/naoqi_driver_py)
+  set(naoqi_driver_py_DEVEL_PREFIX /home/mivia/pepper_ros_ws/devel/.private/naoqi_driver_py)
   set(naoqi_driver_py_INSTALL_PREFIX "")
   set(naoqi_driver_py_PREFIX ${naoqi_driver_py_DEVEL_PREFIX})
 else()
   set(naoqi_driver_py_SOURCE_PREFIX "")
   set(naoqi_driver_py_DEVEL_PREFIX "")
-  set(naoqi_driver_py_INSTALL_PREFIX /home/ciccio/Robotica_Cognitiva/pepper_ros/install)
+  set(naoqi_driver_py_INSTALL_PREFIX /home/mivia/pepper_ros_ws/install)
   set(naoqi_driver_py_PREFIX ${naoqi_driver_py_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(naoqi_driver_py_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_driver_py/include " STREQUAL " ")
+if(NOT "/home/mivia/pepper_ros_ws/devel/.private/naoqi_driver_py/include " STREQUAL " ")
   set(naoqi_driver_py_INCLUDE_DIRS "")
-  set(_include_dirs "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_driver_py/include")
+  set(_include_dirs "/home/mivia/pepper_ros_ws/devel/.private/naoqi_driver_py/include")
   if(NOT "https://github.com/ros-naoqi/naoqi_bridge/issues " STREQUAL " ")
     set(_report "Check the issue tracker 'https://github.com/ros-naoqi/naoqi_bridge/issues' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT "http://ros.org/wiki/naoqi_driver " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_driver_p
         message(FATAL_ERROR "Project 'naoqi_driver_py' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'naoqi_driver_py' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge/naoqi_driver_py/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'naoqi_driver_py' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/mivia/pepper_ros_ws/src/naoqi_bridge/naoqi_driver_py/${idir}'.  ${_report}")
     endif()
     _list_append_unique(naoqi_driver_py_INCLUDE_DIRS ${include})
   endforeach()
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_driver_py/lib;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/lib;/opt/ros/melodic/lib)
+    foreach(path /home/mivia/pepper_ros_ws/devel/.private/naoqi_driver_py/lib;/home/mivia/pepper_ros_ws/devel/lib;/home/mivia/ws_moveit/devel/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

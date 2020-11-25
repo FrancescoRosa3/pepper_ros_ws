@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = -DROS_BUILD_SHARED_LIBS=1
 
-CXX_INCLUDES = -I/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/include -I/home/ciccio/Robotica_Cognitiva/pepper_ros/src/vision_msgs/include -I/opt/ros/melodic/include -I/usr/src/googletest/googletest/include 
+CXX_INCLUDES = -I/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/include -I/home/mivia/pepper_ros_ws/src/vision_msgs/include -I/opt/ros/melodic/include -I/usr/src/googletest/googletest/include 
 

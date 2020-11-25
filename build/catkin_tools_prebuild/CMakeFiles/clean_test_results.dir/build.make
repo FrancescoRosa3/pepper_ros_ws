@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ciccio/Robotica_Cognitiva/pepper_ros/build/catkin_tools_prebuild
+CMAKE_SOURCE_DIR = /home/mivia/pepper_ros_ws/build/catkin_tools_prebuild
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ciccio/Robotica_Cognitiva/pepper_ros/build/catkin_tools_prebuild
+CMAKE_BINARY_DIR = /home/mivia/pepper_ros_ws/build/catkin_tools_prebuild
 
 # Utility rule file for clean_test_results.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/ciccio/Robotica_Cognitiva/pepper_ros/build/catkin_tools
 include CMakeFiles/clean_test_results.dir/progress.make
 
 CMakeFiles/clean_test_results:
-	/usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/remove_test_results.py /home/ciccio/Robotica_Cognitiva/pepper_ros/build/catkin_tools_prebuild/test_results
+	/usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/remove_test_results.py /home/mivia/pepper_ros_ws/build/catkin_tools_prebuild/test_results
 
 clean_test_results: CMakeFiles/clean_test_results
 clean_test_results: CMakeFiles/clean_test_results.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/clean_test_results.dir/clean:
 .PHONY : CMakeFiles/clean_test_results.dir/clean
 
 CMakeFiles/clean_test_results.dir/depend:
-	cd /home/ciccio/Robotica_Cognitiva/pepper_ros/build/catkin_tools_prebuild && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ciccio/Robotica_Cognitiva/pepper_ros/build/catkin_tools_prebuild /home/ciccio/Robotica_Cognitiva/pepper_ros/build/catkin_tools_prebuild /home/ciccio/Robotica_Cognitiva/pepper_ros/build/catkin_tools_prebuild /home/ciccio/Robotica_Cognitiva/pepper_ros/build/catkin_tools_prebuild /home/ciccio/Robotica_Cognitiva/pepper_ros/build/catkin_tools_prebuild/CMakeFiles/clean_test_results.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/mivia/pepper_ros_ws/build/catkin_tools_prebuild && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mivia/pepper_ros_ws/build/catkin_tools_prebuild /home/mivia/pepper_ros_ws/build/catkin_tools_prebuild /home/mivia/pepper_ros_ws/build/catkin_tools_prebuild /home/mivia/pepper_ros_ws/build/catkin_tools_prebuild /home/mivia/pepper_ros_ws/build/catkin_tools_prebuild/CMakeFiles/clean_test_results.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/clean_test_results.dir/depend
 

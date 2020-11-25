@@ -1,24 +1,24 @@
 Determining if the pthread_create exist failed with the following output:
-Change Dir: /home/ciccio/Robotica_Cognitiva/pepper_ros/build/video_stream_opencv/CMakeFiles/CMakeTmp
+Change Dir: /home/mivia/pepper_ros_ws/build/video_stream_opencv/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_1dfc2/fast"
-/usr/bin/make -f CMakeFiles/cmTC_1dfc2.dir/build.make CMakeFiles/cmTC_1dfc2.dir/build
-make[1]: Entering directory '/home/ciccio/Robotica_Cognitiva/pepper_ros/build/video_stream_opencv/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_1dfc2.dir/CheckSymbolExists.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_1dfc2.dir/CheckSymbolExists.c.o   -c /home/ciccio/Robotica_Cognitiva/pepper_ros/build/video_stream_opencv/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_1dfc2
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1dfc2.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_1dfc2.dir/CheckSymbolExists.c.o  -o cmTC_1dfc2 
-CMakeFiles/cmTC_1dfc2.dir/CheckSymbolExists.c.o: In function `main':
+Run Build Command:"/usr/bin/make" "cmTC_1fd01/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1fd01.dir/build.make CMakeFiles/cmTC_1fd01.dir/build
+make[1]: Entering directory '/home/mivia/pepper_ros_ws/build/video_stream_opencv/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1fd01.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_1fd01.dir/CheckSymbolExists.c.o   -c /home/mivia/pepper_ros_ws/build/video_stream_opencv/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_1fd01
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1fd01.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_1fd01.dir/CheckSymbolExists.c.o  -o cmTC_1fd01 
+CMakeFiles/cmTC_1fd01.dir/CheckSymbolExists.c.o: In function `main':
 CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_1dfc2.dir/build.make:97: recipe for target 'cmTC_1dfc2' failed
-make[1]: *** [cmTC_1dfc2] Error 1
-make[1]: Leaving directory '/home/ciccio/Robotica_Cognitiva/pepper_ros/build/video_stream_opencv/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_1dfc2/fast' failed
-make: *** [cmTC_1dfc2/fast] Error 2
+CMakeFiles/cmTC_1fd01.dir/build.make:97: recipe for target 'cmTC_1fd01' failed
+make[1]: *** [cmTC_1fd01] Error 1
+make[1]: Leaving directory '/home/mivia/pepper_ros_ws/build/video_stream_opencv/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_1fd01/fast' failed
+make: *** [cmTC_1fd01/fast] Error 2
 
-File /home/ciccio/Robotica_Cognitiva/pepper_ros/build/video_stream_opencv/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+File /home/mivia/pepper_ros_ws/build/video_stream_opencv/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
 #include <pthread.h>
 
@@ -34,22 +34,22 @@ int main(int argc, char** argv)
 }
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /home/ciccio/Robotica_Cognitiva/pepper_ros/build/video_stream_opencv/CMakeFiles/CMakeTmp
+Change Dir: /home/mivia/pepper_ros_ws/build/video_stream_opencv/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_75e15/fast"
-/usr/bin/make -f CMakeFiles/cmTC_75e15.dir/build.make CMakeFiles/cmTC_75e15.dir/build
-make[1]: Entering directory '/home/ciccio/Robotica_Cognitiva/pepper_ros/build/video_stream_opencv/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_75e15.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_75e15.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
-Linking C executable cmTC_75e15
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_75e15.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_75e15.dir/CheckFunctionExists.c.o  -o cmTC_75e15 -lpthreads 
+Run Build Command:"/usr/bin/make" "cmTC_218fc/fast"
+/usr/bin/make -f CMakeFiles/cmTC_218fc.dir/build.make CMakeFiles/cmTC_218fc.dir/build
+make[1]: Entering directory '/home/mivia/pepper_ros_ws/build/video_stream_opencv/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_218fc.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_218fc.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_218fc
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_218fc.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_218fc.dir/CheckFunctionExists.c.o  -o cmTC_218fc -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_75e15.dir/build.make:97: recipe for target 'cmTC_75e15' failed
-make[1]: *** [cmTC_75e15] Error 1
-make[1]: Leaving directory '/home/ciccio/Robotica_Cognitiva/pepper_ros/build/video_stream_opencv/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_75e15/fast' failed
-make: *** [cmTC_75e15/fast] Error 2
+CMakeFiles/cmTC_218fc.dir/build.make:97: recipe for target 'cmTC_218fc' failed
+make[1]: *** [cmTC_218fc] Error 1
+make[1]: Leaving directory '/home/mivia/pepper_ros_ws/build/video_stream_opencv/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_218fc/fast' failed
+make: *** [cmTC_218fc/fast] Error 2
 
 

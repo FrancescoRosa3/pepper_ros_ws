@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/video_stream_opencv/include/video_stream_opencv/VideoStreamConfig.h
+/home/mivia/pepper_ros_ws/devel/.private/video_stream_opencv/include/video_stream_opencv/VideoStreamConfig.h
 dynamic_reconfigure/config_tools.h
 -
 limits
@@ -24,7 +24,7 @@ dynamic_reconfigure/config_init_mutex.h
 boost/any.hpp
 -
 
-/home/ciccio/Robotica_Cognitiva/pepper_ros/src/video_stream_opencv/src/video_stream.cpp
+/home/mivia/pepper_ros_ws/src/video_stream_opencv/src/video_stream.cpp
 ros/ros.h
 -
 nodelet/nodelet.h

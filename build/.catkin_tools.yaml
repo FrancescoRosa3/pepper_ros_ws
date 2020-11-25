@@ -1,6 +1,6 @@
-devel_space: /home/ciccio/Robotica_Cognitiva/pepper_ros/devel
+devel_space: /home/mivia/pepper_ros_ws/devel
 install: false
-install_space: /home/ciccio/Robotica_Cognitiva/pepper_ros/install
+install_space: /home/mivia/pepper_ros_ws/install
 profile: default
-source_space: /home/ciccio/Robotica_Cognitiva/pepper_ros/src
-workspace: /home/ciccio/Robotica_Cognitiva/pepper_ros
+source_space: /home/mivia/pepper_ros_ws/src
+workspace: /home/mivia/pepper_ros_ws

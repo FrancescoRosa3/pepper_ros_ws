@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ciccio/Robotica_Cognitiva/pepper_ros/src/video_stream_opencv
+CMAKE_SOURCE_DIR = /home/mivia/pepper_ros_ws/src/video_stream_opencv
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ciccio/Robotica_Cognitiva/pepper_ros/build/video_stream_opencv
+CMAKE_BINARY_DIR = /home/mivia/pepper_ros_ws/build/video_stream_opencv
 
 # Include any dependencies generated for this target.
 include CMakeFiles/video_stream_node.dir/depend.make
@@ -58,17 +58,17 @@ include CMakeFiles/video_stream_node.dir/progress.make
 include CMakeFiles/video_stream_node.dir/flags.make
 
 CMakeFiles/video_stream_node.dir/src/video_stream_node.cpp.o: CMakeFiles/video_stream_node.dir/flags.make
-CMakeFiles/video_stream_node.dir/src/video_stream_node.cpp.o: /home/ciccio/Robotica_Cognitiva/pepper_ros/src/video_stream_opencv/src/video_stream_node.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ciccio/Robotica_Cognitiva/pepper_ros/build/video_stream_opencv/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/video_stream_node.dir/src/video_stream_node.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/video_stream_node.dir/src/video_stream_node.cpp.o -c /home/ciccio/Robotica_Cognitiva/pepper_ros/src/video_stream_opencv/src/video_stream_node.cpp
+CMakeFiles/video_stream_node.dir/src/video_stream_node.cpp.o: /home/mivia/pepper_ros_ws/src/video_stream_opencv/src/video_stream_node.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mivia/pepper_ros_ws/build/video_stream_opencv/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/video_stream_node.dir/src/video_stream_node.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/video_stream_node.dir/src/video_stream_node.cpp.o -c /home/mivia/pepper_ros_ws/src/video_stream_opencv/src/video_stream_node.cpp
 
 CMakeFiles/video_stream_node.dir/src/video_stream_node.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/video_stream_node.dir/src/video_stream_node.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ciccio/Robotica_Cognitiva/pepper_ros/src/video_stream_opencv/src/video_stream_node.cpp > CMakeFiles/video_stream_node.dir/src/video_stream_node.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mivia/pepper_ros_ws/src/video_stream_opencv/src/video_stream_node.cpp > CMakeFiles/video_stream_node.dir/src/video_stream_node.cpp.i
 
 CMakeFiles/video_stream_node.dir/src/video_stream_node.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/video_stream_node.dir/src/video_stream_node.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ciccio/Robotica_Cognitiva/pepper_ros/src/video_stream_opencv/src/video_stream_node.cpp -o CMakeFiles/video_stream_node.dir/src/video_stream_node.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mivia/pepper_ros_ws/src/video_stream_opencv/src/video_stream_node.cpp -o CMakeFiles/video_stream_node.dir/src/video_stream_node.cpp.s
 
 CMakeFiles/video_stream_node.dir/src/video_stream_node.cpp.o.requires:
 
@@ -88,52 +88,52 @@ video_stream_node_OBJECTS = \
 # External object files for target video_stream_node
 video_stream_node_EXTERNAL_OBJECTS =
 
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: CMakeFiles/video_stream_node.dir/src/video_stream_node.cpp.o
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: CMakeFiles/video_stream_node.dir/build.make
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /opt/ros/melodic/lib/libcv_bridge.so
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /usr/lib/x86_64-linux-gnu/libopencv_core.so.3.2.0
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.3.2.0
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /usr/lib/x86_64-linux-gnu/libopencv_imgcodecs.so.3.2.0
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /opt/ros/melodic/lib/libimage_transport.so
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /opt/ros/melodic/lib/libmessage_filters.so
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /opt/ros/melodic/lib/libcamera_info_manager.so
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /opt/ros/melodic/lib/libcamera_calibration_parsers.so
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /opt/ros/melodic/lib/libnodeletlib.so
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /opt/ros/melodic/lib/libbondcpp.so
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /usr/lib/x86_64-linux-gnu/libuuid.so
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /opt/ros/melodic/lib/libclass_loader.so
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /usr/lib/libPocoFoundation.so
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /usr/lib/x86_64-linux-gnu/libdl.so
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /opt/ros/melodic/lib/libroslib.so
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /opt/ros/melodic/lib/librospack.so
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /usr/lib/x86_64-linux-gnu/libpython2.7.so
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /usr/lib/x86_64-linux-gnu/libboost_program_options.so
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /opt/ros/melodic/lib/libroscpp.so
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /opt/ros/melodic/lib/librosconsole.so
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /opt/ros/melodic/lib/librosconsole_log4cxx.so
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /opt/ros/melodic/lib/librosconsole_backend_interface.so
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /usr/lib/x86_64-linux-gnu/libboost_regex.so
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /opt/ros/melodic/lib/libxmlrpcpp.so
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /opt/ros/melodic/lib/libdynamic_reconfigure_config_init_mutex.so
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /opt/ros/melodic/lib/libroscpp_serialization.so
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /opt/ros/melodic/lib/librostime.so
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /opt/ros/melodic/lib/libcpp_common.so
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /usr/lib/x86_64-linux-gnu/libboost_system.so
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: CMakeFiles/video_stream_node.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ciccio/Robotica_Cognitiva/pepper_ros/build/video_stream_opencv/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream"
+/home/mivia/pepper_ros_ws/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: CMakeFiles/video_stream_node.dir/src/video_stream_node.cpp.o
+/home/mivia/pepper_ros_ws/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: CMakeFiles/video_stream_node.dir/build.make
+/home/mivia/pepper_ros_ws/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /opt/ros/melodic/lib/libcv_bridge.so
+/home/mivia/pepper_ros_ws/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /usr/lib/x86_64-linux-gnu/libopencv_core.so.3.2.0
+/home/mivia/pepper_ros_ws/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.3.2.0
+/home/mivia/pepper_ros_ws/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /usr/lib/x86_64-linux-gnu/libopencv_imgcodecs.so.3.2.0
+/home/mivia/pepper_ros_ws/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /opt/ros/melodic/lib/libimage_transport.so
+/home/mivia/pepper_ros_ws/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /opt/ros/melodic/lib/libmessage_filters.so
+/home/mivia/pepper_ros_ws/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /opt/ros/melodic/lib/libcamera_info_manager.so
+/home/mivia/pepper_ros_ws/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /opt/ros/melodic/lib/libcamera_calibration_parsers.so
+/home/mivia/pepper_ros_ws/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /opt/ros/melodic/lib/libnodeletlib.so
+/home/mivia/pepper_ros_ws/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /opt/ros/melodic/lib/libbondcpp.so
+/home/mivia/pepper_ros_ws/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /usr/lib/x86_64-linux-gnu/libuuid.so
+/home/mivia/pepper_ros_ws/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /opt/ros/melodic/lib/libclass_loader.so
+/home/mivia/pepper_ros_ws/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /usr/lib/libPocoFoundation.so
+/home/mivia/pepper_ros_ws/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /usr/lib/x86_64-linux-gnu/libdl.so
+/home/mivia/pepper_ros_ws/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /opt/ros/melodic/lib/libroslib.so
+/home/mivia/pepper_ros_ws/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /opt/ros/melodic/lib/librospack.so
+/home/mivia/pepper_ros_ws/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /usr/lib/x86_64-linux-gnu/libpython2.7.so
+/home/mivia/pepper_ros_ws/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /usr/lib/x86_64-linux-gnu/libboost_program_options.so
+/home/mivia/pepper_ros_ws/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
+/home/mivia/pepper_ros_ws/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /opt/ros/melodic/lib/libroscpp.so
+/home/mivia/pepper_ros_ws/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+/home/mivia/pepper_ros_ws/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /opt/ros/melodic/lib/librosconsole.so
+/home/mivia/pepper_ros_ws/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /opt/ros/melodic/lib/librosconsole_log4cxx.so
+/home/mivia/pepper_ros_ws/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /opt/ros/melodic/lib/librosconsole_backend_interface.so
+/home/mivia/pepper_ros_ws/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/mivia/pepper_ros_ws/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /usr/lib/x86_64-linux-gnu/libboost_regex.so
+/home/mivia/pepper_ros_ws/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /opt/ros/melodic/lib/libxmlrpcpp.so
+/home/mivia/pepper_ros_ws/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /opt/ros/melodic/lib/libdynamic_reconfigure_config_init_mutex.so
+/home/mivia/pepper_ros_ws/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /opt/ros/melodic/lib/libroscpp_serialization.so
+/home/mivia/pepper_ros_ws/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /opt/ros/melodic/lib/librostime.so
+/home/mivia/pepper_ros_ws/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /opt/ros/melodic/lib/libcpp_common.so
+/home/mivia/pepper_ros_ws/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /usr/lib/x86_64-linux-gnu/libboost_system.so
+/home/mivia/pepper_ros_ws/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+/home/mivia/pepper_ros_ws/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+/home/mivia/pepper_ros_ws/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+/home/mivia/pepper_ros_ws/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
+/home/mivia/pepper_ros_ws/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/mivia/pepper_ros_ws/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/mivia/pepper_ros_ws/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream: CMakeFiles/video_stream_node.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mivia/pepper_ros_ws/build/video_stream_opencv/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/mivia/pepper_ros_ws/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/video_stream_node.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/video_stream_node.dir/build: /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream
+CMakeFiles/video_stream_node.dir/build: /home/mivia/pepper_ros_ws/devel/.private/video_stream_opencv/lib/video_stream_opencv/video_stream
 
 .PHONY : CMakeFiles/video_stream_node.dir/build
 
@@ -146,6 +146,6 @@ CMakeFiles/video_stream_node.dir/clean:
 .PHONY : CMakeFiles/video_stream_node.dir/clean
 
 CMakeFiles/video_stream_node.dir/depend:
-	cd /home/ciccio/Robotica_Cognitiva/pepper_ros/build/video_stream_opencv && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ciccio/Robotica_Cognitiva/pepper_ros/src/video_stream_opencv /home/ciccio/Robotica_Cognitiva/pepper_ros/src/video_stream_opencv /home/ciccio/Robotica_Cognitiva/pepper_ros/build/video_stream_opencv /home/ciccio/Robotica_Cognitiva/pepper_ros/build/video_stream_opencv /home/ciccio/Robotica_Cognitiva/pepper_ros/build/video_stream_opencv/CMakeFiles/video_stream_node.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/mivia/pepper_ros_ws/build/video_stream_opencv && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mivia/pepper_ros_ws/src/video_stream_opencv /home/mivia/pepper_ros_ws/src/video_stream_opencv /home/mivia/pepper_ros_ws/build/video_stream_opencv /home/mivia/pepper_ros_ws/build/video_stream_opencv /home/mivia/pepper_ros_ws/build/video_stream_opencv/CMakeFiles/video_stream_node.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/video_stream_node.dir/depend
 

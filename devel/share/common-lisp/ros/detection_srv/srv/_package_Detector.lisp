@@ -1,1 +1,1 @@
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/detection_srv/share/common-lisp/ros/detection_srv/srv/_package_Detector.lisp
+/home/mivia/pepper_ros_ws/devel/.private/detection_srv/share/common-lisp/ros/detection_srv/srv/_package_Detector.lisp

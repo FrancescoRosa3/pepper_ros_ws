@@ -1,1 +1,1 @@
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/share/vision_msgs/cmake/vision_msgsConfig.cmake
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/share/vision_msgs/cmake/vision_msgsConfig.cmake

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ciccio/Robotica_Cognitiva/pepper_ros/src/pepper_robot/pepper_bringup
+CMAKE_SOURCE_DIR = /home/mivia/pepper_ros_ws/src/pepper_robot/pepper_bringup
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ciccio/Robotica_Cognitiva/pepper_ros/build/pepper_bringup
+CMAKE_BINARY_DIR = /home/mivia/pepper_ros_ws/build/pepper_bringup
 
 # Utility rule file for run_tests_pepper_bringup_roslaunch-check_launch.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/ciccio/Robotica_Cognitiva/pepper_ros/build/pepper_bring
 include CMakeFiles/run_tests_pepper_bringup_roslaunch-check_launch.dir/progress.make
 
 CMakeFiles/run_tests_pepper_bringup_roslaunch-check_launch:
-	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/run_tests.py /home/ciccio/Robotica_Cognitiva/pepper_ros/build/pepper_bringup/test_results/pepper_bringup/roslaunch-check_launch.xml "/usr/bin/cmake -E make_directory /home/ciccio/Robotica_Cognitiva/pepper_ros/build/pepper_bringup/test_results/pepper_bringup" "/opt/ros/melodic/share/roslaunch/cmake/../scripts/roslaunch-check -o \"/home/ciccio/Robotica_Cognitiva/pepper_ros/build/pepper_bringup/test_results/pepper_bringup/roslaunch-check_launch.xml\" \"/home/ciccio/Robotica_Cognitiva/pepper_ros/src/pepper_robot/pepper_bringup/launch\" "
+	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/run_tests.py /home/mivia/pepper_ros_ws/build/pepper_bringup/test_results/pepper_bringup/roslaunch-check_launch.xml "/usr/bin/cmake -E make_directory /home/mivia/pepper_ros_ws/build/pepper_bringup/test_results/pepper_bringup" "/opt/ros/melodic/share/roslaunch/cmake/../scripts/roslaunch-check -o \"/home/mivia/pepper_ros_ws/build/pepper_bringup/test_results/pepper_bringup/roslaunch-check_launch.xml\" \"/home/mivia/pepper_ros_ws/src/pepper_robot/pepper_bringup/launch\" "
 
 run_tests_pepper_bringup_roslaunch-check_launch: CMakeFiles/run_tests_pepper_bringup_roslaunch-check_launch
 run_tests_pepper_bringup_roslaunch-check_launch: CMakeFiles/run_tests_pepper_bringup_roslaunch-check_launch.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/run_tests_pepper_bringup_roslaunch-check_launch.dir/clean:
 .PHONY : CMakeFiles/run_tests_pepper_bringup_roslaunch-check_launch.dir/clean
 
 CMakeFiles/run_tests_pepper_bringup_roslaunch-check_launch.dir/depend:
-	cd /home/ciccio/Robotica_Cognitiva/pepper_ros/build/pepper_bringup && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ciccio/Robotica_Cognitiva/pepper_ros/src/pepper_robot/pepper_bringup /home/ciccio/Robotica_Cognitiva/pepper_ros/src/pepper_robot/pepper_bringup /home/ciccio/Robotica_Cognitiva/pepper_ros/build/pepper_bringup /home/ciccio/Robotica_Cognitiva/pepper_ros/build/pepper_bringup /home/ciccio/Robotica_Cognitiva/pepper_ros/build/pepper_bringup/CMakeFiles/run_tests_pepper_bringup_roslaunch-check_launch.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/mivia/pepper_ros_ws/build/pepper_bringup && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mivia/pepper_ros_ws/src/pepper_robot/pepper_bringup /home/mivia/pepper_ros_ws/src/pepper_robot/pepper_bringup /home/mivia/pepper_ros_ws/build/pepper_bringup /home/mivia/pepper_ros_ws/build/pepper_bringup /home/mivia/pepper_ros_ws/build/pepper_bringup/CMakeFiles/run_tests_pepper_bringup_roslaunch-check_launch.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/run_tests_pepper_bringup_roslaunch-check_launch.dir/depend
 

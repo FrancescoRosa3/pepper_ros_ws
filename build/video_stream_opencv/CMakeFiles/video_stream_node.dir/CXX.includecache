@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/ciccio/Robotica_Cognitiva/pepper_ros/src/video_stream_opencv/src/video_stream_node.cpp
+/home/mivia/pepper_ros_ws/src/video_stream_opencv/src/video_stream_node.cpp
 ros/ros.h
 -
 nodelet/loader.h

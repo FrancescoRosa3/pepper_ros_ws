@@ -43,44 +43,44 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge/naoqi_driver_py
+CMAKE_SOURCE_DIR = /home/mivia/pepper_ros_ws/src/naoqi_bridge/naoqi_driver_py
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ciccio/Robotica_Cognitiva/pepper_ros/build/naoqi_driver_py
+CMAKE_BINARY_DIR = /home/mivia/pepper_ros_ws/build/naoqi_driver_py
 
 # Utility rule file for naoqi_driver_py_gencfg.
 
 # Include the progress variables for this target.
 include CMakeFiles/naoqi_driver_py_gencfg.dir/progress.make
 
-CMakeFiles/naoqi_driver_py_gencfg: /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_driver_py/include/naoqi_driver_py/NaoqiSpeechConfig.h
-CMakeFiles/naoqi_driver_py_gencfg: /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_driver_py/lib/python2.7/dist-packages/naoqi_driver_py/cfg/NaoqiSpeechConfig.py
+CMakeFiles/naoqi_driver_py_gencfg: /home/mivia/pepper_ros_ws/devel/.private/naoqi_driver_py/include/naoqi_driver_py/NaoqiSpeechConfig.h
+CMakeFiles/naoqi_driver_py_gencfg: /home/mivia/pepper_ros_ws/devel/.private/naoqi_driver_py/lib/python2.7/dist-packages/naoqi_driver_py/cfg/NaoqiSpeechConfig.py
 
 
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_driver_py/include/naoqi_driver_py/NaoqiSpeechConfig.h: /home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge/naoqi_driver_py/cfg/NaoqiSpeech.cfg
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_driver_py/include/naoqi_driver_py/NaoqiSpeechConfig.h: /opt/ros/melodic/share/dynamic_reconfigure/templates/ConfigType.py.template
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_driver_py/include/naoqi_driver_py/NaoqiSpeechConfig.h: /opt/ros/melodic/share/dynamic_reconfigure/templates/ConfigType.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ciccio/Robotica_Cognitiva/pepper_ros/build/naoqi_driver_py/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating dynamic reconfigure files from cfg/NaoqiSpeech.cfg: /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_driver_py/include/naoqi_driver_py/NaoqiSpeechConfig.h /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_driver_py/lib/python2.7/dist-packages/naoqi_driver_py/cfg/NaoqiSpeechConfig.py"
-	catkin_generated/env_cached.sh /home/ciccio/Robotica_Cognitiva/pepper_ros/build/naoqi_driver_py/setup_custom_pythonpath.sh /home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge/naoqi_driver_py/cfg/NaoqiSpeech.cfg /opt/ros/melodic/share/dynamic_reconfigure/cmake/.. /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_driver_py/share/naoqi_driver_py /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_driver_py/include/naoqi_driver_py /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_driver_py/lib/python2.7/dist-packages/naoqi_driver_py
+/home/mivia/pepper_ros_ws/devel/.private/naoqi_driver_py/include/naoqi_driver_py/NaoqiSpeechConfig.h: /home/mivia/pepper_ros_ws/src/naoqi_bridge/naoqi_driver_py/cfg/NaoqiSpeech.cfg
+/home/mivia/pepper_ros_ws/devel/.private/naoqi_driver_py/include/naoqi_driver_py/NaoqiSpeechConfig.h: /opt/ros/melodic/share/dynamic_reconfigure/templates/ConfigType.py.template
+/home/mivia/pepper_ros_ws/devel/.private/naoqi_driver_py/include/naoqi_driver_py/NaoqiSpeechConfig.h: /opt/ros/melodic/share/dynamic_reconfigure/templates/ConfigType.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/mivia/pepper_ros_ws/build/naoqi_driver_py/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating dynamic reconfigure files from cfg/NaoqiSpeech.cfg: /home/mivia/pepper_ros_ws/devel/.private/naoqi_driver_py/include/naoqi_driver_py/NaoqiSpeechConfig.h /home/mivia/pepper_ros_ws/devel/.private/naoqi_driver_py/lib/python2.7/dist-packages/naoqi_driver_py/cfg/NaoqiSpeechConfig.py"
+	catkin_generated/env_cached.sh /home/mivia/pepper_ros_ws/build/naoqi_driver_py/setup_custom_pythonpath.sh /home/mivia/pepper_ros_ws/src/naoqi_bridge/naoqi_driver_py/cfg/NaoqiSpeech.cfg /opt/ros/melodic/share/dynamic_reconfigure/cmake/.. /home/mivia/pepper_ros_ws/devel/.private/naoqi_driver_py/share/naoqi_driver_py /home/mivia/pepper_ros_ws/devel/.private/naoqi_driver_py/include/naoqi_driver_py /home/mivia/pepper_ros_ws/devel/.private/naoqi_driver_py/lib/python2.7/dist-packages/naoqi_driver_py
 
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_driver_py/share/naoqi_driver_py/docs/NaoqiSpeechConfig.dox: /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_driver_py/include/naoqi_driver_py/NaoqiSpeechConfig.h
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_driver_py/share/naoqi_driver_py/docs/NaoqiSpeechConfig.dox
+/home/mivia/pepper_ros_ws/devel/.private/naoqi_driver_py/share/naoqi_driver_py/docs/NaoqiSpeechConfig.dox: /home/mivia/pepper_ros_ws/devel/.private/naoqi_driver_py/include/naoqi_driver_py/NaoqiSpeechConfig.h
+	@$(CMAKE_COMMAND) -E touch_nocreate /home/mivia/pepper_ros_ws/devel/.private/naoqi_driver_py/share/naoqi_driver_py/docs/NaoqiSpeechConfig.dox
 
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_driver_py/share/naoqi_driver_py/docs/NaoqiSpeechConfig-usage.dox: /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_driver_py/include/naoqi_driver_py/NaoqiSpeechConfig.h
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_driver_py/share/naoqi_driver_py/docs/NaoqiSpeechConfig-usage.dox
+/home/mivia/pepper_ros_ws/devel/.private/naoqi_driver_py/share/naoqi_driver_py/docs/NaoqiSpeechConfig-usage.dox: /home/mivia/pepper_ros_ws/devel/.private/naoqi_driver_py/include/naoqi_driver_py/NaoqiSpeechConfig.h
+	@$(CMAKE_COMMAND) -E touch_nocreate /home/mivia/pepper_ros_ws/devel/.private/naoqi_driver_py/share/naoqi_driver_py/docs/NaoqiSpeechConfig-usage.dox
 
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_driver_py/lib/python2.7/dist-packages/naoqi_driver_py/cfg/NaoqiSpeechConfig.py: /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_driver_py/include/naoqi_driver_py/NaoqiSpeechConfig.h
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_driver_py/lib/python2.7/dist-packages/naoqi_driver_py/cfg/NaoqiSpeechConfig.py
+/home/mivia/pepper_ros_ws/devel/.private/naoqi_driver_py/lib/python2.7/dist-packages/naoqi_driver_py/cfg/NaoqiSpeechConfig.py: /home/mivia/pepper_ros_ws/devel/.private/naoqi_driver_py/include/naoqi_driver_py/NaoqiSpeechConfig.h
+	@$(CMAKE_COMMAND) -E touch_nocreate /home/mivia/pepper_ros_ws/devel/.private/naoqi_driver_py/lib/python2.7/dist-packages/naoqi_driver_py/cfg/NaoqiSpeechConfig.py
 
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_driver_py/share/naoqi_driver_py/docs/NaoqiSpeechConfig.wikidoc: /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_driver_py/include/naoqi_driver_py/NaoqiSpeechConfig.h
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_driver_py/share/naoqi_driver_py/docs/NaoqiSpeechConfig.wikidoc
+/home/mivia/pepper_ros_ws/devel/.private/naoqi_driver_py/share/naoqi_driver_py/docs/NaoqiSpeechConfig.wikidoc: /home/mivia/pepper_ros_ws/devel/.private/naoqi_driver_py/include/naoqi_driver_py/NaoqiSpeechConfig.h
+	@$(CMAKE_COMMAND) -E touch_nocreate /home/mivia/pepper_ros_ws/devel/.private/naoqi_driver_py/share/naoqi_driver_py/docs/NaoqiSpeechConfig.wikidoc
 
 naoqi_driver_py_gencfg: CMakeFiles/naoqi_driver_py_gencfg
-naoqi_driver_py_gencfg: /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_driver_py/include/naoqi_driver_py/NaoqiSpeechConfig.h
-naoqi_driver_py_gencfg: /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_driver_py/share/naoqi_driver_py/docs/NaoqiSpeechConfig.dox
-naoqi_driver_py_gencfg: /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_driver_py/share/naoqi_driver_py/docs/NaoqiSpeechConfig-usage.dox
-naoqi_driver_py_gencfg: /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_driver_py/lib/python2.7/dist-packages/naoqi_driver_py/cfg/NaoqiSpeechConfig.py
-naoqi_driver_py_gencfg: /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_driver_py/share/naoqi_driver_py/docs/NaoqiSpeechConfig.wikidoc
+naoqi_driver_py_gencfg: /home/mivia/pepper_ros_ws/devel/.private/naoqi_driver_py/include/naoqi_driver_py/NaoqiSpeechConfig.h
+naoqi_driver_py_gencfg: /home/mivia/pepper_ros_ws/devel/.private/naoqi_driver_py/share/naoqi_driver_py/docs/NaoqiSpeechConfig.dox
+naoqi_driver_py_gencfg: /home/mivia/pepper_ros_ws/devel/.private/naoqi_driver_py/share/naoqi_driver_py/docs/NaoqiSpeechConfig-usage.dox
+naoqi_driver_py_gencfg: /home/mivia/pepper_ros_ws/devel/.private/naoqi_driver_py/lib/python2.7/dist-packages/naoqi_driver_py/cfg/NaoqiSpeechConfig.py
+naoqi_driver_py_gencfg: /home/mivia/pepper_ros_ws/devel/.private/naoqi_driver_py/share/naoqi_driver_py/docs/NaoqiSpeechConfig.wikidoc
 naoqi_driver_py_gencfg: CMakeFiles/naoqi_driver_py_gencfg.dir/build.make
 
 .PHONY : naoqi_driver_py_gencfg
@@ -95,6 +95,6 @@ CMakeFiles/naoqi_driver_py_gencfg.dir/clean:
 .PHONY : CMakeFiles/naoqi_driver_py_gencfg.dir/clean
 
 CMakeFiles/naoqi_driver_py_gencfg.dir/depend:
-	cd /home/ciccio/Robotica_Cognitiva/pepper_ros/build/naoqi_driver_py && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge/naoqi_driver_py /home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge/naoqi_driver_py /home/ciccio/Robotica_Cognitiva/pepper_ros/build/naoqi_driver_py /home/ciccio/Robotica_Cognitiva/pepper_ros/build/naoqi_driver_py /home/ciccio/Robotica_Cognitiva/pepper_ros/build/naoqi_driver_py/CMakeFiles/naoqi_driver_py_gencfg.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/mivia/pepper_ros_ws/build/naoqi_driver_py && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mivia/pepper_ros_ws/src/naoqi_bridge/naoqi_driver_py /home/mivia/pepper_ros_ws/src/naoqi_bridge/naoqi_driver_py /home/mivia/pepper_ros_ws/build/naoqi_driver_py /home/mivia/pepper_ros_ws/build/naoqi_driver_py /home/mivia/pepper_ros_ws/build/naoqi_driver_py/CMakeFiles/naoqi_driver_py_gencfg.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/naoqi_driver_py_gencfg.dir/depend
 

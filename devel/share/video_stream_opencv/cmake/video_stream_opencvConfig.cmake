@@ -1,1 +1,1 @@
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/video_stream_opencv/share/video_stream_opencv/cmake/video_stream_opencvConfig.cmake
+/home/mivia/pepper_ros_ws/devel/.private/video_stream_opencv/share/video_stream_opencv/cmake/video_stream_opencvConfig.cmake

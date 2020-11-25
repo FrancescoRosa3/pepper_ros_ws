@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge/naoqi_sensors_py
+CMAKE_SOURCE_DIR = /home/mivia/pepper_ros_ws/src/naoqi_bridge/naoqi_sensors_py
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ciccio/Robotica_Cognitiva/pepper_ros/build/naoqi_sensors_py
+CMAKE_BINARY_DIR = /home/mivia/pepper_ros_ws/build/naoqi_sensors_py
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ install/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/ciccio/Robotica_Cognitiva/pepper_ros/build/naoqi_sensors_py && $(CMAKE_COMMAND) -E cmake_progress_start /home/ciccio/Robotica_Cognitiva/pepper_ros/build/naoqi_sensors_py/CMakeFiles /home/ciccio/Robotica_Cognitiva/pepper_ros/build/naoqi_sensors_py/src/python_boost/CMakeFiles/progress.marks
-	cd /home/ciccio/Robotica_Cognitiva/pepper_ros/build/naoqi_sensors_py && $(MAKE) -f CMakeFiles/Makefile2 src/python_boost/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ciccio/Robotica_Cognitiva/pepper_ros/build/naoqi_sensors_py/CMakeFiles 0
+	cd /home/mivia/pepper_ros_ws/build/naoqi_sensors_py && $(CMAKE_COMMAND) -E cmake_progress_start /home/mivia/pepper_ros_ws/build/naoqi_sensors_py/CMakeFiles /home/mivia/pepper_ros_ws/build/naoqi_sensors_py/src/python_boost/CMakeFiles/progress.marks
+	cd /home/mivia/pepper_ros_ws/build/naoqi_sensors_py && $(MAKE) -f CMakeFiles/Makefile2 src/python_boost/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mivia/pepper_ros_ws/build/naoqi_sensors_py/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ciccio/Robotica_Cognitiva/pepper_ros/build/naoqi_sensors_py && $(MAKE) -f CMakeFiles/Makefile2 src/python_boost/clean
+	cd /home/mivia/pepper_ros_ws/build/naoqi_sensors_py && $(MAKE) -f CMakeFiles/Makefile2 src/python_boost/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/ciccio/Robotica_Cognitiva/pepper_ros/build/naoqi_sensors_py && $(MAKE) -f CMakeFiles/Makefile2 src/python_boost/preinstall
+	cd /home/mivia/pepper_ros_ws/build/naoqi_sensors_py && $(MAKE) -f CMakeFiles/Makefile2 src/python_boost/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ciccio/Robotica_Cognitiva/pepper_ros/build/naoqi_sensors_py && $(MAKE) -f CMakeFiles/Makefile2 src/python_boost/preinstall
+	cd /home/mivia/pepper_ros_ws/build/naoqi_sensors_py && $(MAKE) -f CMakeFiles/Makefile2 src/python_boost/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/ciccio/Robotica_Cognitiva/pepper_ros/build/naoqi_sensors_py && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/mivia/pepper_ros_ws/build/naoqi_sensors_py && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/python_boost/CMakeFiles/octomap_python.dir/rule:
-	cd /home/ciccio/Robotica_Cognitiva/pepper_ros/build/naoqi_sensors_py && $(MAKE) -f CMakeFiles/Makefile2 src/python_boost/CMakeFiles/octomap_python.dir/rule
+	cd /home/mivia/pepper_ros_ws/build/naoqi_sensors_py && $(MAKE) -f CMakeFiles/Makefile2 src/python_boost/CMakeFiles/octomap_python.dir/rule
 .PHONY : src/python_boost/CMakeFiles/octomap_python.dir/rule
 
 # Convenience name for target.
@@ -179,7 +179,7 @@ octomap_python: src/python_boost/CMakeFiles/octomap_python.dir/rule
 
 # fast build rule for target.
 octomap_python/fast:
-	cd /home/ciccio/Robotica_Cognitiva/pepper_ros/build/naoqi_sensors_py && $(MAKE) -f src/python_boost/CMakeFiles/octomap_python.dir/build.make src/python_boost/CMakeFiles/octomap_python.dir/build
+	cd /home/mivia/pepper_ros_ws/build/naoqi_sensors_py && $(MAKE) -f src/python_boost/CMakeFiles/octomap_python.dir/build.make src/python_boost/CMakeFiles/octomap_python.dir/build
 .PHONY : octomap_python/fast
 
 octomap_python.o: octomap_python.cpp.o
@@ -188,7 +188,7 @@ octomap_python.o: octomap_python.cpp.o
 
 # target to build an object file
 octomap_python.cpp.o:
-	cd /home/ciccio/Robotica_Cognitiva/pepper_ros/build/naoqi_sensors_py && $(MAKE) -f src/python_boost/CMakeFiles/octomap_python.dir/build.make src/python_boost/CMakeFiles/octomap_python.dir/octomap_python.cpp.o
+	cd /home/mivia/pepper_ros_ws/build/naoqi_sensors_py && $(MAKE) -f src/python_boost/CMakeFiles/octomap_python.dir/build.make src/python_boost/CMakeFiles/octomap_python.dir/octomap_python.cpp.o
 .PHONY : octomap_python.cpp.o
 
 octomap_python.i: octomap_python.cpp.i
@@ -197,7 +197,7 @@ octomap_python.i: octomap_python.cpp.i
 
 # target to preprocess a source file
 octomap_python.cpp.i:
-	cd /home/ciccio/Robotica_Cognitiva/pepper_ros/build/naoqi_sensors_py && $(MAKE) -f src/python_boost/CMakeFiles/octomap_python.dir/build.make src/python_boost/CMakeFiles/octomap_python.dir/octomap_python.cpp.i
+	cd /home/mivia/pepper_ros_ws/build/naoqi_sensors_py && $(MAKE) -f src/python_boost/CMakeFiles/octomap_python.dir/build.make src/python_boost/CMakeFiles/octomap_python.dir/octomap_python.cpp.i
 .PHONY : octomap_python.cpp.i
 
 octomap_python.s: octomap_python.cpp.s
@@ -206,7 +206,7 @@ octomap_python.s: octomap_python.cpp.s
 
 # target to generate assembly for a file
 octomap_python.cpp.s:
-	cd /home/ciccio/Robotica_Cognitiva/pepper_ros/build/naoqi_sensors_py && $(MAKE) -f src/python_boost/CMakeFiles/octomap_python.dir/build.make src/python_boost/CMakeFiles/octomap_python.dir/octomap_python.cpp.s
+	cd /home/mivia/pepper_ros_ws/build/naoqi_sensors_py && $(MAKE) -f src/python_boost/CMakeFiles/octomap_python.dir/build.make src/python_boost/CMakeFiles/octomap_python.dir/octomap_python.cpp.s
 .PHONY : octomap_python.cpp.s
 
 # Help Target
@@ -237,6 +237,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/ciccio/Robotica_Cognitiva/pepper_ros/build/naoqi_sensors_py && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/mivia/pepper_ros_ws/build/naoqi_sensors_py && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

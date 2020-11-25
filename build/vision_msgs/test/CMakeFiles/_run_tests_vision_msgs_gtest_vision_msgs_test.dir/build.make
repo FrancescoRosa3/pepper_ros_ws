@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ciccio/Robotica_Cognitiva/pepper_ros/src/vision_msgs
+CMAKE_SOURCE_DIR = /home/mivia/pepper_ros_ws/src/vision_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ciccio/Robotica_Cognitiva/pepper_ros/build/vision_msgs
+CMAKE_BINARY_DIR = /home/mivia/pepper_ros_ws/build/vision_msgs
 
 # Utility rule file for _run_tests_vision_msgs_gtest_vision_msgs_test.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/ciccio/Robotica_Cognitiva/pepper_ros/build/vision_msgs
 include test/CMakeFiles/_run_tests_vision_msgs_gtest_vision_msgs_test.dir/progress.make
 
 test/CMakeFiles/_run_tests_vision_msgs_gtest_vision_msgs_test:
-	cd /home/ciccio/Robotica_Cognitiva/pepper_ros/build/vision_msgs/test && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/run_tests.py /home/ciccio/Robotica_Cognitiva/pepper_ros/build/vision_msgs/test_results/vision_msgs/gtest-vision_msgs_test.xml "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/vision_msgs/vision_msgs_test --gtest_output=xml:/home/ciccio/Robotica_Cognitiva/pepper_ros/build/vision_msgs/test_results/vision_msgs/gtest-vision_msgs_test.xml"
+	cd /home/mivia/pepper_ros_ws/build/vision_msgs/test && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/run_tests.py /home/mivia/pepper_ros_ws/build/vision_msgs/test_results/vision_msgs/gtest-vision_msgs_test.xml "/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/vision_msgs/vision_msgs_test --gtest_output=xml:/home/mivia/pepper_ros_ws/build/vision_msgs/test_results/vision_msgs/gtest-vision_msgs_test.xml"
 
 _run_tests_vision_msgs_gtest_vision_msgs_test: test/CMakeFiles/_run_tests_vision_msgs_gtest_vision_msgs_test
 _run_tests_vision_msgs_gtest_vision_msgs_test: test/CMakeFiles/_run_tests_vision_msgs_gtest_vision_msgs_test.dir/build.make
@@ -67,10 +67,10 @@ test/CMakeFiles/_run_tests_vision_msgs_gtest_vision_msgs_test.dir/build: _run_te
 .PHONY : test/CMakeFiles/_run_tests_vision_msgs_gtest_vision_msgs_test.dir/build
 
 test/CMakeFiles/_run_tests_vision_msgs_gtest_vision_msgs_test.dir/clean:
-	cd /home/ciccio/Robotica_Cognitiva/pepper_ros/build/vision_msgs/test && $(CMAKE_COMMAND) -P CMakeFiles/_run_tests_vision_msgs_gtest_vision_msgs_test.dir/cmake_clean.cmake
+	cd /home/mivia/pepper_ros_ws/build/vision_msgs/test && $(CMAKE_COMMAND) -P CMakeFiles/_run_tests_vision_msgs_gtest_vision_msgs_test.dir/cmake_clean.cmake
 .PHONY : test/CMakeFiles/_run_tests_vision_msgs_gtest_vision_msgs_test.dir/clean
 
 test/CMakeFiles/_run_tests_vision_msgs_gtest_vision_msgs_test.dir/depend:
-	cd /home/ciccio/Robotica_Cognitiva/pepper_ros/build/vision_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ciccio/Robotica_Cognitiva/pepper_ros/src/vision_msgs /home/ciccio/Robotica_Cognitiva/pepper_ros/src/vision_msgs/test /home/ciccio/Robotica_Cognitiva/pepper_ros/build/vision_msgs /home/ciccio/Robotica_Cognitiva/pepper_ros/build/vision_msgs/test /home/ciccio/Robotica_Cognitiva/pepper_ros/build/vision_msgs/test/CMakeFiles/_run_tests_vision_msgs_gtest_vision_msgs_test.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/mivia/pepper_ros_ws/build/vision_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mivia/pepper_ros_ws/src/vision_msgs /home/mivia/pepper_ros_ws/src/vision_msgs/test /home/mivia/pepper_ros_ws/build/vision_msgs /home/mivia/pepper_ros_ws/build/vision_msgs/test /home/mivia/pepper_ros_ws/build/vision_msgs/test/CMakeFiles/_run_tests_vision_msgs_gtest_vision_msgs_test.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : test/CMakeFiles/_run_tests_vision_msgs_gtest_vision_msgs_test.dir/depend
 

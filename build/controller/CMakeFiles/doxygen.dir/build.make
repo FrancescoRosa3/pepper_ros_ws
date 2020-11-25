@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ciccio/Robotica_Cognitiva/pepper_ros/src/controller
+CMAKE_SOURCE_DIR = /home/mivia/pepper_ros_ws/src/controller
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ciccio/Robotica_Cognitiva/pepper_ros/build/controller
+CMAKE_BINARY_DIR = /home/mivia/pepper_ros_ws/build/controller
 
 # Utility rule file for doxygen.
 
@@ -67,6 +67,6 @@ CMakeFiles/doxygen.dir/clean:
 .PHONY : CMakeFiles/doxygen.dir/clean
 
 CMakeFiles/doxygen.dir/depend:
-	cd /home/ciccio/Robotica_Cognitiva/pepper_ros/build/controller && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ciccio/Robotica_Cognitiva/pepper_ros/src/controller /home/ciccio/Robotica_Cognitiva/pepper_ros/src/controller /home/ciccio/Robotica_Cognitiva/pepper_ros/build/controller /home/ciccio/Robotica_Cognitiva/pepper_ros/build/controller /home/ciccio/Robotica_Cognitiva/pepper_ros/build/controller/CMakeFiles/doxygen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/mivia/pepper_ros_ws/build/controller && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mivia/pepper_ros_ws/src/controller /home/mivia/pepper_ros_ws/src/controller /home/mivia/pepper_ros_ws/build/controller /home/mivia/pepper_ros_ws/build/controller /home/mivia/pepper_ros_ws/build/controller/CMakeFiles/doxygen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/doxygen.dir/depend
 

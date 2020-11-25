@@ -1,7 +1,7 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
 messages_str = ""
-services_str = "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/pepper_talk/srv/Say.srv"
+services_str = "/home/mivia/pepper_ros_ws/src/pepper_talk/srv/Say.srv"
 pkg_name = "pepper_talk"
 dependencies_str = "pepper_talk"
 langs = "gencpp;geneus;genlisp;gennodejs;genpy"

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ciccio/Robotica_Cognitiva/pepper_ros/src/pepper_talk
+CMAKE_SOURCE_DIR = /home/mivia/pepper_ros_ws/src/pepper_talk
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ciccio/Robotica_Cognitiva/pepper_ros/build/pepper_talk
+CMAKE_BINARY_DIR = /home/mivia/pepper_ros_ws/build/pepper_talk
 
 # Utility rule file for _pepper_talk_generate_messages_check_deps_Say.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/ciccio/Robotica_Cognitiva/pepper_ros/build/pepper_talk
 include CMakeFiles/_pepper_talk_generate_messages_check_deps_Say.dir/progress.make
 
 CMakeFiles/_pepper_talk_generate_messages_check_deps_Say:
-	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py pepper_talk /home/ciccio/Robotica_Cognitiva/pepper_ros/src/pepper_talk/srv/Say.srv 
+	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py pepper_talk /home/mivia/pepper_ros_ws/src/pepper_talk/srv/Say.srv 
 
 _pepper_talk_generate_messages_check_deps_Say: CMakeFiles/_pepper_talk_generate_messages_check_deps_Say
 _pepper_talk_generate_messages_check_deps_Say: CMakeFiles/_pepper_talk_generate_messages_check_deps_Say.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/_pepper_talk_generate_messages_check_deps_Say.dir/clean:
 .PHONY : CMakeFiles/_pepper_talk_generate_messages_check_deps_Say.dir/clean
 
 CMakeFiles/_pepper_talk_generate_messages_check_deps_Say.dir/depend:
-	cd /home/ciccio/Robotica_Cognitiva/pepper_ros/build/pepper_talk && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ciccio/Robotica_Cognitiva/pepper_ros/src/pepper_talk /home/ciccio/Robotica_Cognitiva/pepper_ros/src/pepper_talk /home/ciccio/Robotica_Cognitiva/pepper_ros/build/pepper_talk /home/ciccio/Robotica_Cognitiva/pepper_ros/build/pepper_talk /home/ciccio/Robotica_Cognitiva/pepper_ros/build/pepper_talk/CMakeFiles/_pepper_talk_generate_messages_check_deps_Say.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/mivia/pepper_ros_ws/build/pepper_talk && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mivia/pepper_ros_ws/src/pepper_talk /home/mivia/pepper_ros_ws/src/pepper_talk /home/mivia/pepper_ros_ws/build/pepper_talk /home/mivia/pepper_ros_ws/build/pepper_talk /home/mivia/pepper_ros_ws/build/pepper_talk/CMakeFiles/_pepper_talk_generate_messages_check_deps_Say.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/_pepper_talk_generate_messages_check_deps_Say.dir/depend
 

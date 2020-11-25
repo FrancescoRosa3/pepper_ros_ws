@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ciccio/Robotica_Cognitiva/pepper_ros/src/vision_msgs
+CMAKE_SOURCE_DIR = /home/mivia/pepper_ros_ws/src/vision_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ciccio/Robotica_Cognitiva/pepper_ros/build/vision_msgs
+CMAKE_BINARY_DIR = /home/mivia/pepper_ros_ws/build/vision_msgs
 
 # Include any dependencies generated for this target.
 include test/CMakeFiles/vision_msgs_test.dir/depend.make
@@ -58,17 +58,17 @@ include test/CMakeFiles/vision_msgs_test.dir/progress.make
 include test/CMakeFiles/vision_msgs_test.dir/flags.make
 
 test/CMakeFiles/vision_msgs_test.dir/main.cpp.o: test/CMakeFiles/vision_msgs_test.dir/flags.make
-test/CMakeFiles/vision_msgs_test.dir/main.cpp.o: /home/ciccio/Robotica_Cognitiva/pepper_ros/src/vision_msgs/test/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ciccio/Robotica_Cognitiva/pepper_ros/build/vision_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object test/CMakeFiles/vision_msgs_test.dir/main.cpp.o"
-	cd /home/ciccio/Robotica_Cognitiva/pepper_ros/build/vision_msgs/test && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/vision_msgs_test.dir/main.cpp.o -c /home/ciccio/Robotica_Cognitiva/pepper_ros/src/vision_msgs/test/main.cpp
+test/CMakeFiles/vision_msgs_test.dir/main.cpp.o: /home/mivia/pepper_ros_ws/src/vision_msgs/test/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mivia/pepper_ros_ws/build/vision_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object test/CMakeFiles/vision_msgs_test.dir/main.cpp.o"
+	cd /home/mivia/pepper_ros_ws/build/vision_msgs/test && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/vision_msgs_test.dir/main.cpp.o -c /home/mivia/pepper_ros_ws/src/vision_msgs/test/main.cpp
 
 test/CMakeFiles/vision_msgs_test.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/vision_msgs_test.dir/main.cpp.i"
-	cd /home/ciccio/Robotica_Cognitiva/pepper_ros/build/vision_msgs/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ciccio/Robotica_Cognitiva/pepper_ros/src/vision_msgs/test/main.cpp > CMakeFiles/vision_msgs_test.dir/main.cpp.i
+	cd /home/mivia/pepper_ros_ws/build/vision_msgs/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mivia/pepper_ros_ws/src/vision_msgs/test/main.cpp > CMakeFiles/vision_msgs_test.dir/main.cpp.i
 
 test/CMakeFiles/vision_msgs_test.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/vision_msgs_test.dir/main.cpp.s"
-	cd /home/ciccio/Robotica_Cognitiva/pepper_ros/build/vision_msgs/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ciccio/Robotica_Cognitiva/pepper_ros/src/vision_msgs/test/main.cpp -o CMakeFiles/vision_msgs_test.dir/main.cpp.s
+	cd /home/mivia/pepper_ros_ws/build/vision_msgs/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mivia/pepper_ros_ws/src/vision_msgs/test/main.cpp -o CMakeFiles/vision_msgs_test.dir/main.cpp.s
 
 test/CMakeFiles/vision_msgs_test.dir/main.cpp.o.requires:
 
@@ -88,15 +88,15 @@ vision_msgs_test_OBJECTS = \
 # External object files for target vision_msgs_test
 vision_msgs_test_EXTERNAL_OBJECTS =
 
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/vision_msgs/vision_msgs_test: test/CMakeFiles/vision_msgs_test.dir/main.cpp.o
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/vision_msgs/vision_msgs_test: test/CMakeFiles/vision_msgs_test.dir/build.make
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/vision_msgs/vision_msgs_test: gtest/googlemock/gtest/libgtest.so
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/vision_msgs/vision_msgs_test: test/CMakeFiles/vision_msgs_test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ciccio/Robotica_Cognitiva/pepper_ros/build/vision_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/vision_msgs/vision_msgs_test"
-	cd /home/ciccio/Robotica_Cognitiva/pepper_ros/build/vision_msgs/test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/vision_msgs_test.dir/link.txt --verbose=$(VERBOSE)
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/vision_msgs/vision_msgs_test: test/CMakeFiles/vision_msgs_test.dir/main.cpp.o
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/vision_msgs/vision_msgs_test: test/CMakeFiles/vision_msgs_test.dir/build.make
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/vision_msgs/vision_msgs_test: gtest/googlemock/gtest/libgtest.so
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/vision_msgs/vision_msgs_test: test/CMakeFiles/vision_msgs_test.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mivia/pepper_ros_ws/build/vision_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/vision_msgs/vision_msgs_test"
+	cd /home/mivia/pepper_ros_ws/build/vision_msgs/test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/vision_msgs_test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-test/CMakeFiles/vision_msgs_test.dir/build: /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/lib/vision_msgs/vision_msgs_test
+test/CMakeFiles/vision_msgs_test.dir/build: /home/mivia/pepper_ros_ws/devel/.private/vision_msgs/lib/vision_msgs/vision_msgs_test
 
 .PHONY : test/CMakeFiles/vision_msgs_test.dir/build
 
@@ -105,10 +105,10 @@ test/CMakeFiles/vision_msgs_test.dir/requires: test/CMakeFiles/vision_msgs_test.
 .PHONY : test/CMakeFiles/vision_msgs_test.dir/requires
 
 test/CMakeFiles/vision_msgs_test.dir/clean:
-	cd /home/ciccio/Robotica_Cognitiva/pepper_ros/build/vision_msgs/test && $(CMAKE_COMMAND) -P CMakeFiles/vision_msgs_test.dir/cmake_clean.cmake
+	cd /home/mivia/pepper_ros_ws/build/vision_msgs/test && $(CMAKE_COMMAND) -P CMakeFiles/vision_msgs_test.dir/cmake_clean.cmake
 .PHONY : test/CMakeFiles/vision_msgs_test.dir/clean
 
 test/CMakeFiles/vision_msgs_test.dir/depend:
-	cd /home/ciccio/Robotica_Cognitiva/pepper_ros/build/vision_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ciccio/Robotica_Cognitiva/pepper_ros/src/vision_msgs /home/ciccio/Robotica_Cognitiva/pepper_ros/src/vision_msgs/test /home/ciccio/Robotica_Cognitiva/pepper_ros/build/vision_msgs /home/ciccio/Robotica_Cognitiva/pepper_ros/build/vision_msgs/test /home/ciccio/Robotica_Cognitiva/pepper_ros/build/vision_msgs/test/CMakeFiles/vision_msgs_test.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/mivia/pepper_ros_ws/build/vision_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mivia/pepper_ros_ws/src/vision_msgs /home/mivia/pepper_ros_ws/src/vision_msgs/test /home/mivia/pepper_ros_ws/build/vision_msgs /home/mivia/pepper_ros_ws/build/vision_msgs/test /home/mivia/pepper_ros_ws/build/vision_msgs/test/CMakeFiles/vision_msgs_test.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : test/CMakeFiles/vision_msgs_test.dir/depend
 

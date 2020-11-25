@@ -1,1 +1,2 @@
+/home/mivia/pepper_ros_ws/devel/./cmake.lock 48
 /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/./cmake.lock 205

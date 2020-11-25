@@ -1,3 +1,3 @@
-Symlinking /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/lib/pkgconfig/pepper_description.pc
-Symlinking /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/share/pepper_description/cmake/pepper_descriptionConfig-version.cmake
-Symlinking /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/share/pepper_description/cmake/pepper_descriptionConfig.cmake
+Symlinking /home/mivia/pepper_ros_ws/devel/lib/pkgconfig/pepper_description.pc
+Symlinking /home/mivia/pepper_ros_ws/devel/share/pepper_description/cmake/pepper_descriptionConfig.cmake
+Symlinking /home/mivia/pepper_ros_ws/devel/share/pepper_description/cmake/pepper_descriptionConfig-version.cmake

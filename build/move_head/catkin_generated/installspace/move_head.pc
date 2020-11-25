@@ -1,4 +1,4 @@
-prefix=/home/ciccio/Robotica_Cognitiva/pepper_ros/install
+prefix=/home/mivia/pepper_ros_ws/install
 
 Name: move_head
 Description: Description of move_head

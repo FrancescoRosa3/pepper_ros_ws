@@ -1,8 +1,8 @@
-prefix=/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/move_head
+prefix=/home/mivia/pepper_ros_ws/devel/.private/move_head
 
 Name: move_head
 Description: Description of move_head
 Version: 0.0.0
-Cflags: -I/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/move_head/include
+Cflags: -I/home/mivia/pepper_ros_ws/devel/.private/move_head/include
 Libs: -L${prefix}/lib 
 Requires: 

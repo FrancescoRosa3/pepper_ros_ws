@@ -1,1 +1,1 @@
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_driver_py/lib/python2.7/dist-packages/naoqi_driver/__init__.py
+/home/mivia/pepper_ros_ws/devel/.private/naoqi_driver_py/lib/python2.7/dist-packages/naoqi_driver/__init__.py

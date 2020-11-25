@@ -1,1 +1,1 @@
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/pepper_description/share/pepper_description/cmake/pepper_descriptionConfig.cmake
+/home/mivia/pepper_ros_ws/devel/.private/pepper_description/share/pepper_description/cmake/pepper_descriptionConfig.cmake

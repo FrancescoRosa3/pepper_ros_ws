@@ -6,5 +6,5 @@ CXX_FLAGS =   -std=c++11
 
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"video_stream_opencv\"
 
-CXX_INCLUDES = -I/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/video_stream_opencv/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/opencv 
+CXX_INCLUDES = -I/home/mivia/pepper_ros_ws/devel/.private/video_stream_opencv/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/opencv 
 

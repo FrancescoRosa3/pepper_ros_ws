@@ -1,1 +1,1 @@
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_driver_py/share/naoqi_driver_py/cmake/naoqi_driver_pyConfig-version.cmake
+/home/mivia/pepper_ros_ws/devel/.private/naoqi_driver_py/share/naoqi_driver_py/cmake/naoqi_driver_pyConfig-version.cmake

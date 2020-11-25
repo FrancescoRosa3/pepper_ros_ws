@@ -1,7 +1,7 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
 messages_str = ""
-services_str = "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/detection_srv/srv/Detector.srv"
+services_str = "/home/mivia/pepper_ros_ws/src/detection_srv/srv/Detector.srv"
 pkg_name = "detection_srv"
 dependencies_str = "sensor_msgs;detection_srv"
 langs = "gencpp;geneus;genlisp;gennodejs;genpy"

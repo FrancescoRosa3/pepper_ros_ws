@@ -1,1 +1,1 @@
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_bridge_msgs/lib/python2.7/dist-packages/naoqi_bridge_msgs/srv/_GetFacesROI.py
+/home/mivia/pepper_ros_ws/devel/.private/naoqi_bridge_msgs/lib/python2.7/dist-packages/naoqi_bridge_msgs/srv/_GetFacesROI.py

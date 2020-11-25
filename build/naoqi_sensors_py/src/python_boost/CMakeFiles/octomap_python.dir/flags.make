@@ -6,5 +6,5 @@ CXX_FLAGS = -fPIC
 
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"naoqi_sensors_py\" -Doctomap_python_EXPORTS
 
-CXX_INCLUDES = -I/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_sensors_py/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/python2.7 
+CXX_INCLUDES = -I/home/mivia/pepper_ros_ws/devel/.private/naoqi_sensors_py/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/python2.7 
 

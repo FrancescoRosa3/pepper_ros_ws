@@ -1,2 +1,2 @@
 - setup-file:
-    local-name: /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/pepper_talk/setup.sh
+    local-name: /home/mivia/pepper_ros_ws/devel/.private/pepper_talk/setup.sh

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs
+CMAKE_SOURCE_DIR = /home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ciccio/Robotica_Cognitiva/pepper_ros/build/naoqi_bridge_msgs
+CMAKE_BINARY_DIR = /home/mivia/pepper_ros_ws/build/naoqi_bridge_msgs
 
 # Utility rule file for _catkin_empty_exported_target.
 
@@ -67,6 +67,6 @@ CMakeFiles/_catkin_empty_exported_target.dir/clean:
 .PHONY : CMakeFiles/_catkin_empty_exported_target.dir/clean
 
 CMakeFiles/_catkin_empty_exported_target.dir/depend:
-	cd /home/ciccio/Robotica_Cognitiva/pepper_ros/build/naoqi_bridge_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs /home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge_msgs /home/ciccio/Robotica_Cognitiva/pepper_ros/build/naoqi_bridge_msgs /home/ciccio/Robotica_Cognitiva/pepper_ros/build/naoqi_bridge_msgs /home/ciccio/Robotica_Cognitiva/pepper_ros/build/naoqi_bridge_msgs/CMakeFiles/_catkin_empty_exported_target.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/mivia/pepper_ros_ws/build/naoqi_bridge_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs /home/mivia/pepper_ros_ws/src/naoqi_bridge_msgs /home/mivia/pepper_ros_ws/build/naoqi_bridge_msgs /home/mivia/pepper_ros_ws/build/naoqi_bridge_msgs /home/mivia/pepper_ros_ws/build/naoqi_bridge_msgs/CMakeFiles/_catkin_empty_exported_target.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/_catkin_empty_exported_target.dir/depend
 

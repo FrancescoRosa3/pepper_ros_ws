@@ -1,1 +1,1 @@
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/share/gennodejs/ros/vision_msgs/msg/Classification2D.js
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/share/gennodejs/ros/vision_msgs/msg/Classification2D.js

@@ -1,4 +1,4 @@
-prefix=/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/pepper_description
+prefix=/home/mivia/pepper_ros_ws/devel/.private/pepper_description
 
 Name: pepper_description
 Description: Description of pepper_description

@@ -1,1 +1,1 @@
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/video_stream_opencv/include/video_stream_opencv/VideoStreamConfig.h
+/home/mivia/pepper_ros_ws/devel/.private/video_stream_opencv/include/video_stream_opencv/VideoStreamConfig.h

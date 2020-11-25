@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge/naoqi_navigation/python
+CMAKE_SOURCE_DIR = /home/mivia/pepper_ros_ws/src/naoqi_bridge/naoqi_navigation/python
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ciccio/Robotica_Cognitiva/pepper_ros/build/naoqi_navigation
+CMAKE_BINARY_DIR = /home/mivia/pepper_ros_ws/build/naoqi_navigation
 
 # Utility rule file for geometry_msgs_generate_messages_nodejs.
 
@@ -67,6 +67,6 @@ CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean:
 .PHONY : CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean
 
 CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/depend:
-	cd /home/ciccio/Robotica_Cognitiva/pepper_ros/build/naoqi_navigation && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge/naoqi_navigation/python /home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge/naoqi_navigation/python /home/ciccio/Robotica_Cognitiva/pepper_ros/build/naoqi_navigation /home/ciccio/Robotica_Cognitiva/pepper_ros/build/naoqi_navigation /home/ciccio/Robotica_Cognitiva/pepper_ros/build/naoqi_navigation/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/mivia/pepper_ros_ws/build/naoqi_navigation && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mivia/pepper_ros_ws/src/naoqi_bridge/naoqi_navigation/python /home/mivia/pepper_ros_ws/src/naoqi_bridge/naoqi_navigation/python /home/mivia/pepper_ros_ws/build/naoqi_navigation /home/mivia/pepper_ros_ws/build/naoqi_navigation /home/mivia/pepper_ros_ws/build/naoqi_navigation/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/depend
 

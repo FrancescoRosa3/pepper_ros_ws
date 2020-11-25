@@ -7,10 +7,7 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/detection_srv:$CMAKE_PREFIX_PATH"
-export LD_LIBRARY_PATH="/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/detection_srv/lib:$LD_LIBRARY_PATH"
-export PKG_CONFIG_PATH="/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/detection_srv/lib/pkgconfig:$PKG_CONFIG_PATH"
-export PWD='/home/ciccio/Robotica_Cognitiva/pepper_ros/build/detection_srv'
-export PYTHONPATH="/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/detection_srv/lib/python2.7/dist-packages:$PYTHONPATH"
-export ROSLISP_PACKAGE_DIRECTORIES="/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/detection_srv/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
-export ROS_PACKAGE_PATH="/home/ciccio/Robotica_Cognitiva/pepper_ros/src/detection_srv:$ROS_PACKAGE_PATH"
+export CMAKE_PREFIX_PATH="/home/mivia/pepper_ros_ws/devel/.private/detection_srv:$CMAKE_PREFIX_PATH"
+export PWD='/home/mivia/pepper_ros_ws/build/detection_srv'
+export ROSLISP_PACKAGE_DIRECTORIES="/home/mivia/pepper_ros_ws/devel/.private/detection_srv/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
+export ROS_PACKAGE_PATH="/home/mivia/pepper_ros_ws/src/detection_srv:$ROS_PACKAGE_PATH"

@@ -17,9 +17,9 @@ add_custom_target(detection_srv_generate_messages ALL)
 
 
 
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/detection_srv/srv/Detector.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/detection_srv/srv/Detector.srv" NAME_WE)
 add_custom_target(_detection_srv_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "detection_srv" "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/detection_srv/srv/Detector.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "detection_srv" "/home/mivia/pepper_ros_ws/src/detection_srv/srv/Detector.srv" ""
 )
 
 #
@@ -31,7 +31,7 @@ add_custom_target(_detection_srv_generate_messages_check_deps_${_filename}
 
 ### Generating Services
 _generate_srv_cpp(detection_srv
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/detection_srv/srv/Detector.srv"
+  "/home/mivia/pepper_ros_ws/src/detection_srv/srv/Detector.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/detection_srv
@@ -49,7 +49,7 @@ add_custom_target(detection_srv_generate_messages_cpp
 add_dependencies(detection_srv_generate_messages detection_srv_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/detection_srv/srv/Detector.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/detection_srv/srv/Detector.srv" NAME_WE)
 add_dependencies(detection_srv_generate_messages_cpp _detection_srv_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -64,7 +64,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS detection_srv_generate_messages_cpp
 
 ### Generating Services
 _generate_srv_eus(detection_srv
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/detection_srv/srv/Detector.srv"
+  "/home/mivia/pepper_ros_ws/src/detection_srv/srv/Detector.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/detection_srv
@@ -82,7 +82,7 @@ add_custom_target(detection_srv_generate_messages_eus
 add_dependencies(detection_srv_generate_messages detection_srv_generate_messages_eus)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/detection_srv/srv/Detector.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/detection_srv/srv/Detector.srv" NAME_WE)
 add_dependencies(detection_srv_generate_messages_eus _detection_srv_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -97,7 +97,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS detection_srv_generate_messages_eus
 
 ### Generating Services
 _generate_srv_lisp(detection_srv
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/detection_srv/srv/Detector.srv"
+  "/home/mivia/pepper_ros_ws/src/detection_srv/srv/Detector.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/detection_srv
@@ -115,7 +115,7 @@ add_custom_target(detection_srv_generate_messages_lisp
 add_dependencies(detection_srv_generate_messages detection_srv_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/detection_srv/srv/Detector.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/detection_srv/srv/Detector.srv" NAME_WE)
 add_dependencies(detection_srv_generate_messages_lisp _detection_srv_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -130,7 +130,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS detection_srv_generate_messages_lis
 
 ### Generating Services
 _generate_srv_nodejs(detection_srv
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/detection_srv/srv/Detector.srv"
+  "/home/mivia/pepper_ros_ws/src/detection_srv/srv/Detector.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/detection_srv
@@ -148,7 +148,7 @@ add_custom_target(detection_srv_generate_messages_nodejs
 add_dependencies(detection_srv_generate_messages detection_srv_generate_messages_nodejs)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/detection_srv/srv/Detector.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/detection_srv/srv/Detector.srv" NAME_WE)
 add_dependencies(detection_srv_generate_messages_nodejs _detection_srv_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -163,7 +163,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS detection_srv_generate_messages_nod
 
 ### Generating Services
 _generate_srv_py(detection_srv
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/detection_srv/srv/Detector.srv"
+  "/home/mivia/pepper_ros_ws/src/detection_srv/srv/Detector.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/detection_srv
@@ -181,7 +181,7 @@ add_custom_target(detection_srv_generate_messages_py
 add_dependencies(detection_srv_generate_messages detection_srv_generate_messages_py)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/detection_srv/srv/Detector.srv" NAME_WE)
+get_filename_component(_filename "/home/mivia/pepper_ros_ws/src/detection_srv/srv/Detector.srv" NAME_WE)
 add_dependencies(detection_srv_generate_messages_py _detection_srv_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

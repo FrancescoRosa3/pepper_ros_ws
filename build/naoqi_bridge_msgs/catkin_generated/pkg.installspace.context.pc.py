@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "${prefix}/include".split(';') if "${prefix}/i
 PROJECT_CATKIN_DEPENDS = "genmsg;message_runtime;actionlib_msgs;sensor_msgs;nav_msgs;trajectory_msgs;std_msgs;geometry_msgs".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "naoqi_bridge_msgs"
-PROJECT_SPACE_DIR = "/home/ciccio/Robotica_Cognitiva/pepper_ros/install"
+PROJECT_SPACE_DIR = "/home/mivia/pepper_ros_ws/install"
 PROJECT_VERSION = "0.0.8"

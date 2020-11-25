@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ciccio/Robotica_Cognitiva/pepper_ros/src/vision_msgs
+CMAKE_SOURCE_DIR = /home/mivia/pepper_ros_ws/src/vision_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ciccio/Robotica_Cognitiva/pepper_ros/build/vision_msgs
+CMAKE_BINARY_DIR = /home/mivia/pepper_ros_ws/build/vision_msgs
 
 # Utility rule file for run_tests_vision_msgs_gtest.
 
@@ -63,10 +63,10 @@ test/CMakeFiles/run_tests_vision_msgs_gtest.dir/build: run_tests_vision_msgs_gte
 .PHONY : test/CMakeFiles/run_tests_vision_msgs_gtest.dir/build
 
 test/CMakeFiles/run_tests_vision_msgs_gtest.dir/clean:
-	cd /home/ciccio/Robotica_Cognitiva/pepper_ros/build/vision_msgs/test && $(CMAKE_COMMAND) -P CMakeFiles/run_tests_vision_msgs_gtest.dir/cmake_clean.cmake
+	cd /home/mivia/pepper_ros_ws/build/vision_msgs/test && $(CMAKE_COMMAND) -P CMakeFiles/run_tests_vision_msgs_gtest.dir/cmake_clean.cmake
 .PHONY : test/CMakeFiles/run_tests_vision_msgs_gtest.dir/clean
 
 test/CMakeFiles/run_tests_vision_msgs_gtest.dir/depend:
-	cd /home/ciccio/Robotica_Cognitiva/pepper_ros/build/vision_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ciccio/Robotica_Cognitiva/pepper_ros/src/vision_msgs /home/ciccio/Robotica_Cognitiva/pepper_ros/src/vision_msgs/test /home/ciccio/Robotica_Cognitiva/pepper_ros/build/vision_msgs /home/ciccio/Robotica_Cognitiva/pepper_ros/build/vision_msgs/test /home/ciccio/Robotica_Cognitiva/pepper_ros/build/vision_msgs/test/CMakeFiles/run_tests_vision_msgs_gtest.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/mivia/pepper_ros_ws/build/vision_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mivia/pepper_ros_ws/src/vision_msgs /home/mivia/pepper_ros_ws/src/vision_msgs/test /home/mivia/pepper_ros_ws/build/vision_msgs /home/mivia/pepper_ros_ws/build/vision_msgs/test /home/mivia/pepper_ros_ws/build/vision_msgs/test/CMakeFiles/run_tests_vision_msgs_gtest.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : test/CMakeFiles/run_tests_vision_msgs_gtest.dir/depend
 

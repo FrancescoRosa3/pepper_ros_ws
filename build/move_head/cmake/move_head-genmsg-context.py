@@ -1,7 +1,7 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
 messages_str = ""
-services_str = "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/move_head/srv/Head_position.srv"
+services_str = "/home/mivia/pepper_ros_ws/src/move_head/srv/Head_position.srv"
 pkg_name = "move_head"
 dependencies_str = "move_head"
 langs = "gencpp;geneus;genlisp;gennodejs;genpy"

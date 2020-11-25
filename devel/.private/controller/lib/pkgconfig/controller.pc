@@ -1,4 +1,4 @@
-prefix=/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/controller
+prefix=/home/mivia/pepper_ros_ws/devel/.private/controller
 
 Name: controller
 Description: Description of controller

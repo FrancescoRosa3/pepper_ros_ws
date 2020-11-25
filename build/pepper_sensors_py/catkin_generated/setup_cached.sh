@@ -7,9 +7,9 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/pepper_sensors_py:$CMAKE_PREFIX_PATH"
-export LD_LIBRARY_PATH="/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/pepper_sensors_py/lib:$LD_LIBRARY_PATH"
-export PWD='/home/ciccio/Robotica_Cognitiva/pepper_ros/build/pepper_sensors_py'
-export PYTHONPATH="/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/pepper_sensors_py/lib/python2.7/dist-packages:$PYTHONPATH"
-export ROSLISP_PACKAGE_DIRECTORIES="/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/pepper_sensors_py/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
-export ROS_PACKAGE_PATH="/home/ciccio/Robotica_Cognitiva/pepper_ros/src/pepper_robot/pepper_sensors_py:$ROS_PACKAGE_PATH"
+export CMAKE_PREFIX_PATH="/home/mivia/pepper_ros_ws/devel/.private/pepper_sensors_py:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/home/mivia/pepper_ros_ws/devel/.private/pepper_sensors_py/lib:$LD_LIBRARY_PATH"
+export PWD='/home/mivia/pepper_ros_ws/build/pepper_sensors_py'
+export PYTHONPATH="/home/mivia/pepper_ros_ws/devel/.private/pepper_sensors_py/lib/python2.7/dist-packages:$PYTHONPATH"
+export ROSLISP_PACKAGE_DIRECTORIES="/home/mivia/pepper_ros_ws/devel/.private/pepper_sensors_py/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
+export ROS_PACKAGE_PATH="/home/mivia/pepper_ros_ws/src/pepper_robot/pepper_sensors_py:$ROS_PACKAGE_PATH"

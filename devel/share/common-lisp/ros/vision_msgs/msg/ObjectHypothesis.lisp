@@ -1,1 +1,1 @@
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/vision_msgs/share/common-lisp/ros/vision_msgs/msg/ObjectHypothesis.lisp
+/home/mivia/pepper_ros_ws/devel/.private/vision_msgs/share/common-lisp/ros/vision_msgs/msg/ObjectHypothesis.lisp

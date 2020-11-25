@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ciccio/Robotica_Cognitiva/pepper_ros/src/pepper_robot/pepper_description
+CMAKE_SOURCE_DIR = /home/mivia/pepper_ros_ws/src/pepper_robot/pepper_description
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ciccio/Robotica_Cognitiva/pepper_ros/build/pepper_description
+CMAKE_BINARY_DIR = /home/mivia/pepper_ros_ws/build/pepper_description
 
 # Utility rule file for run_tests.
 
@@ -67,6 +67,6 @@ CMakeFiles/run_tests.dir/clean:
 .PHONY : CMakeFiles/run_tests.dir/clean
 
 CMakeFiles/run_tests.dir/depend:
-	cd /home/ciccio/Robotica_Cognitiva/pepper_ros/build/pepper_description && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ciccio/Robotica_Cognitiva/pepper_ros/src/pepper_robot/pepper_description /home/ciccio/Robotica_Cognitiva/pepper_ros/src/pepper_robot/pepper_description /home/ciccio/Robotica_Cognitiva/pepper_ros/build/pepper_description /home/ciccio/Robotica_Cognitiva/pepper_ros/build/pepper_description /home/ciccio/Robotica_Cognitiva/pepper_ros/build/pepper_description/CMakeFiles/run_tests.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/mivia/pepper_ros_ws/build/pepper_description && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mivia/pepper_ros_ws/src/pepper_robot/pepper_description /home/mivia/pepper_ros_ws/src/pepper_robot/pepper_description /home/mivia/pepper_ros_ws/build/pepper_description /home/mivia/pepper_ros_ws/build/pepper_description /home/mivia/pepper_ros_ws/build/pepper_description/CMakeFiles/run_tests.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/run_tests.dir/depend
 

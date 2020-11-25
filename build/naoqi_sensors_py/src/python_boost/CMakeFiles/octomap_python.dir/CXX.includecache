@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge/naoqi_sensors_py/src/python_boost/octomap_python.cpp
+/home/mivia/pepper_ros_ws/src/naoqi_bridge/naoqi_sensors_py/src/python_boost/octomap_python.cpp
 boost/python.hpp
 -
 boost/python/stl_iterator.hpp

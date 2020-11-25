@@ -1,1 +1,1 @@
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/detection_srv/share/roseus/ros/detection_srv/manifest.l
+/home/mivia/pepper_ros_ws/devel/.private/detection_srv/share/roseus/ros/detection_srv/manifest.l

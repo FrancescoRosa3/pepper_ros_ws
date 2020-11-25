@@ -1,1 +1,1 @@
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/pepper_talk/share/roseus/ros/pepper_talk/manifest.l
+/home/mivia/pepper_ros_ws/devel/.private/pepper_talk/share/roseus/ros/pepper_talk/manifest.l

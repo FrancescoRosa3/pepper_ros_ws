@@ -1,2 +1,2 @@
 - setup-file:
-    local-name: /home/ciccio/Robotica_Cognitiva/pepper_ros/install/setup.sh
+    local-name: /home/mivia/pepper_ros_ws/install/setup.sh

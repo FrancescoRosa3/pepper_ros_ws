@@ -1,8 +1,8 @@
-# Install script for directory: /home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge/naoqi_sensors_py/src/python_boost
+# Install script for directory: /home/mivia/pepper_ros_ws/src/naoqi_bridge/naoqi_sensors_py/src/python_boost
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/ciccio/Robotica_Cognitiva/pepper_ros/install")
+  set(CMAKE_INSTALL_PREFIX "/home/mivia/pepper_ros_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -44,7 +44,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/naoqi_sensors_py/boost/octomap_python.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/naoqi_sensors_py/boost" TYPE SHARED_LIBRARY FILES "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_sensors_py/lib/python2.7/dist-packages/naoqi_sensors_py/boost/octomap_python.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/naoqi_sensors_py/boost" TYPE SHARED_LIBRARY FILES "/home/mivia/pepper_ros_ws/devel/.private/naoqi_sensors_py/lib/python2.7/dist-packages/naoqi_sensors_py/boost/octomap_python.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/naoqi_sensors_py/boost/octomap_python.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/naoqi_sensors_py/boost/octomap_python.so")
     file(RPATH_CHANGE
@@ -58,6 +58,6 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/naoqi_sensors_py/boost" TYPE FILE FILES "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_sensors_py/lib/python2.7/dist-packages/naoqi_sensors_py/boost/__init__.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/naoqi_sensors_py/boost" TYPE FILE FILES "/home/mivia/pepper_ros_ws/devel/.private/naoqi_sensors_py/lib/python2.7/dist-packages/naoqi_sensors_py/boost/__init__.py")
 endif()
 

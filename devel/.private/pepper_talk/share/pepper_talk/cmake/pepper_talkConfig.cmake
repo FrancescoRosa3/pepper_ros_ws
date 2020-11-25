@@ -67,14 +67,14 @@ set(pepper_talk_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(pepper_talk_SOURCE_PREFIX /home/ciccio/Robotica_Cognitiva/pepper_ros/src/pepper_talk)
-  set(pepper_talk_DEVEL_PREFIX /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/pepper_talk)
+  set(pepper_talk_SOURCE_PREFIX /home/mivia/pepper_ros_ws/src/pepper_talk)
+  set(pepper_talk_DEVEL_PREFIX /home/mivia/pepper_ros_ws/devel/.private/pepper_talk)
   set(pepper_talk_INSTALL_PREFIX "")
   set(pepper_talk_PREFIX ${pepper_talk_DEVEL_PREFIX})
 else()
   set(pepper_talk_SOURCE_PREFIX "")
   set(pepper_talk_DEVEL_PREFIX "")
-  set(pepper_talk_INSTALL_PREFIX /home/ciccio/Robotica_Cognitiva/pepper_ros/install)
+  set(pepper_talk_INSTALL_PREFIX /home/mivia/pepper_ros_ws/install)
   set(pepper_talk_PREFIX ${pepper_talk_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(pepper_talk_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/pepper_talk/include " STREQUAL " ")
+if(NOT "/home/mivia/pepper_ros_ws/devel/.private/pepper_talk/include " STREQUAL " ")
   set(pepper_talk_INCLUDE_DIRS "")
-  set(_include_dirs "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/pepper_talk/include")
+  set(_include_dirs "/home/mivia/pepper_ros_ws/devel/.private/pepper_talk/include")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT " " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/pepper_talk/in
         message(FATAL_ERROR "Project 'pepper_talk' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'pepper_talk' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/ciccio/Robotica_Cognitiva/pepper_ros/src/pepper_talk/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'pepper_talk' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/mivia/pepper_ros_ws/src/pepper_talk/${idir}'.  ${_report}")
     endif()
     _list_append_unique(pepper_talk_INCLUDE_DIRS ${include})
   endforeach()
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/pepper_talk/lib;/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/lib;/opt/ros/melodic/lib)
+    foreach(path /home/mivia/pepper_ros_ws/devel/.private/pepper_talk/lib;/home/mivia/pepper_ros_ws/devel/lib;/home/mivia/ws_moveit/devel/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

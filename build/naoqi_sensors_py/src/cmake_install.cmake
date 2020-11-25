@@ -1,8 +1,8 @@
-# Install script for directory: /home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge/naoqi_sensors_py/src
+# Install script for directory: /home/mivia/pepper_ros_ws/src/naoqi_bridge/naoqi_sensors_py/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/ciccio/Robotica_Cognitiva/pepper_ros/install")
+  set(CMAKE_INSTALL_PREFIX "/home/mivia/pepper_ros_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/ciccio/Robotica_Cognitiva/pepper_ros/build/naoqi_sensors_py/src/python_boost/cmake_install.cmake")
+  include("/home/mivia/pepper_ros_ws/build/naoqi_sensors_py/src/python_boost/cmake_install.cmake")
 
 endif()
 

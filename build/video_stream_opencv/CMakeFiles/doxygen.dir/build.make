@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ciccio/Robotica_Cognitiva/pepper_ros/src/video_stream_opencv
+CMAKE_SOURCE_DIR = /home/mivia/pepper_ros_ws/src/video_stream_opencv
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ciccio/Robotica_Cognitiva/pepper_ros/build/video_stream_opencv
+CMAKE_BINARY_DIR = /home/mivia/pepper_ros_ws/build/video_stream_opencv
 
 # Utility rule file for doxygen.
 
@@ -67,6 +67,6 @@ CMakeFiles/doxygen.dir/clean:
 .PHONY : CMakeFiles/doxygen.dir/clean
 
 CMakeFiles/doxygen.dir/depend:
-	cd /home/ciccio/Robotica_Cognitiva/pepper_ros/build/video_stream_opencv && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ciccio/Robotica_Cognitiva/pepper_ros/src/video_stream_opencv /home/ciccio/Robotica_Cognitiva/pepper_ros/src/video_stream_opencv /home/ciccio/Robotica_Cognitiva/pepper_ros/build/video_stream_opencv /home/ciccio/Robotica_Cognitiva/pepper_ros/build/video_stream_opencv /home/ciccio/Robotica_Cognitiva/pepper_ros/build/video_stream_opencv/CMakeFiles/doxygen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/mivia/pepper_ros_ws/build/video_stream_opencv && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mivia/pepper_ros_ws/src/video_stream_opencv /home/mivia/pepper_ros_ws/src/video_stream_opencv /home/mivia/pepper_ros_ws/build/video_stream_opencv /home/mivia/pepper_ros_ws/build/video_stream_opencv /home/mivia/pepper_ros_ws/build/video_stream_opencv/CMakeFiles/doxygen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/doxygen.dir/depend
 

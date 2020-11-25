@@ -1,1 +1,1 @@
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/detection_srv/share/gennodejs/ros/detection_srv/srv/Detector.js
+/home/mivia/pepper_ros_ws/devel/.private/detection_srv/share/gennodejs/ros/detection_srv/srv/Detector.js

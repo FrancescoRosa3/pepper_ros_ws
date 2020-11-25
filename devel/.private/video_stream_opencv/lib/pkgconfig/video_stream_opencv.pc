@@ -1,8 +1,8 @@
-prefix=/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/video_stream_opencv
+prefix=/home/mivia/pepper_ros_ws/devel/.private/video_stream_opencv
 
 Name: video_stream_opencv
 Description: Description of video_stream_opencv
 Version: 1.1.5
-Cflags: -I/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/video_stream_opencv/include
+Cflags: -I/home/mivia/pepper_ros_ws/devel/.private/video_stream_opencv/include
 Libs: -L${prefix}/lib 
 Requires: 

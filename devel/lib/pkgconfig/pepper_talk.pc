@@ -1,1 +1,1 @@
-/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/pepper_talk/lib/pkgconfig/pepper_talk.pc
+/home/mivia/pepper_ros_ws/devel/.private/pepper_talk/lib/pkgconfig/pepper_talk.pc

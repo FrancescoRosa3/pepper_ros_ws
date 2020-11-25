@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/src/naoqi_bridge/naoqi_sensors_py/src/python_boost/octomap_python.cpp" "/home/ciccio/Robotica_Cognitiva/pepper_ros/build/naoqi_sensors_py/src/python_boost/CMakeFiles/octomap_python.dir/octomap_python.cpp.o"
+  "/home/mivia/pepper_ros_ws/src/naoqi_bridge/naoqi_sensors_py/src/python_boost/octomap_python.cpp" "/home/mivia/pepper_ros_ws/build/naoqi_sensors_py/src/python_boost/CMakeFiles/octomap_python.dir/octomap_python.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -17,7 +17,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_sensors_py/include"
+  "/home/mivia/pepper_ros_ws/devel/.private/naoqi_sensors_py/include"
   "/opt/ros/melodic/include"
   "/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   "/usr/include/python2.7"

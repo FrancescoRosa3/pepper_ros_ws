@@ -1,8 +1,8 @@
-prefix=/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/pepper_talk
+prefix=/home/mivia/pepper_ros_ws/devel/.private/pepper_talk
 
 Name: pepper_talk
 Description: Description of pepper_talk
 Version: 0.0.0
-Cflags: -I/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/pepper_talk/include
+Cflags: -I/home/mivia/pepper_ros_ws/devel/.private/pepper_talk/include
 Libs: -L${prefix}/lib 
 Requires: 

@@ -1,4 +1,4 @@
-prefix=/home/ciccio/Robotica_Cognitiva/pepper_ros/devel/.private/naoqi_apps
+prefix=/home/mivia/pepper_ros_ws/devel/.private/naoqi_apps
 
 Name: naoqi_apps
 Description: Description of naoqi_apps
