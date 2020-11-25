@@ -7,7 +7,7 @@
     <arg name="speech" default="1" doc="Run speech service" />
 
     <!-- Detector args-->
-    <arg name="model" default="faster_rcnn_resnet152_v1_1024x1024_coco17_tpu-8/saved_model" doc="Path to the model" />
+    <arg name="model" default="faster_rcnn_resnet50_v1_640x640_coco17_tpu-8/saved_model" doc="Path to the model" />
     <arg name="publish_bb" default="True" doc="Publish the detected image" />
     <arg name="topic" default="/pepper_robot/camera/front/camera/image_raw" doc="Camera topic" />
     <arg name="frame" default="1" doc="Number of iteration"/>
@@ -19,7 +19,7 @@
     <node name="detector" pkg="detection_srv" type="detector_srv.py"  output="screen" args="-m=$(arg model) -p=$(arg publish_bb) -t=$(arg topic) -f=$(arg frame)" cwd = "node"></node> 
     
     <!-- launch pepper_talk node-->
-    <arg name="D" value="/home/mivia/pepper_ros_ws/src/pynaoqi-python2.7-2.5.7.1-linux64"/>
+    <arg name="D" value="/home/mivia/Gruppo19/pepper_ros_ws/src/pynaoqi-python2.7-2.5.7.1-linux64"/>
     <env name="PYTHONPATH" value="$(env PYTHONPATH):$(arg D)/lib/python2.7/site-packages" />
     <arg name="nao_ip" value="10.0.1.230"/>
     <node name="pepper_talk" pkg="pepper_talk" type="pepper_talk_node.py"  output="screen" args="--pip=$(arg nao_ip)" if="$(arg speech)"></node> 

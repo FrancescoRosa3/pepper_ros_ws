@@ -115,15 +115,19 @@ class DetectionService():
         if self.publish_bb == "True":
             self.pub_image.publish(msg)
             self.pub.publish(message)
-            
-        self.save_image(image, message)
 
         self.counter = self.counter-1
 
+        # Uncomment the following to save the analyzed images in the /images folder inside the detector_srv package
+        # self.save_image(image, message)
+
+    # Save the the analyzed images in the /images folder inside the detector_srv package
     def save_image(self, image, msg):
         rospy.loginfo('saving image')
         im = image.copy()
         h,w,_ = im.shape
+
+        # Drawing the each object boxes over the image
         for d in msg.detections:
             c = d.results[0].id
             s = d.results[0].score
@@ -134,15 +138,14 @@ class DetectionService():
             p2 = (int((b[3]+b[1])*w+.5), int((b[2]+b[0])*h+.5))
             print(p1, p2, c, classmap[c], s)
             col = (255,0,0) 
-            cv2.rectangle(im, p1, p2, col, 3 )
+            cv2.rectangle(im, p1, p2, col, 3)
             p1 = (p1[0]-10, p1[1])
             cv2.putText(im, "%s %.2f" % (classmap[c],s), p1, cv2.FONT_HERSHEY_SIMPLEX, 0.8, col, 2)
         
+        # Save the image
         img_name = self.model.split('/')[0] + "_" + str(self.cnt) + ".jpg"
-        rospy.loginfo('FILE NAME: ' + img_name)
         self.cnt = self.cnt + 1
         path = "images" + "/" + img_name
-        rospy.loginfo('PATH: ' + path)
         if not cv2.imwrite(path, im):
             raise Exception("Could not write image")
         else:
@@ -150,6 +153,5 @@ class DetectionService():
         
 if __name__=="__main__":
     detection_service = DetectionService()
-    
     rospy.spin()
 
